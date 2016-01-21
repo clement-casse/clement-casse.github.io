@@ -1,0 +1,27 @@
+<div class="work-experience col-md-12 col-xs-12">
+
+    <div class="information col-md-3 col-xs-3">
+        <p class="date">
+            <strong>{{ object.dates | durationFilter }}</strong>
+        </p>
+        <p class="place">
+            <em>
+                {{ object.employer.name }}<br />
+                {{ object.employer.city }}<span ng-if="object.employer.country">, {{ object.employer.country | uppercase }}</span>
+            </em>
+        </p>
+    </div>
+
+    <div class="details col-md-9 col-xs-9">
+        <p>
+            <strong>{{ object.name }}</strong>
+        </p>
+        <ul class="list-unstyled">
+            <li ng-repeat="mission in object.missions.briefly">
+                <i class="fa fa-check-square-o fa-fw"></i>
+                {{ mission }}
+            </li>
+        </ul>
+    </div>
+
+</div>

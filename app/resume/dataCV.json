@@ -1,0 +1,1099 @@
+{
+  "identity": {
+    "firstName":	"Clément",
+    "lastName":		"Cassé",
+    "birthDate":	"1991-04-10",
+    "ageAppend": {
+      "fr": "ans",
+      "en": "years old"
+    },
+    "phone": {
+      "fr":		"06 88 80 28 08",
+      "en":		"+33 6 88 80 28 08"
+    },
+    "email":	"casse.clement@outlook.com",
+    "address": {
+      "line1":	"85 Allée du Comminges",
+      "city":	"Colomiers",
+      "zip":	"31770",
+      "country": {
+        "en": "France"
+      }
+    }
+  },
+
+  "heading": {
+    "titleResume": {
+      "fr":	"Ingénieur Réseaux et Télécommunications",
+      "en":	"Engineer specialized Network and Telecommunications"
+    },
+    "qualities": [
+      {
+        "fr": "Méthodique"
+      },
+      {
+        "fr": "Curieux",
+        "_restrictTo": ["infosec"]
+      },
+      {
+        "fr": "Sens de l'éthique",
+        "_restrictTo": ["infosec"]
+      },
+      {
+        "fr": "Autonome",
+        "_restrictTo": ["develop"]
+      },
+      {
+        "fr": "Passionné des nouvelles technologies",
+        "_restrictTo": ["develop"]
+      }
+    ]
+  },
+
+  "skills": {
+    "sectionTitle": {
+      "fr":	"Compétences",
+      "en":	"Skills"
+    },
+    "list": [
+      {
+        "domain": {
+          "fr":	"Administration et architecture réseau",
+          "en":	"Network administration and architecture"
+        },
+        "subDomains": [
+          {
+            "title": {
+              "fr":	"Administration",
+              "en":	"Administration"
+            },
+            "displayAs": "enum",
+            "list":	[
+              {
+                "name": "Linux",
+                "level": {
+                  "mark": 9,
+                  "designation": {
+                    "fr": "",
+                    "en": ""
+                  }
+                }
+              },
+              {
+                "name": "Windows Server",
+                "level": {
+                  "mark": 6,
+                  "designation": {
+                    "fr": "",
+                    "en": ""
+                  }
+                }
+              },
+              {
+                "name":	"Cisco IOS",
+                "level": {
+                  "mark": 7,
+                  "designation": {
+                    "fr": "",
+                    "en": ""
+                  }
+                },
+                "experience": [
+
+                ]
+              }
+            ]
+          },
+          {
+            "title": {
+              "fr":	"Serveurs",
+              "en":	"Servers"
+            },
+            "displayAs": "enum",
+            "_restrictTo": ["default", "infosec"],
+            "list":	[
+              {
+                "name": "Web",
+                "experiences": {
+                  "short": [
+                    "Apache2",
+                    "NginX"
+                  ]
+                }
+              },
+              {
+                "name": {
+                  "fr":	"Bases de Données",
+                  "en":	"Database"
+                },
+                "experiences": {
+                  "short": [
+                    "MySQL",
+                    "Oracle"
+                  ]
+                }
+              },
+              {
+                "name": "Mail",
+                "_restrictTo" : ["default"],
+                "experiences": {
+                  "short": []
+                }
+              },
+              {
+                "name": "DHCP, DNS, ",
+                "_restrictTo" : ["default"],
+                "experiences": {
+                  "short": []
+                }
+              }
+            ]
+          },
+          {
+            "title": {
+              "fr": "Virtualisation",
+              "en": "Virtualization"
+            },
+            "displayAs": "enum",
+            "list": [
+              {
+                "name": {
+                  "fr": "Environnement VMware",
+                  "en": "VMware Environment"
+                }
+              },
+              {
+                "name": {
+                  "fr": "Conteneurisation via Docker",
+                  "en": "Containerization via Docker"
+                },
+                "experiences": {
+                  "short": [
+                    {
+                      "fr": "Admin serveur personnel",
+                      "en": "Personal server admin"
+                    }
+                  ],
+                  "detail": [
+                    {
+                      "fr": "",
+                      "en": ""
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "domain": {
+          "fr":	"Développement",
+          "en":	"Development"
+        },
+        "subDomains": [
+          {
+            "title": {
+              "fr":	"Approches",
+              "en":	"Approaches"
+            },
+            "list": [
+              {
+                "name": {
+                  "fr":	"Orientée Objet",
+                  "en":	"Oriented-Object"
+                }
+              },
+              {
+                "name": {
+                  "fr": "Fonctionnelle",
+                  "en": "Functional"
+                }
+              },
+              {
+                "name": {
+                  "fr":	"Model-Based",
+                  "en":	"Model-Based"
+                }
+              }
+            ]
+          },
+          {
+            "title": {
+              "fr":	"Langages",
+              "en":	"Languages"
+            },
+            "_restrictTo": ["develop"],
+            "displayAs": "levelList",
+            "list":	[
+              {
+                "name": "C",
+                "level": {
+                  "mark": 5,
+                  "designation": {
+                    "fr": "Connaissances",
+                    "en": "Knowledge"
+                  }
+                }
+              },
+              {
+                "name": "Java",
+                "level": {
+                  "mark": 8,
+                  "designation": {
+                    "fr": "Autonome",
+                    "en": "Autonomous"
+                  }
+                }
+              },
+              {
+                "name": "Python",
+                "level": {
+                  "mark": 6,
+                  "designation": {
+                    "fr": "Autonome",
+                    "en": "Autonomous"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "title": "Web stack",
+            "_restrictTo": ["develop"],
+            "displayAs": "radarChart",
+            "list":	[
+              {
+                "name": "HTML/CSS",
+                "level": {
+                  "mark": 9,
+                  "designation": {
+                    "fr": "Connaissances",
+                    "en": "Knowledge"
+                  },
+                  "experiences":{
+                    "detailed": []
+                  }
+                }
+              },
+              {
+                "name": "Javascript",
+                "level": {
+                  "mark": 8,
+                  "designation": {
+                    "fr": "",
+                    "en": ""
+                  },
+                  "experiences":{
+                    "detailed": []
+                  }
+                }
+              },
+              {
+                "name": "PHP",
+                "level": {
+                  "mark": 6,
+                  "designation": {
+                    "fr": "Connaissances",
+                    "en": "Knowledge"
+                  },
+                  "experiences":{
+                    "detailed": []
+                  }
+                }
+              },
+              {
+                "name": "SQL",
+                "level": {
+                  "mark": 8,
+                  "designation": {
+                    "fr": "",
+                    "en": ""
+                  }
+                }
+              },
+              {
+                "name": "Apache2",
+                "level": {
+                  "mark": 7,
+                  "designation": {
+                    "fr": "Connaissances",
+                    "en": "Knowledge"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "title": "Frameworks",
+            "_restrictTo": ["develop"],
+            "displayAs": "enum",
+            "list": [
+              {
+                "name": "Bootstrap",
+                "experiences":{
+                  "detailed": []
+                }
+              },
+              {
+                "name": "AngularJs",
+                "experiences":{
+                  "detailed": []
+                }
+              },
+              {
+                "name": "SailsJs"
+              }
+            ]
+          },
+          {
+            "title": {
+              "fr":	"Langages",
+              "en":	"Languages"
+            },
+            "_restrictTo": ["default", "infosec"],
+            "displayAs": "enum",
+            "list":	[
+              {
+                "name": "C",
+                "level": {
+                  "mark": 5,
+                  "designation": {
+                    "fr": "Connaissances",
+                    "en": "Knowledge"
+                  }
+                }
+              },
+              {
+                "name": "Java",
+                "level": {
+                  "mark": 8,
+                  "designation": {
+                    "fr": "",
+                    "en": ""
+                  }
+                },
+                "experience": [
+
+                ]
+              },
+              {
+                "name": "Python",
+                "level": {
+                  "mark": 6,
+                  "designation": {
+                    "fr": "Connaissances",
+                    "en": "Knowledge"
+                  }
+                }
+              },
+              {
+                "name": "PHP",
+                "level": {
+                  "mark": 6
+                },
+                "experiences":{
+                  "detailed": []
+                }
+              },
+              {
+                "name": "JavaScript",
+                "level": {
+                  "mark": 8,
+                  "designation": {
+                    "fr": "",
+                    "en": ""
+                  }
+                },
+                "experiences":{
+                  "detailed": []
+                }
+              },
+              {
+                "name": "SQL",
+                "level": {
+                  "mark": 8,
+                  "designation": {
+                    "fr": "",
+                    "en": ""
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "title": {
+              "fr":	"Outils",
+              "en":	"Tools"
+            },
+            "list":	[
+              {
+                "name": "SVN/Git"
+              },
+              {
+                "name": "Vim/Eclipse/EMF"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "domain": {
+          "fr":	"Sécurité Informatique",
+          "en":	"Information Security"
+        },
+        "_restrictTo": ["default", "infosec"],
+        "subDomains": [
+          {
+            "title": {
+              "fr": "Techniques",
+              "en": "Technical"
+            },
+            "displayAs": "radarChart",
+            "_restrictTo": ["infosec"],
+            "list": [
+              {
+                "name": "Firewall",
+                "level": {
+                  "mark": 9
+                },
+                "experiences": {
+                  "short": [
+                    "Cisco ASA",
+                    "iptables"
+                  ],
+                  "detailed": []
+                }
+              },
+              {
+                "name": "VPN",
+                "level": {
+                  "mark": 7
+                },
+                "experiences": {
+                  "short": [
+                    "Cisco WebVPN",
+                    "OpenVPN"
+                  ],
+                  "detailed": []
+                }
+              },
+              {
+                "name": {
+                  "fr": "PKI / Authentification",
+                  "en": "PKI / Authentication"
+                },
+                "level": {
+                  "mark": 6
+                },
+                "experiences":{
+                  "short": [
+                    "Radius Server"
+                  ],
+                  "detailed": []
+                }
+              },
+              {
+                "name": "Web app security",
+                "level": {
+                  "mark": 8
+                },
+                "experiences":{
+                  "short": [],
+                  "detailed": []
+                }
+              },
+              {
+                "name": "OS security",
+                "level": {
+                  "mark": 7
+                },
+                "experiences":{
+                  "detailed": []
+                }
+              }
+            ]
+          },
+          {
+            "title": {
+              "fr": "Techniques",
+              "en": "Technical"
+            },
+            "displayAs": "expList",
+            "_restrictTo": ["default"],
+            "list": [
+              {
+                "name": {
+                  "fr": "PKI / Authentification",
+                  "en": "PKI / Authentication"
+                },
+                "level": {
+                  "mark": 6
+                },
+                "experiences":{
+                  "short": [
+                    "Radius Server"
+                  ],
+                  "detailed": []
+                }
+              },
+              {
+                "name": "VPN",
+                "level": {
+                  "mark": 7
+                },
+                "experiences": {
+                  "short": [
+                    "Cisco WebVPN",
+                    "OpenVPN"
+                  ],
+                  "detailed": []
+                }
+              },
+              {
+                "name": "Firewall",
+                "level": {
+                  "mark": 8
+                },
+                "experiences": {
+                  "short": [
+                    "Cisco ASA",
+                    "iptables"
+                  ],
+                  "detailed": []
+                }
+              },
+              {
+                "name": "Web app security",
+                "level": {
+                  "mark": 8
+                },
+                "experiences": {
+                  "short": [
+                    {
+                      "fr": "Projet Pentest OWASP",
+                      "en": "Project on OWASP Testing"
+                    }
+                  ],
+                  "detailed": []
+                }
+              },
+              {
+                "name": "OS security",
+                "level": {
+                  "mark": 6
+                },
+                "experiences": {
+                  "short": [
+                    "Antivirus",
+                    "Authorisation systems"
+                  ],
+                  "detailed": []
+                }
+              }
+            ]
+          },
+          {
+            "title": {
+              "fr": "Méthodes et outils",
+              "en": "Methods and tools"
+            },
+            "_restrictTo": ["infosec", "default"],
+            "displayAs": "enum",
+            "list": [
+              {
+                "name": "Risk Management Framework"
+              },
+              {
+                "name": "OpenSAMM/BSIMM"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "domain": {
+          "fr":	"Langues",
+          "en":	"Tongues"
+        },
+        "list": [
+          {
+            "name": {
+              "en": "French"
+            },
+            "level": {
+              "designation": {
+                "en": "Mother tongue"
+              }
+            }
+          },
+          {
+            "name": {
+              "fr": "Anglais",
+              "en": "English"
+            },
+            "level": {
+              "designation": {
+                "fr": "TOEIC 2014 : 880/990",
+                "en": "TOEIC 2014: 880/990"
+              }
+            },
+            "experiences": {
+              "short": [
+                {
+                  "fr": "Pratique professionnelle écrite",
+                  "en": "Professional document writing"
+                },
+                {
+                  "fr": "Semestre ERASMUS en Norvège : Cours en anglais",
+                  "en": "ERASMUS Semester in Norway: courses in english"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "workExperience": {
+    "sectionTitle": {
+      "fr":	"Expériences Professionnelles",
+      "en":	"Working Experiences"
+    },
+    "list": [
+      {
+        "name": {
+          "fr":	"Apprenti Ingénieur validation des systèmes avioniques",
+          "en":	"Apprentice Engineer on Verification & Validation means for avionic software"
+        },
+        "dates": {
+          "start":	"2012-09-01",
+          "end":	"2015-08-31"
+        },
+        "employer": {
+          "name": "Airbus Group",
+          "city": "Toulouse",
+          "country": {
+            "en": "France"
+          }
+        },
+        "missions": {
+          "briefly": [
+            {
+              "fr":	"Rationalisation d'un parc de moyens de V&V logiciel avionique DO178B DAL A, B, C, E.",
+              "en":	"Rationalization of the park of means for the V&V in the avionic software DO178B DAL A, B, C, E"
+            },
+            {
+              "fr":	"Suivi de prestations de sous-traitance, contribution au pilotage technique des activités sous-traitées.",
+              "en":	"Subcontractor follow up, and contribution to the technical management of the outsourced activity"
+            },
+            {
+              "fr": "Développement d'une application PHP de comparaison de Bases de Données.",
+              "en": "Database comparison application development in PHP.",
+              "_restrictTo": ["develop"]
+            },
+            {
+              "fr":	"Creation d'un sous-réseau sécurisé lié à l'exploitation de moyens obsolètes.",
+              "en":	"Sub-network creation to keep using obsolete means.",
+              "_restrictTo": ["infosec"]
+            },
+            {
+              "fr": "Participation à l'analyse de risques industriels, traitement des obsolesences des moyens V&V",
+              "en": "Participation to the Industrial Risks Analysis, obsolescence management of V&V means"
+            }
+          ],
+          "detailed": [
+            {
+              "fr":	"",
+              "en":	"(1st Year) Management of a park of means used for the Verification, Validation and Certification of the avionic software designed at Airbus (1000+ specific means spread on 70+ clients). DO178B certification environment on DAL A, B, C and E embedded computers. My mission was to structure the park on a software (GLPI) so that the inventory and the support on these means can be maintained easily."
+            },
+            {
+              "fr":	"",
+              "en":	"(2nd Year) Obsolescence management on these means: study of the criticity of means to plan the renewal of the park. Contribution to Risk Analysis to define means criticity. One of my project was to plan both the use and the renewal of the Windows XP OS after the end of life of the product. Both a segregated network and a roadmap have been provided to mitigate this security risk."
+            },
+            {
+              "fr":	"",
+              "en":	"(3rd Year) Verification & Validation lifecycle study in the avionic software departement. The study was focused on the different means used and the simplification that could be done, the automation capabilities and cost, and the use of development practices such as Test Driven Development, Continuous Integration, Model-Based System Engineering."
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "fr":	"Stagiaire administrateur réseaux",
+          "en":	"Trainee Network Administrator"
+        },
+        "dates": {
+          "start":	"2012-04-09",
+          "end":	"2012-06-15"
+        },
+        "employer": {
+          "name":	"MediaMeeting",
+          "city":	"Toulouse",
+          "country": {
+            "en": "France"
+          }
+        },
+        "missions": {
+          "briefly": [
+            {
+              "fr":	"Audit de l'infrastructure réseau de l'entreprise",
+              "en":	"Company network infrastructure audit"
+            },
+            {
+              "fr": "Filtrage Firewall et VPN SSL sur Cisco ASA",
+              "en": "Firewall and VPN SSL setup Cisco ASA",
+              "_restrictTo": ["default", "develop"]
+            },
+            {
+              "fr":	"Etude et déploiement de VPN SSL et d'un système FailOver sur Cisco ASA",
+              "en":	"VPN SSL and FailOver study and setup on Cisco ASA",
+              "_restrictTo": ["infosec"]
+            },
+            {
+              "fr":	"Optimisation des règles firewall sur Cisco ASA",
+              "en":	"Update and simplification of Cisco ASA Firewall Rules",
+              "_restrictTo": ["infosec"]
+            },
+            {
+              "fr":	"Support informatique auprès des utilisateurs",
+              "en":	"IT support to end-users",
+              "_restrictTo": ["default", "develop"]
+            }
+          ]
+        }
+      }
+
+    ]
+  },
+
+  "studies": {
+    "sectionTitle": {
+      "fr":	"Formation",
+      "en":	"Studies"
+    },
+    "list": [
+      {
+        "name": {
+          "fr":	"Diplôme d'Ingénieur en Réseaux - Télécommunications",
+          "en":	"Engineer degree in network and Telecommunications"
+        },
+        "dates": {
+          "start":	"2012-09-01",
+          "end":	"2015-08-31"
+        },
+        "school": {
+          "name":	"Télécom-Bretagne",
+          "city":	"Brest",
+          "country": {
+            "en": "France"
+          }
+        },
+        "description": [
+          {
+            "fr": "Ingénierie Logicielle",
+            "en": "Software Engineering"
+          },
+          {
+            "fr": "Architecture des Systèmes d'Information",
+            "en": "Architecture of Information Systems"
+          },
+          {
+            "fr": "Electronique des télécommunications",
+            "en": "Electronics for telecommunications"
+          },
+          {
+            "fr": "Traitement du signal",
+            "en": "Signal processing",
+            "_restrictTo": ["default", "devep"]
+          }
+        ],
+        "notes": {
+          "briefly": [
+            {
+              "fr": "Formation en apprentissage avec Airbus",
+              "en": "Apprenticeship with Airbus"
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "fr":	"Semestre ERASMUS spé. Informatique et Sécurité",
+          "en":	"ERASMUS Semester: spec. in Information Security "
+        },
+        "dates": {
+          "start":	"2014-08-09",
+          "end":	"2014-12-22"
+        },
+        "school": {
+          "name":	"NTNU",
+          "city":	"Trondheim",
+          "country": {
+            "fr":   "Norvège",
+            "en":   "Norway"
+          }
+        },
+        "description": [
+          {
+            "fr": "Analyse de vulnérabilités",
+            "en": "Vulnerability assessment"
+          },
+          {
+            "fr": "Modélisation de menaces",
+            "en": "Threat Modeling",
+            "_restrictTo": ["infosec", "default"]
+          },
+          {
+            "fr": "Analyse de risques",
+            "en": "Risk Analysis",
+            "_restrictTo": ["infosec"]
+          },
+          {
+            "fr": "Modélisation UML",
+            "en": "UML Modeling"
+          },
+          {
+            "fr": "Modélisation BPM",
+            "en": "BPM Modeling",
+            "_restrictTo": ["develop"]
+          },
+          {
+            "fr": "Sécurité des applications Web",
+            "en": "Web App Security",
+            "_restrictTo": ["develop"]
+          }
+        ],
+        "notes": {
+          "briefly": [
+            {
+              "fr": "Sujets choisis : Sécurité Logicielle, Sécurité des réseaux sans-fils, Développement basé modèles.",
+              "en": "Topics elected: Software security, Wireless Security, Model Based Development of Information Systems."
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "fr":	"DUT Réseaux et Télécommunications",
+          "en":	"DUT R&T : equivalent to a two years degree in networks and telecommunications"
+        },
+        "dates": {
+          "start":	"2010-09-01",
+          "end":	"2012-08-31"
+        },
+        "school": {
+          "name":	"IUT de Toulouse",
+          "city":	"Blagnac",
+          "country": {
+            "en": "France"
+          }
+        },
+        "description": [
+          {
+            "fr": "Architecture des réseaux IP",
+            "en": "IP Network architecture"
+          },
+          {
+            "fr": "Administration Windows Server et Linux",
+            "en": "Windows Server and Linux Administration"
+          },
+          {
+            "fr": "Routage IP sur Cisco",
+            "en": "IP routing on Cisco devices"
+          },
+          {
+            "fr": "Réseaux d'opérateurs",
+            "en": "operator networks",
+            "_restrictTo": ["default"]
+          }
+        ],
+        "notes": {
+          "briefly": [
+            {
+              "fr": "Juillet 2011 : Summer School au pays de Galles - CCNA 1 et 2",
+              "en": "July 2011: Summer School in Wales - CCNA 1 and 2"
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "fr":	"Première année classe préparatoire intégrée INSA",
+          "en":	"First Year in a national Engineering School"
+        },
+        "dates": {
+          "start":	"2009-09-01",
+          "end":	"2010-06-30"
+        },
+        "school": {
+          "name":	"INSA",
+          "city":	"Toulouse",
+          "country": {
+            "en": "France"
+          }
+        },
+        "description": [
+          {
+            "fr": "Etudes d'ingénieur généraliste, en mathématiques, physique et chimie.",
+            "en": "Engineering Studies in maths, chemistry and physical science."
+          }
+        ]
+      },
+      {
+        "name": {
+          "fr":	"Bac. S-Sciences de l’Ingénieur",
+          "en":	"Baccalauréat SSI: equivalent to a High School diploma in Sciences"
+        },
+        "dates": {
+          "end":	"2009-06-30"
+        },
+        "school": {
+          "name":	"Lycée C. de Gaulle",
+          "city":	"Toulouse",
+          "country": {
+            "en": "France"
+          }
+        },
+        "description": [
+          {
+            "fr": "Baccalauréat Scientifique avec formation en électronique et mécanique",
+            "en": "Diploma in Science with a spec. in electronics and mechanic"
+          },
+          {
+            "fr": "option physique-chimie.",
+            "en": "elective courses in physical science."
+          }
+        ],
+        "notes": {
+        }
+      }
+    ]
+  },
+
+  "others": {
+    "sectionTitle": {
+      "fr":	"Centres d'intérêts",
+      "en":	"Hobbies"
+    },
+    "list": [
+      {
+        "name": {
+          "fr": "Origami",
+          "en": "Origami"
+        }
+      },
+      {
+        "name": {
+          "fr": "Veille Technologique",
+          "en": "Technological watch"
+        }
+      },
+      {
+        "name": {
+          "fr": "Jeux vidéos communautaires",
+          "en": "Video games in community"
+        }
+      }
+    ]
+  },
+
+  "pageContent": {
+    "config": {
+      "title": {
+        "fr": "Configuration :",
+        "en": "Configuration:"
+      },
+      "text": {
+        "fr": "Il est possible de changer le contenu du CV, pour ce faire, sélectionnez une langue, et un domaine grâce aux boutons ci dessous.",
+        "en": "To change the content of the CV, please select a language and a dominance with the buttons below."
+      },
+      "btnGroup": [
+        {
+          "text": {
+            "fr": "Langues",
+            "en": "Language"
+          },
+          "buttons": [
+            {
+              "imageUrl": "http://www.crwflags.com/fotw/images/f/fr.gif",
+              "text": "Français",
+              "langId": "fr"
+            },
+            {
+              "imageUrl": "http://www.crwflags.com/fotw/images/g/gb_2x3.gif",
+              "text": "English",
+              "langId": "en"
+
+            }
+          ]
+        },
+        {
+          "text": {
+            "fr": "Domaines",
+            "en": "Dominance"
+          },
+          "buttons": [
+            {
+              "text": {
+                "fr": "Systèmes d'information et Réseaux",
+                "en": "Information systems and network"
+              },
+              "cvId": "default"
+            },
+            {
+              "text": {
+                "fr": "Sécurité des systèmes d'information",
+                "en": "Information system security"
+              },
+              "cvId": "infosec"
+            },
+            {
+              "text": {
+                "fr": "Développement Logiciel",
+                "en": "Software development"
+              },
+              "cvId": "develop"
+            }
+          ]
+        }
+      ]
+    },
+    "links": {
+      "title": {
+        "fr": "Liens :",
+        "en": "Links:"
+      },
+      "list": [
+        {
+          "id": "pagesGitHub",
+          "faIcon": "fa-github-square",
+          "url": "http://clement-casse.github.io",
+          "text": {
+            "fr": "Voir le CV en ligne",
+            "en": "View the CV online"
+          }
+        },
+        {
+          "id": "codeGitHub",
+          "faIcon": "fa-github-square",
+          "url": "https://github.com/clement-casse/clement-casse.github.io",
+          "text": {
+            "fr": "Consulter le code de la page",
+            "en": "View the code on GitHub"
+          }
+        },
+        {
+          "id": "profileLinkedIn",
+          "faIcon": "fa-linkedin-square",
+          "url": "https://fr.linkedin.com/in/clementcasse",
+          "text": {
+            "fr": "Profil LinkedIn",
+            "en": "LinkedIn Profile"
+          }
+        }
+      ]
+    }
+  }
+}

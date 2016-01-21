@@ -1,0 +1,223 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #FAFAFA;
+}
+
+/* Div `page` to display in browser the feeling of having an A4 sheet of paper: 
+   - Size 210*297 mm
+   - Margins and border around the sheet to properly diplay the A4 sheet.
+   - Padding acts as the inside marging of the sheet
+*/
+.page {
+    width: 210mm;
+    min-height: 297mm;
+
+    /* Browser Look and feel A4 Page*/
+    margin: 0 auto 10mm;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    /*Page Internal Margin*/
+    padding: 10mm 5mm 5mm;
+
+    font-size: 12px;
+    font-family: "Typo-Regular", Helvetica, sans-serif; /* Normal Typo */
+}
+
+/* Div `subPage` considered as a document wide line of information,
+ * tightly goes with container 1st Level
+ */
+.subPage {
+    width: 200mm;       /* = .page->width - (.page->padding-right + .page->padding-left) */
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;                              
+    position: relative;
+
+}
+/******************************************************
+ * CV typo (Overriding boostrap CSS) inside div .page *
+ ******************************************************/
+.page h1 {  /* Categories title */
+    font-family: "Typo-Bold", "Arial Black", sans-serif; /* Bold Typo */
+    font-size: 20px;
+    color: rgb(0, 59, 53);
+    letter-spacing: 1px;
+}
+
+.page h2 {  /* SubSections */
+    font-family: "Typo-Light", "Arial Narrow", sans-serif; /* Thin || Light Typo */
+    font-size:  16px ;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.page strong {
+    font-family: "Typo-Bold", "Arial Black", sans-serif;
+    font-weight: normal;
+}
+
+.page em {
+    font-family: "Typo-LightItal", "Arial Narrow", sans-serif;
+    font-style: normal;
+}
+
+.page .enumList {
+    padding-left: 0;
+}
+
+.page .enumList > li {
+    list-style-type: none;
+    font-family: "Typo-Light", "Arial Narrow", sans-serif; /* Thin || Light Typo */
+}
+
+.page .enumList > li:before {
+    content: "— ";
+}
+
+.page .enum {
+    font-family: "Typo-Light", sans-serif;
+}
+
+.page .dl-horizontal {
+    margin-bottom: 10px;
+}
+
+.page .dl-horizontal > .thin-dt {
+    width: 60px;
+    font-weight: normal;
+}
+
+.page .dl-horizontal > .thin-dd {
+    margin-left: 70px;
+}
+
+.page .dl-horizontal > .thick-dt {
+    width: 110px;
+    font-weight: normal;
+}
+
+.page .dl-horizontal > .thick-dd {
+    margin-left: 120px;
+}
+
+.page .thin-dd > .enumList { /* inhibit double bottom margin */
+    margin-bottom: 0;
+}
+
+/************************
+ * CV Specific Sections *
+ ************************/
+
+/* Visual Properties of the header container */
+#headCV {
+    height: 55mm;       /* = .page->min-height - (.page->padding-top + .page->padding-bottom) - #bodyCV->height */
+}
+
+/* Visual Properties of the body container */
+#bodyCV {
+    height: 227mm;      /* = .page->min-height - (.page->padding-top + .page->padding-bottom) - #headCV->height */
+}
+
+/*             * * *             */
+/* Properties of the personal Information Section */
+
+#personalInfo .name {
+    font-size: 17px;
+    color: rgb(0, 59, 53);
+    letter-spacing: 1px;
+}
+
+/* Properties of the eye catcher Section*/
+#eyeCatcher {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    padding-bottom: 10px;
+    border-right: solid 5px rgb(0, 99, 90);
+}
+
+#eyeCatcher h1 {
+    font-family: "Typo-ExtraBold", Gadget, sans-serif; /* Black || Extra-Bold Typo */
+}
+
+#eyeCatcher p {
+    /* Thin || Light Typo */
+    font-size: 16px;
+    font-family: "Typo-Light", Arial, sans-serif;
+}
+
+/* Properties of the Main column */
+#largeCol {
+    height: inherit; /* Important for background */
+}
+
+.information {
+    text-align: right;
+    border-right: solid 5px rgb(0, 99, 90);
+    padding-left: 0;
+}
+
+.information .place {
+    font-size: 0.95em ; /* Light || Thin Ital Typo */
+    color: rgb(119, 119, 119);
+}
+
+.details {
+    padding-right: 0; /* TO delete the extra margins */
+}
+
+/* Properties of the complementary column*/
+#thinCol {
+    height: inherit; /* Important for background height */
+    background: rgba(0, 104, 75, 0.1);
+}
+
+.link {
+    visibility: hidden;
+}
+
+/**********************************
+ * Specifications for print media *
+ **********************************/
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    html, body {
+        visibility: hidden;
+    }
+
+    .page {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        min-height: initial;
+        box-shadow: initial;
+        page-break-after: always;
+    }
+
+    #thinCol {
+        background-color: rgba(0, 104, 75, 0.1) !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .link {
+        visibility: visible;
+        position: absolute;
+        bottom: 0;
+    }
+}

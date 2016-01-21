@@ -1,0 +1,40 @@
+/* OPEN SANS */
+
+@font-face {
+    font-family: 'Typo-Regular';
+    src: url('fonts/SourceSansPro-Regular.otf')
+}
+
+@font-face {
+    font-family: 'Typo-Light';
+    src: url('fonts/SourceSansPro-Light.otf')
+}
+
+@font-face {
+    font-family: 'Typo-LightItal';
+    src: url('./fonts/SourceSansPro-LightIt.otf')
+}
+
+@font-face {
+    font-family: 'Typo-ExtraBold';
+    src: url('./fonts/SourceSansPro-Black.otf')
+}
+
+@font-face {
+    font-family: 'Typo-Bold';
+    src: url('./fonts/SourceSansPro-Bold.otf')
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px 0 0;
+    background-color: #FAFAFA;
+
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}

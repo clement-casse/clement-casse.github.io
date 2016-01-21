@@ -1,0 +1,114 @@
+<div class="container">
+
+    <link rel="stylesheet" href="resume/resume.css"/>
+
+    <div class="row">
+
+        <div class="col-md-3 sidebar well">
+            <!-- SideBar -->
+            <h3>{{ pageContent.config.title }}</h3>
+            <p>{{ pageContent.config.text }}</p>
+            <div class="btn-group">
+                <div class="btn-group" role="group" ng-repeat="group in pageContent.config.btnGroup">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ group.text }}
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li ng-repeat="btn in group.buttons">
+                            <a href="#/resume/{{ btn.langId || langId }}/{{ btn.cvId || cvId }}">
+                                <img ng-if="btn.imageUrl" src="{{ btn.imageUrl }}" alt="{{btn.langId}} Flag" height="18px"/>
+                                {{ btn.text }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="btn-group" role="group">
+                    <button class="btn btn-default" onclick="window.print()">
+                        <span class="fa fa-print fa-lg"></span>
+                    </button>
+                </div>
+            </div>
+
+            <h3>{{ pageContent.links.title }}</h3>
+
+            <ul class="list-unstyled">
+                <li ng-repeat="link in pageContent.links.list | filter:{id:'!pagesGitHub'}">
+                    <a href="{{ link.url }}">
+                        <span class="fa {{ link.faIcon }} fa-fw"></span> {{ link.text }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-9">
+            <!-- Resume content -->
+            <!-- Use of `col-xs-??` for printing purpose -->
+            <div class="page">
+                <div class="row subPage" id="headCV">
+
+                    <div id="personalInfo" class="col-md-4 col-xs-4">
+                        <identity id-data-object="identity"></identity>
+                    </div>
+
+                    <div id="eyeCatcher" class="col-md-8 col-xs-8">
+                        <h1>{{ heading.title }}</h1>
+                        <p>{{ heading.subheader }}</p>
+                    </div>
+
+                </div>
+
+                <div id="bodyCV" class="row subPage">
+                    <div id="largeCol" class="col-md-7 col-xs-7">
+
+                        <div id="experience" class="row">
+                            <h1 class="col-md-12 col-xs-12">
+                                {{ sectionTitles.workExps }}
+                            </h1>
+                            <workexp ng-repeat="exp in workExps" exp-data-object="exp"></workexp>
+                        </div>
+
+                        <div id="studies" class="row">
+                            <h1 class="col-md-12 col-xs-12">
+                                {{ sectionTitles.studies }}
+                            </h1>
+                            <study ng-repeat="study in studies" study-data-object="study"></study>
+                        </div>
+
+                    </div><!-- END OF COLUMN ONE -->
+
+                    <div id="thinCol" class="col-xs-5">
+
+                        <div id="skills" class="row">
+                            <h1 class="col-md-12 col-xs-12">
+                                {{ sectionTitles.skills }}
+                            </h1>
+                            <skill ng-repeat="skill in skills" skill-data-object="skill"></skill>
+                        </div>
+
+                        <div id="others" class="row">
+                            <h1 class="col-md-12 col-xs-12">
+                                {{ sectionTitles.others }}
+                            </h1>
+                            <div class="col-md-12 col-xs-12">
+                                <p>{{ others | pluck : "name" : ", " }}</p>
+                            </div>
+                        </div>
+
+                        <div class="row link">
+                            <p class="col-xs-12">
+                                <a  ng-repeat="link in pageContent.links.list | filter:{id:'pagesGitHub'}" href="{{ link.url }}">
+                                    <span class="fa fa-fw" ng-class="link.faIcon"></span> {{ link.text }}
+                                </a>
+                            </p>
+                        </div>
+
+
+                    </div><!-- END OF COLUMN TWO -->
+
+                </div><!-- END OF SUBPAGE -->
+            </div><!-- END OF PAGE -->
+        </div>
+    </div>
+</div>

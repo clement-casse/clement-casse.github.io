@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="application">
+<head>
+
+    <!--
+        # Meta-Information
+    -->
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="This site is the personal resume of Clément Cassé" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--
+        # Styles: Vendor and Custom
+    -->
+    <!-- ## Vendor: Bootstrap Stylesheets -->
+    <!-- ### FOR DEVELOPMENT PURPOSE -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- ### FOR PRODUCTION ONLY
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    -->
+
+    <!-- ## Custom Website CSS Style -->
+    <link rel="stylesheet" href="app.css" />
+
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--<div ng-include="'components/menu/menuView.html'"></div>-->
+
+    <div ng-view></div>
+
+
+    <!--
+        # Javascript: Vendor and customs
+    -->
+    <!-- Vendor: jQuery and Bootstrap scripts -->
+    <!-- ### FOR DEVELOPMENT PURPOSE
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    -->
+    <!-- ### FOR PRODUCTION ONLY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+    <!-- Vendor: Angular -->
+    <!-- ### FOR DEVELOPMENT PURPOSE
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    -->
+    <!-- ### FOR PRODUCTION ONLY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
+
+
+    <!-- Vendor: Chart.js script -->
+    <!-- ### FOR DEVELOPMENT PURPOSE
+    <script src="bower_components/Chart.js/Chart.js"></script>
+    <!-- ### FOR PRODUCTION ONLY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+
+    <!-- bootstrapping angular application -->
+    <script src="app.js"></script>
+
+    <!--<script src="home/home.js"></script>-->
+    <script src="resume/resume.js"></script>
+
+</body>
+</html>

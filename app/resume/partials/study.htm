@@ -1,0 +1,39 @@
+<div class="study col-md-12 col-xs-12">
+
+    <div class="information col-md-3 col-xs-3">
+        <p class="date">
+            <strong>{{ object.dates | durationFilter }}</strong>
+        </p>
+        <p class="place">
+            <em>
+                {{ object.school.name }}<br />
+                {{ object.school.city }}<span ng-if="object.school.country">,
+                {{ object.school.country | uppercase }}</span>
+            </em>
+        </p>
+    </div>
+
+    <div class="details col-md-9 col-xs-9">
+
+        <p>
+            <strong>{{ object.name }}</strong>
+        </p>
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <span>{{ object.description.join(', ') }}</span>
+            </div>
+
+            <div class="col-md-1 col-xs-1 details" ng-if="object.notes.briefly">
+                <span class="fa fa-info-circle"></span>
+            </div>
+            <div class="col-md-11 col-xs-11" ng-if="object.notes.briefly">
+                <ul class="enumList">
+                    <li ng-repeat="briefNote in object.notes.briefly">
+                        {{ briefNote }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
