@@ -464,6 +464,10 @@
             {
               "fr": "Analyse de malware dynamique (bac-à-sable)",
               "en": "Dynamic malware analysis (sandbox)"
+            },
+            {
+              "fr": "Rédaction de rapports d'analyse",
+              "en": "Analysis report writing"
             }
           ],
           "detailed": {
@@ -531,7 +535,7 @@
             {
               "fr": "Développement d'une application PHP de comparaison de Bases de Données.",
               "en": "Database comparison application development in PHP.",
-              "_restrictTo": ["develop"]
+              "_restrictTo": ["hidden"]
             },
             {
               "fr":	"Creation d'un sous-réseau sécurisé lié à l'exploitation de moyens obsolètes.",
