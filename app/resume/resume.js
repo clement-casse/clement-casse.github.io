@@ -13,10 +13,11 @@ resumeApp.value('modulePreferences', {
         "en"
     ],
     resumes: [
-        "default",
         "infosec",
-        "develop",
-        "embedded"
+        //"L2-analyst",
+        //"malware-analyst",
+        //"develop",
+        "hidden"
     ]
 });
 
@@ -88,7 +89,8 @@ resumeApp.directive('skill', function(){
 });
 
 /**
- *
+ * Directive that generate the charts used in the `Skills` section.
+ * Imports the $filter to use a partial application of the `pluck` function for its internal use.
  */
 resumeApp.directive('chart', ['$filter', function($filter) {
 
@@ -174,11 +176,17 @@ resumeApp.filter('durationFilter', function(){
         var dateStart 	= (typeof strDateStart !== 'undefined') ? new Date(strDateStart) : null,
             dateEnd 	= (typeof strDateEnd   !== 'undefined') ? new Date(strDateEnd)   : null;
 
+        /* Case where the end date does not exist yet - current situation */
+        if (dateEnd === null){
+            return dateStart.getFullYear();
+        }
+
         /* Case where the start date is not specified */
         if ((dateStart === null) || (dateStart.getUTCFullYear() === dateEnd.getUTCFullYear())){
             return dateEnd.getFullYear();
         }
 
+        /* Case for a standard duration defined by a start and an end */
         return dateStart.getFullYear()+" - "+dateEnd.getFullYear() ;
     }
 
@@ -348,8 +356,8 @@ resumeApp.controller('resumeController', ['$scope', '$http', '$routeParams', 're
 
             // Load general content
             $scope.heading	= {
-                title: 		data.heading.titleResume,
-                subheader: 	data.heading.qualities.join(", ")
+                title: 		data.heading.titleResume.join(", "),
+                subheader: 	data.heading.subTitle.join(", ")
             };
 
             $scope.sectionTitles = {

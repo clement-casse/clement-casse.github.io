@@ -9,6 +9,6 @@ angular.module('application', [
 //
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider.otherwise({
-        redirectTo: '/resume/en/default'
+        redirectTo: '/resume/en/infosec'
     });
 }]);

@@ -75,6 +75,20 @@
                 ></chart>
             </div>
 
+            <!-- Own custom Stack chart with Divs-->
+
+            <div ng-switch-when="stackLine">
+                <strong>{{ subDomain.title }} : </strong>
+                <table class="stackLine">
+                    <tr>
+                        <td class="stackCell" ng-repeat="skill in subDomain.list">
+                            <em>{{ skill.name }}</em><br />
+                            {{ skill.experiences.short.join(', ') }}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
             <!-- By default, display an enumeration without further information -->
             <div ng-switch-default>
                 <p>

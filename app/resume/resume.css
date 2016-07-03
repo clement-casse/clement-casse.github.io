@@ -47,6 +47,8 @@ body {
     font-size: 20px;
     color: rgb(0, 59, 53);
     letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 7px;
 }
 
 .page h2 {  /* SubSections */
@@ -115,12 +117,12 @@ body {
 
 /* Visual Properties of the header container */
 #headCV {
-    height: 55mm;       /* = .page->min-height - (.page->padding-top + .page->padding-bottom) - #bodyCV->height */
+    height: 46mm;       /* = .page->min-height - (.page->padding-top + .page->padding-bottom) - #bodyCV->height */
 }
 
 /* Visual Properties of the body container */
 #bodyCV {
-    height: 227mm;      /* = .page->min-height - (.page->padding-top + .page->padding-bottom) - #headCV->height */
+    height: 236mm;      /* = .page->min-height - (.page->padding-top + .page->padding-bottom) - #headCV->height */
 }
 
 /*             * * *             */
@@ -157,6 +159,10 @@ body {
     height: inherit; /* Important for background */
 }
 
+.date {
+    margin-bottom: 0;
+}
+
 .information {
     text-align: right;
     border-right: solid 5px rgb(0, 99, 90);
@@ -168,14 +174,41 @@ body {
     color: rgb(119, 119, 119);
 }
 
-.details {
-    padding-right: 0; /* TO delete the extra margins */
+/*.details {
+    padding-right: 0; /* TO delete the extra margins
+}*/
+
+.work-experience, .study, .infoPicto {
+    padding-right: 0;
+}
+
+.details:hover {
+    cursor: pointer;
+    background-color: rgba(0, 104, 75, 0.08); /*TODO Change color*/
 }
 
 /* Properties of the complementary column*/
 #thinCol {
     height: inherit; /* Important for background height */
     background: rgba(0, 104, 75, 0.1);
+}
+
+.stackLine {
+    width: 93%;
+    /*table-layout: fixed;*/
+    border-collapse: separate;
+    border-spacing: 3px;
+    float: right;
+}
+
+.stackCell {
+    margin: 2px;
+    padding: 3px;
+    text-align: center;
+    border: solid 2px rgb(0, 99, 90);
+    border-radius: 5px;
+    background-color: rgb(0, 99, 90);
+    color: #ffffff;
 }
 
 .link {
@@ -219,5 +252,10 @@ body {
         visibility: visible;
         position: absolute;
         bottom: 0;
+    }
+
+    .stackCell, .stackCell * {
+        background-color: rgb(0, 99, 90) !important;
+        color: #ffffff !important;
     }
 }

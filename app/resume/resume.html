@@ -76,6 +76,18 @@
                             <study ng-repeat="study in studies" study-data-object="study"></study>
                         </div>
 
+                        <div id="others" class="row">
+                            <h1 class="col-md-12 col-xs-12">
+                                {{ sectionTitles.others }}
+                            </h1>
+                            <div class="information col-md-3 col-xs-3">
+                                <br>
+                            </div>
+                            <div class="col-xs-9 col-md-9">
+                                <p>{{ others | pluck : "name" : " - " }}</p>
+                            </div>
+                        </div>
+
                     </div><!-- END OF COLUMN ONE -->
 
                     <div id="thinCol" class="col-xs-5">
@@ -87,14 +99,6 @@
                             <skill ng-repeat="skill in skills" skill-data-object="skill"></skill>
                         </div>
 
-                        <div id="others" class="row">
-                            <h1 class="col-md-12 col-xs-12">
-                                {{ sectionTitles.others }}
-                            </h1>
-                            <div class="col-md-12 col-xs-12">
-                                <p>{{ others | pluck : "name" : ", " }}</p>
-                            </div>
-                        </div>
 
                         <div class="row link">
                             <p class="col-xs-12">

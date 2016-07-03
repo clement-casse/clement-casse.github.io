@@ -4,7 +4,7 @@
         <p class="date">
             <strong>{{ object.dates | durationFilter }}</strong>
         </p>
-        <p class="place">
+        <p class="place" ng-if="object.school">
             <em>
                 {{ object.school.name }}<br />
                 {{ object.school.city }}<span ng-if="object.school.country">,
@@ -13,7 +13,10 @@
         </p>
     </div>
 
-    <div class="details col-md-9 col-xs-9">
+    <div class="col-md-9 col-xs-9"
+         ng-class="{ 'details': object.notes.detailed !== undefined }"
+         data-toggle="{{ (object.notes.detailed !== undefined) ? 'modal' : '' }}"
+         data-target="#{{ object._id }}">
 
         <p>
             <strong>{{ object.name }}</strong>
@@ -23,7 +26,7 @@
                 <span>{{ object.description.join(', ') }}</span>
             </div>
 
-            <div class="col-md-1 col-xs-1 details" ng-if="object.notes.briefly">
+            <div class="col-md-1 col-xs-1 infoPicto" ng-if="object.notes.briefly">
                 <span class="fa fa-info-circle"></span>
             </div>
             <div class="col-md-11 col-xs-11" ng-if="object.notes.briefly">
@@ -35,5 +38,22 @@
             </div>
         </div>
     </div>
+
+    <!-- Start Of Modal content-->
+    <div class="modal fade" id="{{ object._id }}" tabindex="-1" role="dialog" aria-labelledby="{{ object._id }}">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4>{{ object.name }}</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </div>
