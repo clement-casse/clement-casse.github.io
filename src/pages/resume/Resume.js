@@ -17,8 +17,7 @@ export default class Resume extends React.Component {
         this.state = {
             lang: props.lang,
         };
-
-        let dataPaths = [
+        this.dataPaths = [
             "/data/resume/sidebar.json",
             "/data/resume/identity.json",
             "/data/resume/hook.json",
@@ -27,18 +26,23 @@ export default class Resume extends React.Component {
             "/data/resume/hobbies.json",
             "/data/resume/skills.json",
         ];
+        // Some react ugliness
+        this.changeLocale = this.changeLocale.bind(this);
+    }
 
-        Promise.all(dataPaths.map((c) => fetch(c).then(res => res.json())))
+    // Component lifecycle
+    componentDidMount() {
+        // Wait for all promises to resolve to merge retreived objects into state.
+        Promise.all(this.dataPaths.map((c) => fetch(c).then(res => res.json())))
             .then((resolve) => {
                 this.setState((previousState) => resolve.reduce(
                     (acc, cur) => Object.assign({}, acc, cur)
                 ))
             });
-
-        // Some react ugliness
-        this.changeLocale = this.changeLocale.bind(this);
     }
 
+
+    // Actions
     changeLocale(newLang) {
         this.setState({ lang: newLang })
     }
@@ -46,15 +50,15 @@ export default class Resume extends React.Component {
     render() {
         console.log(this.state);
         return (
-            <div className="row resume">
-                <div className="col-md-3">
+            <div className="resumePage">
+                <div className="resumeMenu">
                     <Sidebar
                         lang={this.state.lang}
                         data={this.state.sidebar}
                         handler={this.changeLocale}
                     />
                 </div>
-                <div className="col-md-9">
+                <div className="resume">
                     <Page format="A4">
                         <SubPage sectionHeight="46mm">
                             <Column colWidth={1}>
