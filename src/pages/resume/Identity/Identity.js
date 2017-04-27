@@ -22,7 +22,7 @@ const Identity = ({lang, data}) => {
             return null;
         }
         return (
-            <p>
+            <p className="address">
                 {data.line1}<br />
                 {data.zip} {data.city.toUpperCase()}
             </p>

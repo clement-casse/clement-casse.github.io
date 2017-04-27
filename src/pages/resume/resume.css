@@ -1,12 +1,22 @@
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    background-color: rgb(220, 220, 220);
+.resumePage {
+    padding-top: 30px;
+    display: flex;
+}
+
+.resumeMenu {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 15px;
+}
+
+.resumeMenu > *{
+    overflow: auto;
+    height: auto;
 }
 
 .resume {
-    padding-top: 30px;
+    flex-grow: 4;
+    flex-basis: 0;
 }
 
 #largeColumn {

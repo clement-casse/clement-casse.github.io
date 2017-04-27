@@ -162,11 +162,15 @@ const ExpEntry = ({lang, data}) => {
             })
         
         return (
-            <div className="notes" style={{display: "flex"}}>
+            <div className="notes">
                 <div style={{flexGrow: 1, paddingRight: "5px"}}>
-                    <i className="fa fa-info-circle"/>
+                    <i className="fa fa-info-circle fa-fw"/>
                 </div>
-                <ul style={{flexGrow: 11}}>{briefNotes}</ul>
+                <div style={{flexGrow: 9}}>
+                    <ul>
+                        {briefNotes}
+                    </ul>
+                </div>
             </div>
         );
     };

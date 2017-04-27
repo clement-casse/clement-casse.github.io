@@ -96,7 +96,7 @@ export const Sidebar = ({lang, data, handler}) => {
     }
 
     return (
-        <div className="sidebar well">
+        <div className="sidebar">
             <ConfigMenu 
                 lang={lang}
                 dataConfig={data.config}
