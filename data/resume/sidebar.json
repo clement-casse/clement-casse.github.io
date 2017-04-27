@@ -1,0 +1,58 @@
+{
+  "sidebar": {
+    "config": {
+      "title": {
+        "fr": "Configuration :",
+        "en": "Configuration:"
+      },
+      "text": {
+        "fr": "Il est possible de changer le contenu du CV, pour ce faire, sélectionnez une langue, et un domaine grâce aux boutons ci dessous.",
+        "en": "To change the content of the CV, please select a language and a dominance with the buttons below."
+      },
+      "LangMenu": {
+        "title": {
+          "fr": "Langues",
+          "en": "Language"
+        },
+        "entries": [
+          {
+            "key": "fr",
+            "imageUrl": "http://www.crwflags.com/fotw/images/f/fr.gif",
+            "text": "Français"
+          },
+          {
+            "key": "en",
+            "imageUrl": "http://www.crwflags.com/fotw/images/g/gb_2x3.gif",
+            "text": "English"
+          }
+        ]
+      }
+    },
+    "links": {
+      "title": {
+        "fr": "Liens :",
+        "en": "Links:"
+      },
+      "list": [
+        {
+          "key": "github-code",
+          "icon": "fa-github-square",
+          "url": "https://github.com/clement-casse/clement-casse.github.io",
+          "text": {
+            "fr": "Consulter le code de la page",
+            "en": "View the code on GitHub"
+          }
+        },
+        {
+          "key": "linkedin-profile",
+          "icon": "fa-linkedin-square",
+          "url": "https://fr.linkedin.com/in/clementcasse",
+          "text": {
+            "fr": "Profil LinkedIn",
+            "en": "LinkedIn Profile"
+          }
+        }
+      ]
+    }
+  }
+}

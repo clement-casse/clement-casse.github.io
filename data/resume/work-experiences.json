@@ -1,0 +1,156 @@
+{
+  "workexp": {
+    "sectionTitle": {
+      "fr": "Expériences Professionnelles",
+      "en": "Working Experiences"
+    },
+    "list": [
+      {
+        "name": {
+          "fr": "Analyste de Niveau 2 - Investigations Cyber Sécurité en SOC pour le compte d'Airbus",
+          "en": "Level 2 Analyst - Cyber-security investigation in SOC on the behalf of Airbus"
+        },
+        "dates": {
+          "start": "2016-03-07",
+          "end": "2016-07-07"
+        },
+        "location": {
+          "name": "Sopra Steria",
+          "address": "8 avenue Yves Brunaud",
+          "zip": "31770",
+          "city": "Colomiers",
+          "logoUrl": "//www.prestationintellectuelle.com/wp-content/uploads/2015/04/logo-sopra-steria-groupe.jpg",
+          "area": {
+            "fr": "31",
+            "en": "France"
+          }
+        },
+        "missions": [
+          {
+            "brief": {
+              "fr": "Gestion et reporting d'incidents de sécurité",
+              "en": "Reporting on security incidents"
+            },
+            "keywords": []
+          },
+          {
+            "brief": {
+              "fr": "Investigation et analyse de logs sur SIEM",
+              "en": "Investigation and log analysis on SIEM"
+            },
+            "keywords": []
+          },
+          {
+            "brief": {
+              "fr": "Qualifications et classification d'évènements de sécurité sur IDS-IPS",
+              "en": "Qualification and classification of security events with IDS-IPS"
+            },
+            "keywords": []
+          },
+          {
+            "brief": {
+              "fr": "Analyse de malware dynamique (bac-à-sable)",
+              "en": "Dynamic malware analysis (sandbox)"
+            },
+            "keywords": []
+          },
+          {
+            "brief": {
+              "fr": "Rédaction de rapports d'analyse",
+              "en": "Analysis report writing"
+            },
+            "keywords": []
+          }
+        ]
+      },
+      {
+        "name": {
+          "fr": "Apprenti Ingénieur validation systèmes avioniques",
+          "en": "Apprentice Engineer on Verification & Validation means for avionic software"
+        },
+        "dates": {
+          "start": "2012-09-01",
+          "end": "2015-08-31"
+        },
+        "location": {
+          "name": "Airbus Group",
+          "address": "316 Route de Bayonne",
+          "zip": "31000",
+          "city": "Toulouse",
+          "logoUrl": "//seeklogo.com/images/A/airbus-logo-327DC4730C-seeklogo.com.png",
+          "area": {
+            "fr": "31",
+            "en": "France"
+          }
+        },
+        "missions": [
+          {
+            "brief":{
+              "fr": "Rationalisation d'un parc de moyens de V&V logiciel avionique DO178B DAL A, B, C, E.",
+              "en": "Rationalization of the park of means for the V&V in the avionic software DO178B DAL A, B, C, E."
+            },
+            "keywords": []
+          },
+          {
+            "brief":{
+              "fr": "Suivi de prestations de sous-traitance, contribution au pilotage technique des activités sous-traitées.",
+              "en": "Subcontractor follow up, and contribution to the technical management of the outsourced activity."
+            },
+            "keywords": []
+          },
+          {
+            "brief": {
+              "fr": "Creation d'un sous-réseau sécurisé lié à l'exploitation de moyens obsolètes.",
+              "en": "Sub-network creation to keep using obsolete means."
+            },
+            "keywords": []
+          },
+          {
+            "brief": {
+              "fr": "Participation à l'analyse de risques industriels, traitement des obsolesences des moyens V&V.",
+              "en": "Participation to the Industrial Risks Analysis, obsolescence management of V&V means."
+            },
+            "keywords":[]
+          }
+        ]
+      },
+      {
+        "name": {
+          "fr": "Stagiaire administrateur réseaux",
+          "en": "Trainee Network Administrator"
+        },
+        "dates": {
+          "start": "2012-04-09",
+          "end": "2012-06-15"
+        },
+        "location": {
+          "name": "MediaMeeting",
+          "address": "99 Route d'Espagne",
+          "zip": "31100",
+          "city": "Toulouse",
+          "logoUrl": "//www.a2prl.fr/wp-content/uploads/2015/01/logo-mediameeting.png",
+          "area": {
+            "fr": "31",
+            "en": "France"
+          }
+        },
+        "missions": [
+          {
+            "brief": {
+              "fr": "Etude et déploiement de VPN SSL et d'un système FailOver sur Cisco ASA",
+              "en": "VPN SSL and FailOver study and setup on Cisco ASA"
+            },
+            "keywords": []
+          },
+          {
+            "brief": {
+              "fr": "Optimisation des règles firewall sur Cisco ASA",
+              "en": "Update and simplification of Cisco ASA Firewall Rules"
+            },
+            "keywords": []
+          }
+        ]
+      }
+    ]
+  }
+}
