@@ -1,22 +1,29 @@
 .resumePage {
-    padding-top: 30px;
     display: flex;
 }
 
 .resumeMenu {
+    background-color: rgba(0, 32, 29, 1);
+    font-family: "Abel", monospace;
+    color: rgb(210, 210, 210);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
     flex-basis: 0;
-    padding: 15px;
+    padding: 20px;
 }
 
-.resumeMenu > *{
+.resumeMenu > * {
     overflow: auto;
     height: auto;
 }
 
 .resume {
+    background-color: rgb(230, 230, 230);
+    padding-top: 30px;
     flex-grow: 4;
     flex-basis: 0;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 #largeColumn {

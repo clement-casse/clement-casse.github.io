@@ -1,5 +1,4 @@
 import React from "react";
-import {Button, ButtonGroup, DropdownButton, MenuItem} from "react-bootstrap";
 
 import "./sidebar.css";
 
@@ -51,19 +50,11 @@ export const Sidebar = ({lang, data, handler}) => {
 
     const ConfigMenu = ({lang, dataConfig}) => {
 
+        //TODO implement language selector
+        //TODO Implement print button
         const SelectLangMenuTitle = (typeof dataConfig["LangMenu"]["title"] === 'object')
             ? dataConfig["LangMenu"]["title"][lang]
             : dataConfig["LangMenu"]["title"];
-
-        const LanguageDropdownEntries = dataConfig.LangMenu.entries.map(e => {
-            return (
-                <MenuItem key={e.key} eventKey={e.key} onClick={() => handler(e.key)}>
-                    <img src={e.imageUrl}
-                         alt={`${e.key} flag`} 
-                         height="18px"/> {e.text}
-                </MenuItem>
-            )
-        });
 
         const print = () => {
             window.print();
@@ -79,14 +70,6 @@ export const Sidebar = ({lang, data, handler}) => {
                     localizedDesc={dataConfig.text}
                     lang={lang}
                 />
-                <ButtonGroup>
-                    <DropdownButton title={SelectLangMenuTitle} id="LanguageDropdownEntries">
-                        {LanguageDropdownEntries}
-                    </DropdownButton>
-                    <Button onClick={print}>
-                        <span class="fa fa-print fa-lg"></span>
-                    </Button>
-                </ButtonGroup>
             </div>
         )
     }
@@ -101,6 +84,7 @@ export const Sidebar = ({lang, data, handler}) => {
                 lang={lang}
                 dataConfig={data.config}
             />
+            <hr />
             <SectionTitle
                 localizedTitle={data.links.title}
                 lang={lang}
@@ -109,6 +93,7 @@ export const Sidebar = ({lang, data, handler}) => {
                 list={data.links.list}
                 lang={lang}
             />
+            <hr />
         </div>
     );
 };

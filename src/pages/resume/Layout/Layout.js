@@ -56,8 +56,8 @@ export const Page = ({format, margins, children}) => {
     };
 
     const pageDimensions = {
-        width: paperSize[format].width + 'mm',
-        height: paperSize[format].height + 'mm',
+        width: (paperSize[format].width - paperMargins[margins].right - paperMargins[margins].left)+ 'mm',
+        height: (paperSize[format].height - paperMargins[margins].top - paperMargins[margins].bottom) + 'mm',
         paddingTop: paperMargins[margins].top + 'mm',
         paddingBottom: paperMargins[margins].bottom + 'mm',
         paddingRight: paperMargins[margins].right + 'mm',
