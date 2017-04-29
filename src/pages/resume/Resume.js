@@ -55,7 +55,7 @@ export default class Resume extends React.Component {
                     <Sidebar
                         lang={this.state.lang}
                         data={this.state.sidebar}
-                        handler={this.changeLocale}
+                        handlerChangeLang={this.changeLocale}
                     />
                 </div>
                 <div className="resume">
