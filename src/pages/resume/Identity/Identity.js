@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from 'prop-types';
 
 import "./identity.css"
 
@@ -74,10 +75,10 @@ const Identity = ({lang, data}) => {
 }
 
 Identity.propTypes = {
-    lang: React.PropTypes.oneOf(["en", "fr"]),
-    name: React.PropTypes.string,
-    phone: React.PropTypes.string,
-    email: React.PropTypes.string
+    lang: PropTypes.oneOf(["en", "fr"]),
+    name: PropTypes.string,
+    phone: PropTypes.string,
+    email: PropTypes.string
 };
 
 Identity.defaultProps = {

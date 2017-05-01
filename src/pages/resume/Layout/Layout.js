@@ -1,3 +1,6 @@
+import React from "react";
+import PropTypes from 'prop-types';
+
 import "./layout.css"
 
 export const SubPage = ({sectionHeight, children}) => {
@@ -74,8 +77,8 @@ export const Page = ({format, margins, children}) => {
 };
 
 Page.propTypes = {
-    format: React.PropTypes.oneOf(['A4', 'B5']),
-    margins: React.PropTypes.oneOf(['standard'])
+    format: PropTypes.oneOf(['A4', 'B5']),
+    margins: PropTypes.oneOf(['standard'])
 }
 
 Page.defaultProps = {

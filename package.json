@@ -4,7 +4,7 @@
   "description": "My HTML Ready-to-print resume",
   "main": "webpack.config.js",
   "dependencies": {
-    "react-bootstrap": "^0.30.8"
+    "d3": "^4.8.0"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
@@ -21,6 +21,7 @@
     "react": "^15.5.0 ",
     "react-dom": "^15.5.0 ",
     "react-localization": "0.0.13",
+    "prop-types": "^15.5.8",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.1"
   },

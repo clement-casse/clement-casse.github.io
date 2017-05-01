@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import PropTypes from 'prop-types';
 
 import { Page, SubPage, Column } from "./Layout/Layout";
 import Sidebar from "./Sidebar/Sidebar";
@@ -92,7 +93,7 @@ export default class Resume extends React.Component {
 }
 
 Resume.propTypes = {
-    lang: React.PropTypes.oneOf(["en", "fr"])
+    lang: PropTypes.oneOf(["en", "fr"])
 }
 
 Resume.defaultProps = {
