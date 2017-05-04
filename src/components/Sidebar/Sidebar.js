@@ -112,7 +112,7 @@ export const Sidebar = ({lang, data, handlerChangeLang}) => {
     }
 
     if (typeof data === 'undefined') {
-        return (<div>Placeholer</div>)
+        return null;
     }
 
     return (

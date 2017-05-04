@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import PropTypes from 'prop-types';
 
 import { Page, SubPage, Column } from "./Layout/Layout";
-import Sidebar from "./Sidebar/Sidebar";
+import Sidebar from "../../components/Sidebar/Sidebar";
 import Identity from "./Identity/Identity";
 import Hook from "./Hook/Hook";
 import Experiences from "./Experience/Experience";
@@ -49,16 +49,13 @@ export default class Resume extends React.Component {
     }
 
     render() {
-        console.log(this.state);
         return (
             <div className="resumePage">
-                <div className="resumeMenu">
-                    <Sidebar
-                        lang={this.state.lang}
-                        data={this.state.sidebar}
-                        handlerChangeLang={this.changeLocale}
-                    />
-                </div>
+                <Sidebar
+                    lang={this.state.lang}
+                    data={this.state.sidebar}
+                    handlerChangeLang={this.changeLocale}
+                />
                 <div className="resume">
                     <Page format="A4">
                         <SubPage sectionHeight="46mm">
@@ -77,12 +74,24 @@ export default class Resume extends React.Component {
                         </SubPage>
                         <SubPage sectionHeight="236mm">
                             <Column id="largeColumn" colWidth={7}>
-                                <Experiences data={this.state.workexp} lang={this.state.lang} />
-                                <Experiences data={this.state.studies} lang={this.state.lang} />
-                                <Experiences data={this.state.hobbies} lang={this.state.lang} />
+                                <Experiences
+                                    data={this.state.workexp}
+                                    lang={this.state.lang}
+                                />
+                                <Experiences
+                                    data={this.state.studies}
+                                    lang={this.state.lang}
+                                />
+                                <Experiences
+                                    data={this.state.hobbies}
+                                    lang={this.state.lang}
+                                />
                             </Column>
                             <Column id="thinColumn" colWidth={5}>
-                                <Skills data={this.state.skills} lang={this.state.lang} />
+                                <Skills
+                                    data={this.state.skills}
+                                    lang={this.state.lang}
+                                />
                             </Column>
                         </SubPage>
                     </Page>
