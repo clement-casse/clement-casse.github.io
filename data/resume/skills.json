@@ -4,12 +4,166 @@
       "fr": "Compétences",
       "en": "Skills"
     },
-    "list": [
+    "domains": [
       {
-
+        "id": "languages",
+        "title": {
+          "fr": "Langages",
+          "en": "Languages"
+        },
+        "relatedSkills": [
+          "java", "javascript", "c", "golang"
+        ]
       },
       {
-
+        "id": "infosec",
+        "title": {
+          "fr": "Sécurité Informatique",
+          "en": "Information Security"
+        },
+        "relatedSkills": [
+          "graylog"
+        ]
+      },
+      {
+        "id": "bigdata",
+        "title": {
+          "fr": "Technologies Big Data",
+          "en": "Big Data Technologies"
+        },
+        "relatedSkills": [
+          "kafka", "elasticsearch"
+        ]
+      },
+      {
+        "id": "tongues",
+        "title": {
+          "fr": "Langues",
+          "en": "Tongues"
+        },
+        "relatedSkills": [
+          "french", "english"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "id": "linux",
+        "title": {
+          "fr": "Linux",
+          "en": "Linux"
+        },
+        "relatedSkills": [
+          "bash"
+        ]
+      },
+      {
+        "id": "windows",
+        "title": {
+          "fr": "Windows",
+          "en": "Windows"
+        }
+      },
+      {
+        "id": "c",
+        "title": {
+          "en": "C",
+          "fr": "C"
+        }
+      },
+      {
+        "id": "java",
+        "title": {
+          "en": "Java",
+          "fr": "Java"
+        }
+      },
+      {
+        "id": "python",
+        "title": {
+          "en": "Python",
+          "fr": "Python"
+        }
+      },
+      {
+        "id": "javascript",
+        "title": {
+          "fr": "Javascript",
+          "en": "Javascript"
+        },
+        "relatedSkills": [
+          "react", "es6", "d3"
+        ]
+      },
+      {
+        "id": "golang",
+        "title": {
+          "fr": "Go",
+          "en": "Go"
+        }
+      },
+      {
+        "id": "bash",
+        "title": {
+          "fr": "Script Bash",
+          "en": "Bash Scripting"
+        }
+      },
+      {
+        "id": "react",
+        "title": {
+          "fr": "ReactJS",
+          "en": "ReactJS"
+        }
+      },
+      {
+        "id": "d3",
+        "title": {
+          "fr": "D3",
+          "en": "D3"
+        }
+      },
+      {
+        "id": "docker",
+        "title": {
+          "fr": "Docker",
+          "en": "Docker"
+        }
+      },
+      {
+        "id": "elasticsearch",
+        "title": {
+          "fr": "Elasticsearch",
+          "en": "Elasticsearch"
+        }
+      },
+      {
+        "id": "graylog",
+        "title": {
+          "fr": "Graylog",
+          "en": "Graylog"
+        }
+      },
+      {
+        "id": "kafka",
+        "title": {
+          "fr": "Kafka",
+          "en": "Kafka"
+        }
+      },
+      {
+        "id": "french",
+        "title": {
+          "en": "French",
+          "fr": "Français"
+        }
+      },
+      {
+        "id": "english",
+        "title": {
+          "en": "English",
+          "fr": "Anglais"
+        }
       }
     ]
   }
