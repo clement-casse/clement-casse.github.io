@@ -7,6 +7,55 @@
     "list": [
       {
         "name": {
+          "fr": "Ingénieur DevOps conception et développement SOC ITrust",
+          "en": "DevOps Engineer for ITrust SOC conception and development"
+        },
+        "dates": {
+          "start": "2016-08-01"
+        },
+        "location": {
+          "name": "ITrust",
+          "address": "55 L'Occitane",
+          "zip": "31670",
+          "city": "Labège",
+          "area": {
+            "fr": "31",
+            "en": "France"
+          }
+        },
+        "missions": [
+          {
+            "brief": {
+              "fr": "Conception d'un SOC basé sur des composants Open-Sources et distribués",
+              "en": "yop"
+            },
+            "keywords": ["logstash", "elasticsearch"]
+          },
+          {
+            "brief": {
+              "fr": "Intégration et orchestration via Docker",
+              "en": "yop2"
+            },
+            "keywords": ["docker"]
+          },
+          {
+            "brief": {
+              "fr": "yop3",
+              "en": "yop3"
+            },
+            "keywords": []
+          },
+          {
+            "brief": {
+              "fr": "Rédaction de rapports d'analyse",
+              "en": "Analysis report writing"
+            },
+            "keywords": []
+          }
+        ]
+      },
+      {
+        "name": {
           "fr": "Analyste de Niveau 2 - Investigations Cyber Sécurité en SOC pour le compte d'Airbus",
           "en": "Level 2 Analyst - Cyber-security investigation in SOC on the behalf of Airbus"
         },
@@ -53,13 +102,6 @@
               "en": "Dynamic malware analysis (sandbox)"
             },
             "keywords": []
-          },
-          {
-            "brief": {
-              "fr": "Rédaction de rapports d'analyse",
-              "en": "Analysis report writing"
-            },
-            "keywords": []
           }
         ]
       },
@@ -103,12 +145,13 @@
               "fr": "Creation d'un sous-réseau sécurisé lié à l'exploitation de moyens obsolètes.",
               "en": "Sub-network creation to keep using obsolete means."
             },
+            "display": "hidden",
             "keywords": []
           },
           {
             "brief": {
-              "fr": "Participation à l'analyse de risques industriels, traitement des obsolesences des moyens V&V.",
-              "en": "Participation to the Industrial Risks Analysis, obsolescence management of V&V means."
+              "fr": "Analyse de risques industriels, traitement des obsolesences des outils de  V&V.",
+              "en": "Industrial Risks Analysis, obsolescence management of V&V tools."
             },
             "keywords":[]
           }
@@ -119,6 +162,7 @@
           "fr": "Stagiaire administrateur réseaux",
           "en": "Trainee Network Administrator"
         },
+        "display": "hidden",
         "dates": {
           "start": "2012-04-09",
           "end": "2012-06-15"
