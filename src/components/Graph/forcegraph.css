@@ -1,0 +1,26 @@
+line.force-graph-link {
+    stroke: rgb(0, 59, 53);
+    stroke-opacity: 0.4;
+}
+
+g.force-graph-node > text {
+    font-family: "Source Sans Pro", sans-serif;
+    color: rgb(0, 59, 53);
+}
+
+g.force-graph-node.skill > circle {
+    stroke: rgb(0, 59, 53);
+    stroke-width: 1.5px;
+    fill: rgb(0, 59, 53);
+}
+
+g.force-graph-node.domain > circle {
+    stroke: rgb(0, 59, 53);
+    stroke-width: 1.5px;
+    fill: rgb(229, 240, 237);
+}
+
+g.force-graph-node.domain > text {
+    font-weight: 700;
+}
+
