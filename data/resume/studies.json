@@ -73,12 +73,12 @@
           {
             "fr": "Modélisation de menaces",
             "en": "Threat Modeling",
-            "_restrictTo": ["infosec", "default"]
+            "display": "hidden"
           },
           {
             "fr": "Analyse de risques",
             "en": "Risk Analysis",
-            "_restrictTo": ["infosec"]
+            "display": "hidden"
           },
           {
             "fr": "Modélisation UML",
@@ -87,7 +87,7 @@
           {
             "fr": "Sécurité des applications Web",
             "en": "Web App Security",
-            "_restrictTo": ["develop"]
+            "display": "hidden"
           }
         ],
         "notes": [
@@ -117,20 +117,23 @@
         "topics": [
           {
             "fr": "Architecture des réseaux IP",
-            "en": "IP Network architecture"
+            "en": "IP Network architecture",
+            "display": "hidden"
           },
           {
             "fr": "Administration Windows Server et Linux",
-            "en": "Windows Server and Linux Administration"
+            "en": "Windows Server and Linux Administration",
+            "display": "hidden"
           },
           {
             "fr": "Routage IP sur Cisco",
-            "en": "IP routing on Cisco devices"
+            "en": "IP routing on Cisco devices",
+            "display": "hidden"
           },
           {
             "fr": "Réseaux d'opérateurs",
             "en": "operator networks",
-            "_restrictTo": ["hidden"]
+            "display": "hidden"
           }
         ],
         "notes": [
