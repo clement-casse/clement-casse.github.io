@@ -2,16 +2,9 @@
     display: flex;
 }
 
-.resumeMenu > * {
-    overflow: auto;
-    height: auto;
-}
-
 .resume {
     background-color: rgb(230, 230, 230);
-    padding-top: 30px;
-    flex-grow: 4;
-    flex-basis: 0;
+    flex: 1 1 auto;
     height: 100vh;
     overflow-y: scroll;
 }

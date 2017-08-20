@@ -1,15 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Page, SubPage, Column } from "./Layout/Layout";
-import Sidebar from "../../components/Sidebar/Sidebar";
-import Identity from "./Identity/Identity";
-import Hook from "./Hook/Hook";
-import Experiences from "./Experience/Experience";
-import Skills from "./Skill/Skill";
+import { Page, SubPage, Column } from './Layout/Layout';
+import Sidebar from '../../components/Sidebar/Sidebar';
+import Identity from './Identity/Identity';
+import Hook from './Hook/Hook';
+import Experiences from './Experience/Experience';
+import Skills from './Skill/Skill';
 
-import "./resume.css"
+import './resume.css';
 
 export default class Resume extends React.Component {
 
@@ -19,42 +18,44 @@ export default class Resume extends React.Component {
             lang: props.lang,
         };
         this.dataPaths = [
-            "/data/resume/sidebar.json",
-            "/data/resume/identity.json",
-            "/data/resume/hook.json",
-            "/data/resume/work-experiences.json",
-            "/data/resume/studies.json",
-            "/data/resume/hobbies.json",
-            "/data/resume/skills.json",
+            '/data/resume/sidebar.json',
+            '/data/resume/identity.json',
+            '/data/resume/hook.json',
+            '/data/resume/work-experiences.json',
+            '/data/resume/studies.json',
+            '/data/resume/hobbies.json',
+            '/data/resume/skills.json',
         ];
-        // Some react ugliness
         this.changeLocale = this.changeLocale.bind(this);
     }
 
     // Component lifecycle
     componentDidMount() {
         // Wait for all promises to resolve to merge retreived objects into state.
-        Promise.all(this.dataPaths.map((c) => fetch(c).then(res => res.json())))
+        Promise.all(this.dataPaths.map(c => fetch(c).then(res => res.json())))
             .then((resolve) => {
-                this.setState((previousState) => resolve.reduce(
-                    (acc, cur) => Object.assign({}, acc, cur)
-                ))
+                this.setState(() => resolve.reduce(
+                    (acc, cur) => Object.assign({}, acc, cur),
+                ));
             });
     }
 
-
-    // Actions
     changeLocale(newLang) {
-        this.setState({ lang: newLang })
+        this.setState({ lang: newLang });
     }
 
     render() {
+        const navigationHandlers = {
+            print: window.print,
+            changeLangFR: () => this.changeLocale('fr'),
+            changeLangEN: () => this.changeLocale('en'),
+        };
         return (
             <div className="resumePage">
                 <Sidebar
                     lang={this.state.lang}
                     data={this.state.sidebar}
-                    handlerChangeLang={this.changeLocale}
+                    handlers={navigationHandlers}
                 />
                 <div className="resume">
                     <Page format="A4">
@@ -102,10 +103,10 @@ export default class Resume extends React.Component {
 }
 
 Resume.propTypes = {
-    lang: PropTypes.oneOf(["en", "fr"])
-}
+    lang: PropTypes.oneOf(['en', 'fr']),
+};
 
 Resume.defaultProps = {
-    lang: "fr"
-}
+    lang: 'fr',
+};
 
