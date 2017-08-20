@@ -1,44 +1,36 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import "./hook.css"
+import './hook.css';
 
-const Hook = ({lang, data}) => {
-
-    if (typeof data !== 'object'){
+/**
+ * rendering component of the Resume head section (title and subtitle)
+ */
+const Hook = ({ lang, data }) => {
+    if (!data) {
         return null;
-    }
-
-    const Title = ({localizedTitle, lang}) => {
-        const displayedTitle = (typeof localizedTitle === "object")
-            ? localizedTitle[lang]
-            : localizedTitle ;
-        return (<h1>{displayedTitle}</h1>);
-    }
-
-    const SubTitle = ({localizedSubTitle, lang}) => {
-        const displayedSubTitle = (typeof localizedSubTitle === "object") 
-            ? localizedSubTitle[lang]
-            : localizedSubTitle ;
-        return (<p>{displayedSubTitle}</p>);
     }
 
     return (
         <div className="hook">
-            <Title localizedTitle={data.titleResume}
-                   lang={lang}
-            />
-            <SubTitle localizedSubTitle={data.subTitle}
-                      lang={lang}
-            />
+            <h1>
+                {data.titleResume[lang]}
+            </h1>
+            <p>
+                {data.subTitle[lang]}
+            </p>
         </div>
     );
-}
-
+};
 Hook.propTypes = {
-    title: PropTypes.string,
-    subTitle: PropTypes.string
-}
+    data: PropTypes.shape({
+        titleResume: PropTypes.objectOf(PropTypes.string),
+        subTitle: PropTypes.objectOf(PropTypes.string),
+    }),
+    lang: PropTypes.string.isRequired,
+};
+Hook.defaultProps = {
+    data: null,
+};
 
 export default Hook;
-

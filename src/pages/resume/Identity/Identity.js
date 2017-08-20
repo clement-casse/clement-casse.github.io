@@ -1,88 +1,112 @@
-import React from "react"
+import React from 'react';
 import PropTypes from 'prop-types';
 
-import "./identity.css"
+import './identity.css';
 
-const Identity = ({lang, data}) => {
-
-    if (typeof data !== 'object') {
+/**
+ * Compenent that renders out an Address block based on the components Name, Phone, 
+ * Email, Address and Age.
+ */
+const Identity = ({ lang, data }) => {
+    if (!data) {
         return null;
     }
 
-    const Name = ({firstName, lastName}) => {
-        const displayedName = [firstName, lastName].join(" ")
-        return (
-            <p className="name">
-                {displayedName}
-            </p>
-        );
-    }
-
-    const Address = ({data}) => {
-        if (typeof data !== 'object') {
-            return null;
-        }
-        return (
-            <p className="address">
-                {data.line1}<br />
-                {data.zip} {data.city.toUpperCase()}
-            </p>
-        )
-    }
-
-    const Phone = ({localizedPhone, lang}) => {
-        const displayedPhone = (typeof localizedPhone === "object") ? localizedPhone[lang] : localizedPhone;
-        return (
-            <p>{displayedPhone}</p>
-        );
-    }
-
-    const Email = ({displayedEmail}) => {
-        return (
-            <p>{displayedEmail}</p>
-        );
-    }
-
-    const Age = ({birthDate, lang}) => {
-        const ageAppend = {
-            fr: "ans",
-            en: "years old"
-        }
-        const ageDate = new Date(Date.now() - (new Date(birthDate)).getTime()).getUTCFullYear() - 1970;
-        return (
-            <p>{ageDate} {ageAppend[lang]}</p>
-        )
-    }
-
-
     return (
         <address>
-            <Name firstName={data.firstName} 
-                  lastName={data.lastName}
+            <Name
+                firstName={data.firstName}
+                lastName={data.lastName}
             />
-            <Address data={data.address} 
-                     lang={lang} 
-            />
-            <Phone localizedPhone={data.phone}
-                   lang={lang} 
-            />
+            <Address address={data.address} />
+            <Phone localizedPhone={data.phone} lang={lang} />
             <Email displayedEmail={data.email} />
-            <Age birthDate={data.birthDate}
-                 lang={lang}
-            />
+            <Age birthDate={data.birthDate} lang={lang} />
         </address>
-    )
-}
-
+    );
+};
 Identity.propTypes = {
-    lang: PropTypes.oneOf(["en", "fr"]),
-    name: PropTypes.string,
-    phone: PropTypes.string,
-    email: PropTypes.string
+    lang: PropTypes.oneOf(['en', 'fr']),
+    data: PropTypes.shape({
+        firstName: PropTypes.string,
+        lastName: PropTypes.string,
+        birthDate: PropTypes.string,
+        email: PropTypes.string,
+        phone: PropTypes.objectOf(PropTypes.string),
+        address: PropTypes.objectOf(PropTypes.string),
+    }),
+};
+Identity.defaultProps = {
+    lang: 'fr',
+    data: undefined,
+};
+export default Identity;
+
+/**
+ * Rendering component for the name
+ */
+const Name = ({ firstName, lastName }) => (
+    <p className="name">
+        {firstName} {lastName}
+    </p>
+);
+Name.propTypes = {
+    firstName: PropTypes.string.isRequired,
+    lastName: PropTypes.string.isRequired,
 };
 
-Identity.defaultProps = {
-    lang: "fr"
-}
+/**
+ * Rendering component for email address
+ */
+const Email = ({ displayedEmail }) => (
+    <p>{displayedEmail}</p>
+);
+Email.propTypes = {
+    displayedEmail: PropTypes.string.isRequired,
+};
 
-export default Identity;
+/**
+ * Rendering component for the postal address
+ */
+const Address = ({ address }) => (
+    <p className="address">
+        {address.line1}<br />
+        {address.zip} {address.city.toUpperCase()}
+    </p>
+);
+Address.propTypes = {
+    address: PropTypes.shape({
+        line1: PropTypes.string,
+        city: PropTypes.string,
+        zip: PropTypes.string,
+    }).isRequired,
+};
+
+/**
+ * Rendering component for the phone number
+ */
+const Phone = ({ localizedPhone, lang }) => (
+    <p>{localizedPhone[lang]}</p>
+);
+Phone.propTypes = {
+    localizedPhone: PropTypes.objectOf(PropTypes.string).isRequired,
+    lang: PropTypes.string.isRequired,
+};
+
+/**
+ * Component that calculate the Age from the brith date
+ */
+const Age = ({ birthDate, lang }) => {
+    const ageAppend = {
+        fr: 'ans',
+        en: 'years old',
+    };
+    const ageDate = new Date(Date.now() - (new Date(birthDate)).getTime()).getUTCFullYear() - 1970;
+    return (
+        <p>{ageDate} {ageAppend[lang]}</p>
+    );
+};
+Age.propTypes = {
+    birthDate: PropTypes.string.isRequired,
+    lang: PropTypes.string.isRequired,
+};
