@@ -1,67 +1,113 @@
 import React from 'react';
-import ForceSimulation from '../../../components/Graph/Forcegraph';
+import PropTypes from 'prop-types';
+import ForceGraph from './Graph/ForceGraph.jsx';
+import TreemapGraph from './Graph/TreemapGraph.jsx';
+import RadialTreeGraph from './Graph/RadialTreeGraph.jsx';
 
-import "./skill.css";
+import './skill.css';
 
-
+/**
+ * Complete "Skills" section of the resume
+ */
 const Skills = ({ data, lang }) => {
-    if (!data) {
+    const isDataLoaded = (!data);
+
+    if (isDataLoaded) {
         return null;
     }
-    const Title = ({ localizedTitle }) => {
-        const displayedTitle = (typeof localizedTitle === 'object')
-            ? localizedTitle[lang]
-            : localizedTitle;
-        return (
-            <h1>{displayedTitle}</h1>
-        )
-    };
 
     const subsections = data.subSections
-        .map((subsection, index) => {
-            return (
-                <SkillSection data={subsection} key={index} lang={lang}/>
-            )
-        })
+        .map(subsection => (
+            <SkillSection
+                key={subsection.id}
+                lang={lang}
+                data={subsection}
+                skills={data.list}
+            />
+        ));
 
     return (
         <div className="skills">
-            <Title localizedTitle={data.sectionTitle} />
+            <Title localizedTitle={data.sectionTitle} lang={lang} />
             {subsections}
         </div>
-    )
-}
+    );
+};
+Skills.propTypes = {
+    data: PropTypes.shape({
+        sectionTitle: PropTypes.objectOf(PropTypes.string),
+        subSections: PropTypes.arrayOf(PropTypes.object),
+        list: PropTypes.arrayOf(PropTypes.object),
+    }),
+    lang: PropTypes.string.isRequired,
+};
+Skills.defaultProps = {
+    data: null,
+};
 
-const SkillSection = ({lang, data}) => {
-    if (!data.type) {
+/**
+ * Component that renders out the Title of the section Skills
+ */
+const Title = ({ localizedTitle, lang }) => {
+    if (!localizedTitle) {
+        return null;
+    }
+    return (
+        <h1>{localizedTitle[lang]}</h1>
+    );
+};
+Title.propTypes = {
+    lang: PropTypes.string.isRequired,
+    localizedTitle: PropTypes.objectOf(PropTypes.string),
+};
+Title.defaultProps = {
+    localizedTitle: null,
+};
+
+/**
+ * 
+ */
+const SectionTitle = ({ localizedTitle, lang }) => {
+    if (!localizedTitle) {
         return null;
     }
 
-    const Title = ({ localizedTitle }) => {
-        if (!localizedTitle) {
-            return null;
-        }
-        const displayedTitle = (typeof localizedTitle === 'object')
-            ? localizedTitle[lang]
-            : localizedTitle;
-        return (
-            <h2>{displayedTitle}</h2>
-        )
-    };
+    return (
+        <h2>{localizedTitle[lang]}</h2>
+    );
+};
+SectionTitle.propTypes = {
+    lang: PropTypes.string.isRequired,
+    localizedTitle: PropTypes.objectOf(PropTypes.string),
+};
+SectionTitle.defaultProps = {
+    localizedTitle: null,
+};
+
+/**
+ * 
+ */
+const SkillSection = ({ lang, data, skills }) => {
+    const isDataLoaded = (!data || !skills);
+
+    if (isDataLoaded) {
+        return null;
+    }
 
     switch (data.type) {
-        case "extended-list": {
-            const skills = data.skills
-                .map(({id, title, level}, index) => {
+        case 'extended-list': {
+            const skillList = data.skills
+                .map((skillID) => {
+                    const { id, title, level } = skills.find(s => s.id === skillID);
                     if (typeof title === 'object' && !title[lang]) {
                         return null;
                     }
                     return (
-                        <div key={index} style={{display: "flex"}}>
-                            <dt style={{flex: "1 0"}}>
+                        <div key={id} style={{ display: 'flex' }}>
+                            <dt style={{ flex: '1 0' }}>
                                 {(typeof title === 'object') ? title[lang] : title}
                             </dt>
-                            <dd style={{flex: "3 0", margin: 0}}>
+                            <dd style={{ flex: '3 0', margin: 0 }}>
                                 {(typeof level === 'object') ? level[lang] : level}
                             </dd>
                         </div>
@@ -69,69 +115,65 @@ const SkillSection = ({lang, data}) => {
                 });
             return (
                 <div className="skill-section extended-list">
-                    <Title localizedTitle={data.title} />
+                    <SectionTitle localizedTitle={data.title} lang={lang} />
                     <dl>
-                        {skills}
+                        {skillList}
                     </dl>
                 </div>
-            )
+            );
         }
-        case "force-graph" : {
-            if (!data.domains || !data.skills || !data.height) {
+        case 'force-graph' : {
+            if (!data.domains || !data.height) {
                 console.warn("A subsection with type = 'force-graph' expects 2 keys : domains and skills");
                 return null;
             }
-            let nodes = [], links = [];
-
-            data["domains"].forEach((element) => {
-                nodes.push({
-                    id: element["id"],
-                    type: "domain",
-                    title: element["title"][lang],
-                    level: (Array.isArray(element.relatedSkills)) ? element.relatedSkills.length : 1
-                });
-
-                if (Array.isArray(element["relatedSkills"])) {
-                    element["relatedSkills"].forEach((refSkill) => {
-                        links.push({
-                            source: element["id"],
-                            target: refSkill
-                        });
-                    })
-                }
-            }, this);
-
-            data["skills"].forEach((element) => {
-                nodes.push({
-                    id: element["id"],
-                    type: "skill",
-                    title: element["title"][lang],
-                    level: (Array.isArray(element.relatedSkills)) ? element.relatedSkills.length : 1
-                });
-
-                if (Array.isArray(element["relatedSkills"])) {
-                    element["relatedSkills"].forEach((refSkill) => {
-                        links.push({
-                            source: element["id"],
-                            target: refSkill
-                        });
-                    })
-                }
-            }, this);
 
             return (
                 <div className="skill-section force-graph">
-                    <Title localizedTitle={data.title} />
-                    <ForceSimulation nodes={nodes} links={links} width={300} height={data.height}/>
+                    <SectionTitle localizedTitle={data.title} lang={lang} />
+                    <ForceGraph
+                        width={300}
+                        height={data.height}
+                        domains={data.domains}
+                        skills={skills}
+                        lang={lang}
+                    />
                 </div>
-            )
+            );
+        }
+        case 'treemap-graph' : {
+            return (
+                <div className="skill-section treemap-graph">
+                    <SectionTitle localizedTitle={data.title} lang={lang} />
+                    <TreemapGraph
+                        width={300}
+                        height={data.height}
+                        domains={data.domains}
+                        skills={skills}
+                        lang={lang}
+                    />
+                </div>
+            );
+        }
+        case 'radial-tree-graph' : {
+            return (
+                <div className="skill-section radial-tree-graph">
+                    <SectionTitle localizedTitle={data.title} lang={lang} />
+                    <RadialTreeGraph
+                        width={300}
+                        height={data.height}
+                        domains={data.domains}
+                        skills={skills}
+                        lang={lang}
+                    />
+                </div>
+            );
         }
         default: {
-            console.warn("Skill Type not handled ... Skipping");
+            console.warn('Skill Type not handled ... Skipping');
             return null;
         }
     }
-
-}
+};
 
 export default Skills;

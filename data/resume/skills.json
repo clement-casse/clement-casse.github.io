@@ -6,84 +6,119 @@
     },
     "subSections": [
       {
-        "type": "force-graph",
-        "height": 95,
+        "id": "environments",
         "title": {
           "fr": "Environnements",
           "en": "Environments"
         },
+        "type": "treemap-graph",
+        "height": 95,
         "domains": [
           {
-            "id": "environment",
+            "id": "root",
             "title": {
-              "fr": " ",
-              "en": " "
+              "fr": "",
+              "en": ""
+            },
+            "relatedDomains": [
+              "os", "virt"
+            ]
+          },
+          {
+            "id": "os",
+            "title": {
+              "fr": "Systèmes d'exploitation",
+              "en": "Operating Systems"
             },
             "relatedSkills": [
-              "linux", "windows", "docker", "kvm"
+              { "id": "linux", "weight": 4},
+              { "id": "windows", "weight": 3}
+            ]
+          },
+          {
+            "id": "virt",
+            "title": {
+              "fr": "Virtualisation / Cloud",
+              "en": "Virtualization / Cloud"
+            },
+            "relatedSkills": [
+              { "id": "docker", "weight": 5},
+              { "id": "kvm", "weight": 1},
+              { "id": "aws", "weight": 1}
             ]
           }
         ],
-        "skills": [
-          {
-            "id": "linux",
-            "title": {
-              "fr": "Linux",
-              "en": "Linux"
-            },
-            "relatedSkills": [
-              "bash"
-            ]
-          },
-          {
-            "id": "windows",
-            "title": {
-              "fr": "Windows",
-              "en": "Windows"
-            }
-          },
-          {
-            "id": "docker",
-            "title": {
-              "fr": "Docker",
-              "en": "Docker"
-            },
-            "relatedSkills": [
-              "bash"
-            ]
-          },
-          {
-            "id": "kvm",
-            "title": {
-              "fr": "KVM",
-              "en": "KVM"
-            }
-          },
-          {
-            "id": "bash",
-            "title": {
-              "fr": "Script Bash",
-              "en": "Bash Scripting"
-            }
-          }
-        ]
+        "skills": []
       },
       {
-        "type": "force-graph",
-        "height": 210,
+        "id": "development",
         "title": {
-          "fr": "Architecture",
-          "en": "Architecture"
+          "fr": "Développement : Langages & Frameworks",
+          "en": "Development: Languages & Frameworks"
         },
+        "type": "radial-tree-graph",
+        "height": 200,
         "domains": [
           {
-            "id": "architecture",
+            "id": "root",
+            "title": {
+              "fr": "",
+              "en": ""
+            },
+            "relatedDomains": [
+              "interested", "practice", "knowledge"
+            ]
+          },
+          {
+            "id": "practice",
+            "title": {
+              "fr": "Pratiqués",
+              "en": "Practice"
+            },
+            "relatedSkills": [
+              "python", "javascript", "golang"
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": {
+              "fr": "Connaissance",
+              "en": ""
+            },
+            "relatedSkills": [
+              "java", "c"
+            ]
+          },
+          {
+            "id": "interested",
+            "title": {
+              "fr": "Intéressé par",
+              "en": "Curious about"
+            },
+            "relatedSkills": [
+              "elixir", "scala"
+            ]
+          }
+        ],
+        "skills": []
+      },
+      {
+        "id": "architecture",
+        "title": {
+          "fr": "DevOps",
+          "en": "DevOps"
+        },
+        "type": "radial-tree-graph",
+        "height": 210,
+        "domains": [
+          {
+            "id": "root",
             "title": {
               "fr": " ",
               "en": " "
             },
-            "relatedSkills": [
-              "web", "network", "databases", "broker"
+            "relatedDomains": [
+              "web", "network", "databases", "broker", "tools"
             ]
           },
           {
@@ -113,7 +148,7 @@
               "en": "Databases"
             },
             "relatedSkills": [
-              "mysql", "elasticsearch"
+              "elasticsearch", "mysql"
             ]
           },
           {
@@ -125,74 +160,28 @@
             "relatedSkills": [
               "kafka", "redis"
             ]
+          },
+          {
+            "id": "tools",
+            "title": {
+              "fr": "Outils",
+              "en": "Tools"
+            },
+            "relatedSkills": [
+              "git", "rest"
+            ]
           }
         ],
-        "skills": [
-          {
-            "id": "apache",
-            "title": {
-              "fr": "Apache",
-              "en": "Apache"
-            }
-          },
-          {
-            "id": "nginx",
-            "title": {
-              "fr": "NginX",
-              "en": "NginX"
-            }
-          },
-          {
-            "id": "traefik",
-            "title": {
-              "fr": "Traefik",
-              "en": "Traefik"
-            }
-          },
-          {
-            "id": "dns",
-            "title": {
-              "fr": "DNS",
-              "en": "DNS"
-            }
-          },
-          {
-            "id": "elasticsearch",
-            "title": {
-              "fr": "Elasticsearch",
-              "en": "Elasticsearch"
-            }
-          },
-          {
-            "id": "mysql",
-            "title": {
-              "fr": "MySQL",
-              "en": "MySQL"
-            }
-          },
-          {
-            "id": "redis",
-            "title": {
-              "fr": "Redis",
-              "en": "Redis"
-            }
-          },
-          {
-            "id": "kafka",
-            "title": {
-              "fr": "Kafka",
-              "en": "Kafka"
-            }
-          }
-        ]
+        "skills": []
       },
       {
-        "type": "force-graph",
-        "height": 130,
+        "id": "infosec",
         "title": {
           "fr": "Sécurité Informatique",
           "en": "Information Security"
         },
+        "type": "force-graph",
+        "height": 130,
         "domains": [
           {
             "id": "infosec",
@@ -200,7 +189,7 @@
               "fr": " ",
               "en": " "
             },
-            "relatedSkills": [
+            "relatedDomains": [
               "loganalysis", "infosec-appliances"
             ]
           },
@@ -225,178 +214,297 @@
             ]
           }
         ],
-        "skills": [
-          {
-            "id": "graylog",
-            "title": {
-              "fr": "Graylog",
-              "en": "Graylog"
-            }
-          },
-          {
-            "id": "logstash",
-            "title": {
-              "fr": "Logstash",
-              "en": "Logstash"
-            }
-          },
-          {
-            "id": "firewall",
-            "title": {
-              "fr": "Pare-Feux",
-              "en": "Firewall"
-            }
-          },
-          {
-            "id": "web-proxy",
-            "title": {
-              "fr": "Proxy Web",
-              "en": "Web Proxies"
-            }
-          },
-          {
-            "id": "ids",
-            "title": {
-              "fr": "IDS",
-              "en": "IDS"
-            }
-          }
-        ]
+        "skills": []
       },
       {
-        "type": "force-graph",
-        "height": 170,
-        "title": {
-          "fr": "Développement",
-          "en": "Development"
-        },
-        "domains": [
-          {
-            "id": "languages",
-            "title": {
-              "fr": "Langages",
-              "en": "Languages"
-            },
-            "relatedSkills": [
-              "java", "tools", "javascript", "c", "golang", "python"
-            ]
-          },
-          {
-            "id": "tools",
-            "title": {
-              "fr": "Outils",
-              "en": "Tools"
-            },
-            "relatedSkills": [
-              "git", "rest"
-            ]
-          }
-        ],
-        "skills": [
-          {
-            "id": "git",
-            "title": {
-              "fr": "Git",
-              "en": "Git"
-            }
-          },
-          {
-            "id": "rest",
-            "title": {
-              "fr": "API REST",
-              "en": "REST API"
-            }
-          },
-          {
-            "id": "c",
-            "title": {
-              "en": "C",
-              "fr": "C"
-            }
-          },
-          {
-            "id": "java",
-            "title": {
-              "en": "Java",
-              "fr": "Java"
-            }
-          },
-          {
-            "id": "python",
-            "title": {
-              "en": "Python",
-              "fr": "Python"
-            }
-          },
-          {
-            "id": "javascript",
-            "title": {
-              "fr": "Javascript",
-              "en": "Javascript"
-            },
-            "relatedSkills": [
-              "react", "es6", "d3"
-            ]
-          },
-          {
-            "id": "golang",
-            "title": {
-              "fr": "Go",
-              "en": "Go"
-            }
-          },
-          {
-            "id": "react",
-            "title": {
-              "fr": "ReactJS",
-              "en": "ReactJS"
-            }
-          },
-          {
-            "id": "d3",
-            "title": {
-              "fr": "D3",
-              "en": "D3"
-            }
-          },
-          {
-            "id": "es6",
-            "title": {
-              "en": "ES6",
-              "fr": "ES6"
-            }
-          }
-        ]
-      },
-      {
-        "type": "extended-list",
+        "id": "tongues",
         "title": {
           "fr": "Langues",
           "en": "Tongues"
         },
-        "skills": [
-          {
-            "id": "fr",
-            "title": {
-              "en": "French"
-            },
-            "level": {
-              "en": "Mother tongue"
-            }
-          },
-          {
-            "id": "en",
-            "title": {
-              "fr": "Anglais",
-              "en": "English"
-            },
-            "level": {
-              "fr": "TOEIC 2014 : 880/990",
-              "en": "TOEIC 2014: 880/990"
-            }
-          }
-
+        "type": "extended-list",
+        "skills": [ "fr", "en" ]
+      }
+    ],
+    "list": [
+      {
+        "id": "linux",
+        "title": {
+          "fr": "Linux",
+          "en": "Linux"
+        },
+        "relatedSkills": [
+          "bash",
+          "debian"
         ]
+      },
+      {
+        "id": "debian",
+        "title": {
+          "fr": "Debian",
+          "en": "Debian"
+        }
+      },
+      {
+        "id": "windows",
+        "title": {
+          "fr": "Windows",
+          "en": "Windows"
+        },
+        "relatedSkills": [
+          "active-directory"
+        ]
+      },
+      {
+        "id": "active-directory",
+        "title": {
+          "fr": "AD",
+          "en": "AD"
+        }
+      },
+      {
+        "id": "docker",
+        "title": {
+          "fr": "Docker",
+          "en": "Docker"
+        },
+        "relatedSkills": [
+          "microservices",
+          "docker-swarm"
+        ]
+      },
+      {
+        "id": "microservices",
+        "title": {
+          "fr": "Microservices",
+          "en": "Microservices arch."
+        }
+      },
+      {
+        "id": "docker-swarm",
+        "title": {
+          "fr": "Swarm",
+          "en": "Swarm"
+        }
+      },
+      {
+        "id": "kvm",
+        "title": {
+          "fr": "KVM",
+          "en": "KVM"
+        }
+      },
+      {
+        "id": "aws",
+        "title": {
+          "fr": "AWS",
+          "en": "AWS"
+        }
+      },
+      {
+        "id": "bash",
+        "title": {
+          "fr": "Bash",
+          "en": "Bash"
+        }
+      },
+      {
+        "id": "apache",
+        "title": {
+          "fr": "Apache",
+          "en": "Apache"
+        }
+      },
+      {
+        "id": "nginx",
+        "title": {
+          "fr": "NginX",
+          "en": "NginX"
+        }
+      },
+      {
+        "id": "traefik",
+        "title": {
+          "fr": "Traefik",
+          "en": "Traefik"
+        }
+      },
+      {
+        "id": "dns",
+        "title": {
+          "fr": "DNS",
+          "en": "DNS"
+        }
+      },
+      {
+        "id": "elasticsearch",
+        "title": {
+          "fr": "Elasticsearch",
+          "en": "Elasticsearch"
+        }
+      },
+      {
+        "id": "mysql",
+        "title": {
+          "fr": "MySQL",
+          "en": "MySQL"
+        }
+      },
+      {
+        "id": "redis",
+        "title": {
+          "fr": "Redis",
+          "en": "Redis"
+        }
+      },
+      {
+        "id": "kafka",
+        "title": {
+          "fr": "Kafka",
+          "en": "Kafka"
+        }
+      },
+      {
+        "id": "graylog",
+        "title": {
+          "fr": "Graylog",
+          "en": "Graylog"
+        }
+      },
+      {
+        "id": "logstash",
+        "title": {
+          "fr": "Logstash",
+          "en": "Logstash"
+        }
+      },
+      {
+        "id": "firewall",
+        "title": {
+          "fr": "Pare-Feux",
+          "en": "Firewall"
+        }
+      },
+      {
+        "id": "web-proxy",
+        "title": {
+          "fr": "Proxy Web",
+          "en": "Web Proxies"
+        }
+      },
+      {
+        "id": "ids",
+        "title": {
+          "fr": "IDS",
+          "en": "IDS"
+        }
+      },
+      {
+        "id": "git",
+        "title": {
+          "fr": "Git",
+          "en": "Git"
+        }
+      },
+      {
+        "id": "rest",
+        "title": {
+          "fr": "API REST",
+          "en": "REST API"
+        }
+      },
+      {
+        "id": "c",
+        "title": {
+          "en": "C",
+          "fr": "C"
+        }
+      },
+      {
+        "id": "java",
+        "title": {
+          "en": "Java",
+          "fr": "Java"
+        }
+      },
+      {
+        "id": "python",
+        "title": {
+          "en": "Python",
+          "fr": "Python"
+        }
+      },
+      {
+        "id": "javascript",
+        "title": {
+          "fr": "Javascript",
+          "en": "Javascript"
+        },
+        "relatedSkills": [
+          "react", "es6", "d3"
+        ]
+      },
+      {
+        "id": "golang",
+        "title": {
+          "fr": "Go",
+          "en": "Go"
+        }
+      },
+      {
+        "id": "react",
+        "title": {
+          "fr": "ReactJS",
+          "en": "ReactJS"
+        }
+      },
+      {
+        "id": "d3",
+        "title": {
+          "fr": "D3",
+          "en": "D3"
+        }
+      },
+      {
+        "id": "es6",
+        "title": {
+          "en": "ES6",
+          "fr": "ES6"
+        }
+      },
+      {
+        "id": "elixir",
+        "title": {
+          "fr": "Elixir",
+          "en": "Elixir"
+        }
+      },
+      {
+        "id": "scala",
+        "title": {
+          "fr": "Scala",
+          "en": "Scala"
+        }
+      },
+      {
+        "id": "fr",
+        "title": {
+          "en": "French"
+        },
+        "level": {
+          "en": "Mother tongue"
+        }
+      },
+      {
+        "id": "en",
+        "title": {
+          "fr": "Anglais",
+          "en": "English"
+        },
+        "level": {
+          "fr": "TOEIC 2014 : 880/990",
+          "en": "TOEIC 2014: 880/990"
+        }
       }
     ]
   }
