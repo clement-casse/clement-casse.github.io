@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './identity.css';
 
 /**
- * Compenent that renders out an Address block based on the components Name, Phone, 
+ * Compenent that renders out an Address block based on the components Name, Phone,
  * Email, Address and Age.
  */
 const Identity = ({ lang, data }) => {
