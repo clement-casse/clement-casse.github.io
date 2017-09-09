@@ -48,6 +48,7 @@ export default class TreemapGraph extends React.Component {
             .id(d => d.id)
             .parentId(d => d.parent)(data);
 
+        console.log(stratified);
         const root = stratified.sum(d => d.weight)
             .sort((a, b) => b.height - a.height || b.value - a.value);
 

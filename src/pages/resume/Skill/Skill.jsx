@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ForceGraph from './Graph/ForceGraph';
-import TreemapGraph from './Graph/TreemapGraph';
-import RadialTreeGraph from './Graph/RadialTreeGraph';
+import ForceGraph from './Graph/ForceGraph.jsx';
+import TreemapGraph from './Graph/TreemapGraph.jsx';
+import RadialTreeGraph from './Graph/RadialTreeGraph.jsx';
 
 import './skill.css';
 

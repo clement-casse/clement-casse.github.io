@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Page, SubPage, Column } from './Layout/Layout';
-import Sidebar from '../../components/Sidebar/Sidebar';
-import Identity from './Identity/Identity';
-import Hook from './Hook/Hook';
-import Experiences from './Experience/Experience';
-import Skills from './Skill/Skill';
+import { Page, SubPage, Column } from './Layout/Layout.jsx';
+import Sidebar from '../../components/Sidebar/Sidebar.jsx';
+import Identity from './Identity/Identity.jsx';
+import Hook from './Hook/Hook.jsx';
+import Experiences from './Experience/Experience.jsx';
+import Skills from './Skill/Skill.jsx';
 
 import './resume.css';
 
@@ -32,7 +32,8 @@ export default class Resume extends React.Component {
     // Component lifecycle
     componentDidMount() {
         // Wait for all promises to resolve to merge retreived objects into state.
-        Promise.all(this.dataPaths.map(c => fetch(c).then(res => res.json())))
+        Promise
+            .all(this.dataPaths.map(c => fetch(c).then(res => res.json())))
             .then((resolve) => {
                 this.setState(() => resolve.reduce(
                     (acc, cur) => Object.assign({}, acc, cur),

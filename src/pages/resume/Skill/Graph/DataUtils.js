@@ -7,7 +7,7 @@
  * @param {Object[]} arrays Arrays of objects with the properties 'id' and linking
  * children with the properties "relatedDomains" or "relatedSkills".
  */
-export function createTreeStruct(idRoot, ...arrays) {
+function createTreeStruct(idRoot, ...arrays) {
     const data = [].concat(...arrays);
     const root = data.find(d => d.id === idRoot);
     if (typeof root === 'undefined') {
@@ -62,3 +62,12 @@ export function createTreeStruct(idRoot, ...arrays) {
     });
     return treeStruct;
 }
+
+/**
+ * 
+ */
+function currentlyUseless() {
+    return 'definitly usesless';
+}
+
+export { createTreeStruct, currentlyUseless };
