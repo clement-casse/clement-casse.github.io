@@ -33,18 +33,17 @@ export default class TreemapGraph extends React.Component {
     componentDidMount() {
         const { domains, skills, lang } = this.props;
         const data = DataUtils.createTreeStruct('root', domains, skills);
-        console.log(data);
-        this.d3logic(lang, data);
+        this.d3logic(data, lang);
     }
 
     shouldComponentUpdate(nextProps) {
         const { domains, skills, lang } = nextProps;
         const data = DataUtils.createTreeStruct('root', domains, skills);
-        this.d3logic(lang, data);
+        this.d3logic(data, lang);
         return false;
     }
 
-    d3logic(lang, data) {
+    d3logic(data, lang) {
         const stratified = d3.stratify()
             .id(d => d.id)
             .parentId(d => d.parent)(data);

@@ -1,3 +1,12 @@
+/**
+ * This functions return an array of skills and domains with the parent field
+ * calculated from the fields 'RelatedSkills' and 'RelatedDomains'.
+ * It requires, as first argument, the ID of the root of the tree. All other arguments
+ * are arrays that are merged together
+ * @param {string} idRoot ID of the root element of the tree
+ * @param {Object[]} arrays Arrays of objects with the properties 'id' and linking
+ * children with the properties "relatedDomains" or "relatedSkills".
+ */
 export function createTreeStruct(idRoot, ...arrays) {
     const data = [].concat(...arrays);
     const root = data.find(d => d.id === idRoot);
@@ -38,11 +47,15 @@ export function createTreeStruct(idRoot, ...arrays) {
         const enrichedElements = newElements.map((e) => {
             // Enrich with the fields : type, parent, and all other fields provided
             // within the key relatedSkills
-            const enrichedData = Object.assign({
+            const enrichedData = {
                 type: 'skill',
                 parent: idRoot,
-            }, (typeof skill === 'object') ? skill : {});
-
+            };
+            // terrible hack to extend skills with 'weight' attribute e.g.
+            if (e.id === skill.id) {
+                Object.assign(enrichedData, skill);
+            }
+            // end of big shame
             return Object.assign({}, enrichedData, e);
         });
         treeStruct.push(...enrichedElements);
