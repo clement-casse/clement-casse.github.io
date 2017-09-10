@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import ForceGraph from './Graph/ForceGraph.jsx';
 import TreemapGraph from './Graph/TreemapGraph.jsx';
 import RadialTreeGraph from './Graph/RadialTreeGraph.jsx';
+import RadialPartitionGraph from './Graph/RadialPartitionGraph.jsx';
 
 import './skill.css';
 
@@ -160,6 +161,20 @@ const SkillSection = ({ lang, data, skills }) => {
                 <div className="skill-section radial-tree-graph">
                     <SectionTitle localizedTitle={data.title} lang={lang} />
                     <RadialTreeGraph
+                        width={300}
+                        height={data.height}
+                        domains={data.domains}
+                        skills={skills}
+                        lang={lang}
+                    />
+                </div>
+            );
+        }
+        case 'radial-partition-graph' : {
+            return (
+                <div className="skill-section radial-partition-graph">
+                    <SectionTitle localizedTitle={data.title} lang={lang} />
+                    <RadialPartitionGraph
                         width={300}
                         height={data.height}
                         domains={data.domains}

@@ -56,7 +56,7 @@
           "fr": "Développement : Langages & Frameworks",
           "en": "Development: Languages & Frameworks"
         },
-        "type": "radial-tree-graph",
+        "type": "radial-partition-graph",
         "height": 200,
         "domains": [
           {
@@ -306,6 +306,13 @@
         "title": {
           "fr": "Bash",
           "en": "Bash"
+        }
+      },
+      {
+        "id": "vagrant",
+        "title": {
+          "fr": "Vagrant",
+          "en": "Vagrant"
         }
       },
       {
