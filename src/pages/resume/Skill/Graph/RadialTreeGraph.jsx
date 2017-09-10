@@ -57,7 +57,7 @@ export default class RadialTreeGraph extends React.Component {
                 .radius(d => d.y));
 
         const nodes = graph
-            .selectAll('.node')
+            .selectAll('g.node')
             .data(root.descendants());
 
         nodes.selectAll('text')

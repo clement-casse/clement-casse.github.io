@@ -7,8 +7,8 @@
     "list": [
       {
         "name": {
-          "fr": "Ingénieur DevOps conception et développement SOC ITrust",
-          "en": "DevOps Engineer for ITrust SOC conception and development"
+          "fr": "Ingénieur DevOps Cybersécurité",
+          "en": "Cybersecurity DevOps Engineer "
         },
         "dates": {
           "start": "2016-08-01"
@@ -26,31 +26,31 @@
         "missions": [
           {
             "brief": {
-              "fr": "Conception d'un SOC basé sur des composants Open-Sources et distribués",
-              "en": "yop"
+              "fr": "Conception et architecture SOC basé sur des composants Open-Source.",
+              "en": "SOC design and architecture relying on Open-Source components."
             },
-            "keywords": ["logstash", "elasticsearch"]
+            "relatedSkills": ["docker", ""]
           },
           {
             "brief": {
               "fr": "Intégration et orchestration via Docker",
               "en": "yop2"
             },
-            "keywords": ["docker"]
+            "relatedSkills": ["docker"]
           },
           {
             "brief": {
               "fr": "yop3",
               "en": "yop3"
             },
-            "keywords": []
+            "relatedSkills": []
           },
           {
             "brief": {
               "fr": "Rédaction de rapports d'analyse",
               "en": "Analysis report writing"
             },
-            "keywords": []
+            "relatedSkills": []
           }
         ]
       },
@@ -80,28 +80,21 @@
               "fr": "Gestion et reporting d'incidents de sécurité",
               "en": "Reporting on security incidents"
             },
-            "keywords": []
+            "relatedSkills": []
           },
           {
             "brief": {
               "fr": "Investigation et analyse de logs sur SIEM",
               "en": "Investigation and log analysis on SIEM"
             },
-            "keywords": []
+            "relatedSkills": []
           },
           {
             "brief": {
               "fr": "Qualifications et classification d'évènements de sécurité sur IDS-IPS",
               "en": "Qualification and classification of security events with IDS-IPS"
             },
-            "keywords": []
-          },
-          {
-            "brief": {
-              "fr": "Analyse de malware dynamique (bac-à-sable)",
-              "en": "Dynamic malware analysis (sandbox)"
-            },
-            "keywords": []
+            "relatedSkills": []
           }
         ]
       },
@@ -131,14 +124,14 @@
               "fr": "Rationalisation d'un parc de moyens de V&V logiciel avionique DO178B DAL A, B, C, E.",
               "en": "Rationalization of the park of means for the V&V in the avionic software DO178B DAL A, B, C, E."
             },
-            "keywords": []
+            "relatedSkills": []
           },
           {
             "brief":{
               "fr": "Suivi de prestations de sous-traitance, contribution au pilotage technique des activités sous-traitées.",
               "en": "Subcontractor follow up, and contribution to the technical management of the outsourced activity."
             },
-            "keywords": []
+            "relatedSkills": []
           },
           {
             "brief": {
@@ -146,14 +139,14 @@
               "en": "Sub-network creation to keep using obsolete means."
             },
             "display": "hidden",
-            "keywords": []
+            "relatedSkills": []
           },
           {
             "brief": {
               "fr": "Analyse de risques industriels, traitement des obsolesences des outils de  V&V.",
               "en": "Industrial Risks Analysis, obsolescence management of V&V tools."
             },
-            "keywords":[]
+            "relatedSkills":[]
           }
         ]
       },
@@ -184,14 +177,14 @@
               "fr": "Etude et déploiement de VPN SSL et d'un système FailOver sur Cisco ASA",
               "en": "VPN SSL and FailOver study and setup on Cisco ASA"
             },
-            "keywords": []
+            "relatedSkills": []
           },
           {
             "brief": {
               "fr": "Optimisation des règles firewall sur Cisco ASA",
               "en": "Update and simplification of Cisco ASA Firewall Rules"
             },
-            "keywords": []
+            "relatedSkills": []
           }
         ]
       }

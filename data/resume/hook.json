@@ -1,11 +1,11 @@
 {
   "hook": {
     "titleResume": {
-      "fr": "Ingénieur Réseaux et Télécommunications",
-      "en": ""
+      "fr": "Ingénieur DevOps",
+      "en": "DevOps Engineer"
     },
     "subTitle": {
-      "fr": "Objectif : Trouver un poste avec des missions d'analyse et d'investigation sur des malwares/vulnérabilités afin d'évoluer vers du forensic.",
+      "fr": "Passionné par les nouvelles technologies, en particulier l'architecture Cloud et le Big-Data",
       "en": ""
     }
   }
