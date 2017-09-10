@@ -44,11 +44,11 @@ export default class TreemapGraph extends React.Component {
     }
 
     d3logic(data, lang) {
+        const treemapData = data.filter(e => !(e.type === 'skill' && typeof e.weight === 'undefined'));
         const stratified = d3.stratify()
             .id(d => d.id)
-            .parentId(d => d.parent)(data);
+            .parentId(d => d.parent)(treemapData);
 
-        console.log(stratified);
         const root = stratified.sum(d => d.weight)
             .sort((a, b) => b.height - a.height || b.value - a.value);
 
@@ -60,8 +60,11 @@ export default class TreemapGraph extends React.Component {
             .selectAll('.node')
             .data(root.descendants());
 
-        cell.selectAll('text').selectAll('tspan.title').text(d => d.data.title[lang]);
-        // TODO Update relatedSkills too.
+        // Updating existing elements (when lang changes)
+        cell.selectAll('tspan.title')
+            .text(d => d.data.title[lang]);
+        cell.selectAll('tspan.relatedSkills')
+            .text(d => `- ${data.find(skill => skill.id === d).title[lang]}`);
 
         const newCell = cell.enter()
             .append('g')
@@ -88,18 +91,19 @@ export default class TreemapGraph extends React.Component {
             .style('fill', d => this.textColourScale(d.depth))
             .text(d => d.data.title[lang]);
 
+        // Bind the data to Related Skills with no weight.
+        // The ones that cannot be rendered as TreeMap Nodes.
         newCell
-            .filter(d => d.data.relatedSkills)
             .append('text')
             .selectAll('tspan')
-            .data(d => d.data.relatedSkills)
+            .data(d => d.data.relatedSkills.filter(e => typeof e === 'string'))
             .enter()
                 .append('tspan')
                 .classed('relatedSkills', true)
                 .attr('x', 6)
                 .attr('y', (d, i) => 5 + ((i + 2) * 12))
                 .style('fill', () => this.textColourScale(2))
-                .text(d => `- ${d[lang]}`);
+                .text(d => `- ${data.find(skill => skill.id === d).title[lang]}`);
     }
 
     render() {
