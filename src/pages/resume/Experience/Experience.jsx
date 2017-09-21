@@ -152,7 +152,7 @@ const Topics = ({ data, lang }) => {
     }
 
     const topics = data
-        .filter(topic => !topic.display || topic.display === 'hidden')
+        .filter(topic => !topic.display || topic.display !== 'hidden')
         .map(topic => topic[lang]);
 
     return (<p className="topics">{topics.join(', ')}</p>);
