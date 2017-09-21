@@ -51,58 +51,6 @@
         "skills": []
       },
       {
-        "id": "development",
-        "title": {
-          "fr": "Développement : Langages & Frameworks",
-          "en": "Development: Languages & Frameworks"
-        },
-        "type": "radial-partition-graph",
-        "height": 200,
-        "domains": [
-          {
-            "id": "root",
-            "title": {
-              "fr": "",
-              "en": ""
-            },
-            "relatedDomains": [
-              "interested", "knowledge", "practice"
-            ]
-          },
-          {
-            "id": "practice",
-            "title": {
-              "fr": "Pratiqués",
-              "en": "Practice"
-            },
-            "relatedSkills": [
-              "python", "javascript", "golang"
-            ]
-          },
-          {
-            "id": "knowledge",
-            "title": {
-              "fr": "Connaissance",
-              "en": ""
-            },
-            "relatedSkills": [
-              "java", "c"
-            ]
-          },
-          {
-            "id": "interested",
-            "title": {
-              "fr": "Intéressé par",
-              "en": "Curious about"
-            },
-            "relatedSkills": [
-              "elixir", "scala"
-            ]
-          }
-        ],
-        "skills": []
-      },
-      {
         "id": "architecture",
         "title": {
           "fr": "DevOps",
@@ -175,42 +123,52 @@
         "skills": []
       },
       {
-        "id": "infosec",
+        "id": "development",
         "title": {
-          "fr": "Sécurité Informatique",
-          "en": "Information Security"
+          "fr": "Développement : Langages & Frameworks",
+          "en": "Development: Languages & Frameworks"
         },
-        "type": "force-graph",
-        "height": 130,
+        "type": "radial-partition-graph",
+        "height": 200,
         "domains": [
           {
-            "id": "infosec",
+            "id": "root",
             "title": {
-              "fr": " ",
-              "en": " "
+              "fr": "",
+              "en": ""
             },
             "relatedDomains": [
-              "loganalysis", "infosec-appliances"
+              "interested", "knowledge", "practice"
             ]
           },
           {
-            "id": "loganalysis",
+            "id": "practice",
             "title": {
-              "fr": "Analyse de logs",
-              "en": "Log analysis"
+              "fr": "Pratiqués",
+              "en": "Practice"
             },
             "relatedSkills": [
-              "graylog", "logstash"
+              "python", "javascript", "golang"
             ]
           },
           {
-            "id": "infosec-appliances",
+            "id": "knowledge",
             "title": {
-              "fr": "Equipements",
-              "en": "Appliances"
+              "fr": "Connaissance",
+              "en": ""
             },
             "relatedSkills": [
-              "firewall", "web-proxy", "ids"
+              "java", "c"
+            ]
+          },
+          {
+            "id": "interested",
+            "title": {
+              "fr": "Intéressé par",
+              "en": "Curious about"
+            },
+            "relatedSkills": [
+              "elixir", "scala"
             ]
           }
         ],
@@ -235,7 +193,8 @@
         },
         "relatedSkills": [
           "bash",
-          "debian"
+          "debian",
+          "centos"
         ]
       },
       {
@@ -243,6 +202,13 @@
         "title": {
           "fr": "Debian",
           "en": "Debian"
+        }
+      },
+      {
+        "id": "centos",
+        "title": {
+          "fr": "CentOS",
+          "en": "CentOS"
         }
       },
       {
@@ -277,7 +243,7 @@
         "id": "microservices",
         "title": {
           "fr": "Microservices",
-          "en": "Microservices arch."
+          "en": "Microservices"
         }
       },
       {
@@ -404,6 +370,27 @@
         "title": {
           "fr": "IDS",
           "en": "IDS"
+        }
+      },
+      {
+        "id": "rsa-security-analitics",
+        "title": {
+          "fr": "RSA Security Analitics",
+          "en": "RSA Security Analitics"
+        }
+      },
+      {
+        "id": "rsa-archer",
+        "title": {
+          "fr": "RSA Archer",
+          "en": "RSA Archer"
+        }
+      },
+      {
+        "id": "thehive",
+        "title": {
+          "fr": "TheHive",
+          "en": "TheHive"
         }
       },
       {
