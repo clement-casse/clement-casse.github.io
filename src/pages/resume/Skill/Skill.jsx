@@ -4,6 +4,7 @@ import ForceGraph from './Graph/ForceGraph.jsx';
 import TreemapGraph from './Graph/TreemapGraph.jsx';
 import RadialTreeGraph from './Graph/RadialTreeGraph.jsx';
 import RadialPartitionGraph from './Graph/RadialPartitionGraph.jsx';
+import SimpleDefinitionList from './Text/SimpleDefinitionList.jsx';
 
 import './skill.css';
 
@@ -97,38 +98,18 @@ const SkillSection = ({ lang, data, skills }) => {
 
     switch (data.type) {
         case 'extended-list': {
-            const skillList = data.skills
-                .map((skillID) => {
-                    const { id, title, level } = skills.find(s => s.id === skillID);
-                    if (typeof title === 'object' && !title[lang]) {
-                        return null;
-                    }
-                    return (
-                        <div key={id} style={{ display: 'flex' }}>
-                            <dt style={{ flex: '1 0' }}>
-                                {(typeof title === 'object') ? title[lang] : title}
-                            </dt>
-                            <dd style={{ flex: '3 0', margin: 0 }}>
-                                {(typeof level === 'object') ? level[lang] : level}
-                            </dd>
-                        </div>
-                    );
-                });
             return (
                 <div className="skill-section extended-list">
                     <SectionTitle localizedTitle={data.title} lang={lang} />
-                    <dl>
-                        {skillList}
-                    </dl>
+                    <SimpleDefinitionList
+                        domains={data.skills}
+                        skills={skills}
+                        lang={lang}
+                    />
                 </div>
             );
         }
         case 'force-graph' : {
-            if (!data.domains || !data.height) {
-                console.warn("A subsection with type = 'force-graph' expects 2 keys : domains and skills");
-                return null;
-            }
-
             return (
                 <div className="skill-section force-graph">
                     <SectionTitle localizedTitle={data.title} lang={lang} />
