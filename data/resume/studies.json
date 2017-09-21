@@ -121,19 +121,16 @@
             "display": "hidden"
           },
           {
-            "fr": "Administration Windows Server et Linux",
-            "en": "Windows Server and Linux Administration",
-            "display": "hidden"
+            "fr": "Administration Windows et Linux",
+            "en": "Windows and Linux Administration"
           },
           {
-            "fr": "Routage IP sur Cisco",
-            "en": "IP routing on Cisco devices",
-            "display": "hidden"
+            "fr": "Routage IP",
+            "en": "IP routing"
           },
           {
             "fr": "Réseaux d'opérateurs",
-            "en": "operator networks",
-            "display": "hidden"
+            "en": "operator networks"
           }
         ],
         "notes": [

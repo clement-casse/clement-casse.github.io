@@ -26,29 +26,36 @@
         "missions": [
           {
             "brief": {
-              "fr": "Conception et architecture SOC basé sur des composants Open-Source.",
-              "en": "SOC design and architecture relying on Open-Source components."
+              "fr": "Conception SIEM et SOC basé sur l'intégration de composants Open-Source.",
+              "en": "SIEM and SOC design based on Open-Source components integration."
             },
-            "relatedSkills": ["docker", ""]
+            "relatedSkills": ["graylog", "elasticsearch", "logstash", "rsyslog", "thehive"]
           },
           {
             "brief": {
-              "fr": "Intégration et orchestration via Docker",
-              "en": "yop2"
+              "fr": "Création d'une architecture de traitement de logs par micro-services via Docker.",
+              "en": "Micro-services log processing architecture via Docker."
             },
-            "relatedSkills": ["docker"]
+            "relatedSkills": ["docker", "docker-swarm", "microservices", "bash"]
           },
           {
             "brief": {
-              "fr": "yop3",
-              "en": "yop3"
+              "fr": "Développement de modules d'alertes de sécurité en Python basé sur des requètes Elasticsearch.",
+              "en": "Elastalert modules developement."
             },
-            "relatedSkills": []
+            "relatedSkills": ["rest", "python", "elasticsearch"]
           },
           {
             "brief": {
-              "fr": "Rédaction de rapports d'analyse",
-              "en": "Analysis report writing"
+              "fr": "Développement de modules de collecte de données de Threat Intelligence en Go.",
+              "en": "Threat intelligence database collect module development in Go."
+            },
+            "relatedSkills": ["rest", "goland"]
+          },
+          {
+            "brief": {
+              "fr": "Rédaction de rapports d'analyse.",
+              "en": "Analysis report writing."
             },
             "relatedSkills": []
           }
@@ -77,22 +84,22 @@
         "missions": [
           {
             "brief": {
-              "fr": "Gestion et reporting d'incidents de sécurité",
-              "en": "Reporting on security incidents"
+              "fr": "Gestion et reporting d'incidents de sécurité.",
+              "en": "Reporting on security incidents."
             },
-            "relatedSkills": []
+            "relatedSkills": ["rsa-archer"]
           },
           {
             "brief": {
-              "fr": "Investigation et analyse de logs sur SIEM",
-              "en": "Investigation and log analysis on SIEM"
+              "fr": "Investigation et analyse de logs sur SIEM.",
+              "en": "Investigation and log analysis on SIEM."
             },
-            "relatedSkills": []
+            "relatedSkills": ["rsa-security-analitics"]
           },
           {
             "brief": {
-              "fr": "Qualifications et classification d'évènements de sécurité sur IDS-IPS",
-              "en": "Qualification and classification of security events with IDS-IPS"
+              "fr": "Qualification d'évènements de sécurité sur IDS-IPS.",
+              "en": "Qualification of security events with IDS-IPS."
             },
             "relatedSkills": []
           }
@@ -129,7 +136,7 @@
           {
             "brief":{
               "fr": "Suivi de prestations de sous-traitance, contribution au pilotage technique des activités sous-traitées.",
-              "en": "Subcontractor follow up, and contribution to the technical management of the outsourced activity."
+              "en": "Subcontractor follow-up, and contribution to the technical management of the outsourced activity."
             },
             "relatedSkills": []
           },
