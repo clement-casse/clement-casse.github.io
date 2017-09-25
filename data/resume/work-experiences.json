@@ -41,14 +41,14 @@
           {
             "brief": {
               "fr": "Développement de modules d'alertes de sécurité en Python basé sur des requètes Elasticsearch.",
-              "en": "Elastalert modules developement."
+              "en": "Alerting module development in Python based on Elasticsearch queries."
             },
             "relatedSkills": ["rest", "python", "elasticsearch"]
           },
           {
             "brief": {
               "fr": "Développement de modules de collecte de données de Threat Intelligence en Go.",
-              "en": "Threat intelligence database collect module development in Go."
+              "en": "Threat intelligence database collection module development in Go."
             },
             "relatedSkills": ["rest", "goland"]
           },
@@ -63,8 +63,8 @@
       },
       {
         "name": {
-          "fr": "Analyste de Niveau 2 - Investigations Cyber Sécurité en SOC pour le compte d'Airbus",
-          "en": "Level 2 Analyst - Cyber-security investigation in SOC on the behalf of Airbus"
+          "fr": "Analyste SOC de Niveau 2 - Investigations de cyber-sécurité pour le compte d'Airbus",
+          "en": "Level 2 SOC Analyst - Cyber-security investigation on the behalf of Airbus"
         },
         "dates": {
           "start": "2016-03-07",

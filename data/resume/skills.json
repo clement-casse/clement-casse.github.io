@@ -11,8 +11,12 @@
           "fr": "Environnements",
           "en": "Environments"
         },
+        "note": {
+          "fr": "Deux ans d'expérience en administration de serveurs Linux et un an d'exploitation de Docker en production.",
+          "en": "Two years of experience administrating Linux servers and one year running Docker in production."
+        },
         "type": "treemap-graph",
-        "height": 95,
+        "height": 100,
         "domains": [
           {
             "id": "root",
@@ -44,7 +48,7 @@
             "relatedSkills": [
               { "id": "docker", "weight": 5},
               { "id": "kvm", "weight": 1},
-              { "id": "aws", "weight": 1}
+              { "id": "xen", "weight": 1}
             ]
           }
         ],
@@ -56,6 +60,10 @@
           "fr": "DevOps",
           "en": "DevOps"
         },
+        "note": {
+          "fr": "",
+          "en": ""
+        },
         "type": "radial-tree-graph",
         "height": 210,
         "domains": [
@@ -66,37 +74,37 @@
               "en": " "
             },
             "relatedDomains": [
-              "web", "network", "databases", "broker", "tools"
+              "web", "broker", "log-processing", "monitoring", "tools"
             ]
           },
           {
             "id": "web",
             "title": {
-              "fr": "Serveurs Web",
-              "en": "Web Servers"
+              "fr": "Web",
+              "en": "Web"
             },
             "relatedSkills": [
-              "apache", "nginx", "traefik"
+              "nginx", "traefik"
             ]
           },
           {
-            "id": "network",
+            "id": "log-processing",
             "title": {
-              "fr": "Réseaux",
-              "en": "Network"
+              "fr": "Traitement de logs",
+              "en": "Log Processing"
             },
             "relatedSkills": [
-              "dns"
+             "logstash", "elasticsearch", "graylog"
             ]
           },
           {
-            "id": "databases",
+            "id": "monitoring",
             "title": {
-              "fr": "Bases de données",
-              "en": "Databases"
+              "fr": "Monitoring",
+              "en": "Monitoring"
             },
             "relatedSkills": [
-              "elasticsearch", "mysql"
+              "prometheus", "grafana"
             ]
           },
           {
@@ -116,7 +124,7 @@
               "en": "Tools"
             },
             "relatedSkills": [
-              "git", "rest"
+              "git", "rest", "vagrant"
             ]
           }
         ],
@@ -128,8 +136,12 @@
           "fr": "Développement : Langages & Frameworks",
           "en": "Development: Languages & Frameworks"
         },
+        "note": {
+          "fr": "Expérience en développments basés autour des APIs REST, interèt pour la programmation fonctionnelle.",
+          "en": "Experience developping focused on REST APIs, interested in functional programing."
+        },
         "type": "radial-partition-graph",
-        "height": 200,
+        "height": 205,
         "domains": [
           {
             "id": "root",
@@ -144,18 +156,18 @@
           {
             "id": "practice",
             "title": {
-              "fr": "Pratiqués",
+              "fr": "Pratiqu",
               "en": "Practice"
             },
             "relatedSkills": [
-              "python", "javascript", "golang"
+              "golang", "javascript", "python"
             ]
           },
           {
             "id": "knowledge",
             "title": {
               "fr": "Connaissance",
-              "en": ""
+              "en": "Knowledge"
             },
             "relatedSkills": [
               "java", "c"
@@ -164,8 +176,8 @@
           {
             "id": "interested",
             "title": {
-              "fr": "Intéressé par",
-              "en": "Curious about"
+              "fr": "Intérèt",
+              "en": "Interested"
             },
             "relatedSkills": [
               "elixir", "scala"
@@ -261,10 +273,10 @@
         }
       },
       {
-        "id": "aws",
+        "id": "xen",
         "title": {
-          "fr": "AWS",
-          "en": "AWS"
+          "fr": "Xen",
+          "en": "Xen"
         }
       },
       {
@@ -279,6 +291,27 @@
         "title": {
           "fr": "Vagrant",
           "en": "Vagrant"
+        }
+      },
+      {
+        "id": "ansible",
+        "title": {
+          "fr": "Ansible",
+          "en": "Ansible"
+        }
+      },
+      {
+        "id": "prometheus",
+        "title": {
+          "fr": "Prometheus",
+          "en": "Prometheus"
+        }
+      },
+      {
+        "id": "grafana",
+        "title": {
+          "fr": "Grafana",
+          "en": "Grafana"
         }
       },
       {
@@ -457,6 +490,13 @@
         "title": {
           "fr": "D3",
           "en": "D3"
+        }
+      },
+      {
+        "id": "nodejs",
+        "title": {
+          "fr": "Node.js",
+          "en": "Node.js"
         }
       },
       {
