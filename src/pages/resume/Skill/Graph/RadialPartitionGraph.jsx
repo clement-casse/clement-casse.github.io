@@ -13,7 +13,7 @@ export default class RadialPartitionGraph extends React.Component {
         this.DOMNode = {}; // Assignment triggered by th `ref` attribute in the `render()` method
 
         this.partition = d3.partition()
-            .size([2 * Math.PI, Math.min(props.width, props.height) / 2]);
+            .size([2 * Math.PI, (Math.min(props.width, props.height) / 2) - 6]);
 
         this.colourScale = d3.scaleLinear()
             .domain([0, 3])

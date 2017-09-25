@@ -5,7 +5,6 @@
 
 .radial-partition-graph polyline {
     fill: none;
-    stroke: rgb(33, 34, 34);
-    stroke-opacity: 0.4;
+    stroke: rgb(71, 80, 80);
     stroke-width: 1.5px;
 }

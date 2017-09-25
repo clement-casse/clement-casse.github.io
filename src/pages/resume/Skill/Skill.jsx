@@ -86,6 +86,30 @@ SectionTitle.defaultProps = {
     localizedTitle: null,
 };
 
+const SectionNote = ({ lang, note }) => {
+    if (!note) {
+        return null;
+    }
+
+    return (
+        <div className="note">
+            <div style={{ flexGrow: 1, paddingRight: '5px' }}>
+                <i className="fa fa-info-circle fa-fw" />
+            </div>
+            <div style={{ flexGrow: 9 }}>
+                {note[lang]}
+            </div>
+        </div>
+    );
+};
+SectionNote.propTypes = {
+    lang: PropTypes.string.isRequired,
+    note: PropTypes.objectOf(PropTypes.string),
+};
+SectionNote.defaultProps = {
+    note: null,
+};
+
 /**
  * 
  */
@@ -120,6 +144,7 @@ const SkillSection = ({ lang, data, skills }) => {
                         skills={skills}
                         lang={lang}
                     />
+                    <SectionNote note={data.note} lang={lang} />
                 </div>
             );
         }
@@ -134,6 +159,7 @@ const SkillSection = ({ lang, data, skills }) => {
                         skills={skills}
                         lang={lang}
                     />
+                    <SectionNote note={data.note} lang={lang} />
                 </div>
             );
         }
@@ -148,6 +174,7 @@ const SkillSection = ({ lang, data, skills }) => {
                         skills={skills}
                         lang={lang}
                     />
+                    <SectionNote note={data.note} lang={lang} />
                 </div>
             );
         }
@@ -162,6 +189,7 @@ const SkillSection = ({ lang, data, skills }) => {
                         skills={skills}
                         lang={lang}
                     />
+                    <SectionNote note={data.note} lang={lang} />
                 </div>
             );
         }
