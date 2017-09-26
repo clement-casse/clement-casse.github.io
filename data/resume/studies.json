@@ -1,8 +1,8 @@
 {
   "studies": {
     "sectionTitle": {
-      "fr":	"Formation",
-      "en":	"Studies"
+      "fr":	"Formations",
+      "en":	"Education & Training"
     },
     "list": [
       {
@@ -100,7 +100,7 @@
       {
         "name": {
           "fr":	"DUT Réseaux et Télécommunications",
-          "en":	"DUT R&T : ~ Two-years degree in IT"
+          "en":	"DUT R&T: ~ Two-year degree in IT"
         },
         "dates": {
           "start":	"2010-09-01",

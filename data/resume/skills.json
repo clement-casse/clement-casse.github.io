@@ -55,14 +55,14 @@
         "skills": []
       },
       {
-        "id": "architecture",
+        "id": "devops",
         "title": {
           "fr": "DevOps",
           "en": "DevOps"
         },
         "note": {
-          "fr": "",
-          "en": ""
+          "fr": "Expérience dans la containerisation d'applications Big Data, fort intérêt pour l'élaboration de solutions Cloud.",
+          "en": "Experience containerizing Big Data Applications, strong interest in designing Cloud-based solutions."
         },
         "type": "radial-tree-graph",
         "height": 210,
@@ -74,7 +74,7 @@
               "en": " "
             },
             "relatedDomains": [
-              "web", "broker", "log-processing", "monitoring", "tools"
+              "tools", "broker", "log-processing", "monitoring", "web"
             ]
           },
           {
@@ -84,7 +84,7 @@
               "en": "Web"
             },
             "relatedSkills": [
-              "nginx", "traefik"
+              "nginx", "rest", "traefik"
             ]
           },
           {
@@ -94,7 +94,7 @@
               "en": "Log Processing"
             },
             "relatedSkills": [
-             "logstash", "elasticsearch", "graylog"
+             "logstash", "graylog", "elasticsearch"
             ]
           },
           {
@@ -124,7 +124,7 @@
               "en": "Tools"
             },
             "relatedSkills": [
-              "git", "rest", "vagrant"
+              "git", "vagrant"
             ]
           }
         ],
@@ -137,8 +137,8 @@
           "en": "Development: Languages & Frameworks"
         },
         "note": {
-          "fr": "Expérience en développments basés autour des APIs REST, interèt pour la programmation fonctionnelle.",
-          "en": "Experience developping focused on REST APIs, interested in functional programing."
+          "fr": "Expérience en développement basé autour des APIs REST, interêt pour la programmation fonctionnelle.",
+          "en": "Experience developping focused on REST APIs, interested in functional programming."
         },
         "type": "radial-partition-graph",
         "height": 205,
@@ -156,7 +156,7 @@
           {
             "id": "practice",
             "title": {
-              "fr": "Pratiqu",
+              "fr": "Pratiqué",
               "en": "Practice"
             },
             "relatedSkills": [
@@ -176,8 +176,8 @@
           {
             "id": "interested",
             "title": {
-              "fr": "Intérèt",
-              "en": "Interested"
+              "fr": "Intérêt",
+              "en": "Interes"
             },
             "relatedSkills": [
               "elixir", "scala"
@@ -468,7 +468,7 @@
           "en": "Javascript"
         },
         "relatedSkills": [
-          "react", "es6", "d3"
+          "react", "d3"
         ]
       },
       {
@@ -537,7 +537,7 @@
         },
         "level": {
           "fr": "TOEIC 2014 : 880/990",
-          "en": "TOEIC 2014: 880/990"
+          "en": "Advanced speaker, TOEIC 2014: 880/990"
         }
       }
     ]

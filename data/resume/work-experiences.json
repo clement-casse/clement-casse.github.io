@@ -2,7 +2,7 @@
   "workexp": {
     "sectionTitle": {
       "fr": "Expériences Professionnelles",
-      "en": "Working Experiences"
+      "en": "Work Experience"
     },
     "list": [
       {
@@ -26,8 +26,8 @@
         "missions": [
           {
             "brief": {
-              "fr": "Conception SIEM et SOC basé sur l'intégration de composants Open-Source.",
-              "en": "SIEM and SOC design based on Open-Source components integration."
+              "fr": "Conception SIEM et SOC basée sur l'intégration de composants Open-Source.",
+              "en": "SIEM and SOC design based on Open-Source component integration."
             },
             "relatedSkills": ["graylog", "elasticsearch", "logstash", "rsyslog", "thehive"]
           },
@@ -40,14 +40,14 @@
           },
           {
             "brief": {
-              "fr": "Développement de modules d'alertes de sécurité en Python basé sur des requètes Elasticsearch.",
+              "fr": "Développement de modules d'alertes de sécurité en Python basés sur des requètes Elasticsearch.",
               "en": "Alerting module development in Python based on Elasticsearch queries."
             },
             "relatedSkills": ["rest", "python", "elasticsearch"]
           },
           {
             "brief": {
-              "fr": "Développement de modules de collecte de données de Threat Intelligence en Go.",
+              "fr": "Développement de modules de collecte de donnée de Threat Intelligence en Go.",
               "en": "Threat intelligence database collection module development in Go."
             },
             "relatedSkills": ["rest", "goland"]
@@ -63,8 +63,8 @@
       },
       {
         "name": {
-          "fr": "Analyste SOC de Niveau 2 - Investigations de cyber-sécurité pour le compte d'Airbus",
-          "en": "Level 2 SOC Analyst - Cyber-security investigation on the behalf of Airbus"
+          "fr": "Analyste SOC de Niveau 2 - Investigations de cybersécurité pour le compte d'Airbus",
+          "en": "Level 2 SOC Analyst - Cybersecurity investigation on behalf of Airbus"
         },
         "dates": {
           "start": "2016-03-07",
@@ -85,21 +85,21 @@
           {
             "brief": {
               "fr": "Gestion et reporting d'incidents de sécurité.",
-              "en": "Reporting on security incidents."
+              "en": "Security incident reporting."
             },
             "relatedSkills": ["rsa-archer"]
           },
           {
             "brief": {
               "fr": "Investigation et analyse de logs sur SIEM.",
-              "en": "Investigation and log analysis on SIEM."
+              "en": "SIEM log analysis and investigation."
             },
             "relatedSkills": ["rsa-security-analitics"]
           },
           {
             "brief": {
               "fr": "Qualification d'évènements de sécurité sur IDS-IPS.",
-              "en": "Qualification of security events with IDS-IPS."
+              "en": "IDS-IPS qualification of security events."
             },
             "relatedSkills": []
           }
@@ -108,7 +108,7 @@
       {
         "name": {
           "fr": "Apprenti Ingénieur validation systèmes avioniques",
-          "en": "Apprentice Engineer on Verification & Validation means for avionic software"
+          "en": "Apprentice Engineer on V&V for avionic software"
         },
         "dates": {
           "start": "2012-09-01",
@@ -129,7 +129,14 @@
           {
             "brief":{
               "fr": "Rationalisation d'un parc de moyens de V&V logiciel avionique DO178B DAL A, B, C, E.",
-              "en": "Rationalization of the park of means for the V&V in the avionic software DO178B DAL A, B, C, E."
+              "en": "Park of means rationalization for the V&V of avionic software DO178B DAL A, B, C, E."
+            },
+            "relatedSkills": []
+          },
+          {
+            "brief": {
+              "fr": "Etude de mise en place d'Intégration Continue dans les cycles de développement de logiciel avionique.",
+              "en": "Continuous Integration in avionic software development lifecycle set-up study."
             },
             "relatedSkills": []
           },
@@ -138,6 +145,7 @@
               "fr": "Suivi de prestations de sous-traitance, contribution au pilotage technique des activités sous-traitées.",
               "en": "Subcontractor follow-up, and contribution to the technical management of the outsourced activity."
             },
+            "display": "hidden",
             "relatedSkills": []
           },
           {
