@@ -8,7 +8,7 @@
 .radial-tree-graph .node--internal > circle {
     stroke: rgb(0, 59, 53);
     stroke-width: 1.5px;
-    fill: rgb(229, 240, 237);
+    fill: rgb(240, 240, 240);
 }
 
 .radial-tree-graph .node--internal > text {

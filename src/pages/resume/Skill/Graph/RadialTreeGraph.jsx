@@ -71,7 +71,7 @@ export default class RadialTreeGraph extends React.Component {
             .attr('transform', d => `translate(${radialPoint(d.x, d.y)})`);
 
         newNodes.append('circle')
-            .attr('r', 4);
+            .attr('r', 3);
 
         newNodes.append('text')
             .attr('dy', (d) => {
