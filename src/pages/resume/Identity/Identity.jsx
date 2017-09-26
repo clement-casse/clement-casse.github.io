@@ -98,12 +98,12 @@ Phone.propTypes = {
  */
 const Age = ({ birthDate, lang }) => {
     const ageAppend = {
-        fr: 'ans',
-        en: 'years old',
+        fr: ' ans',
+        en: '-years-old',
     };
     const ageDate = new Date(Date.now() - (new Date(birthDate)).getTime()).getUTCFullYear() - 1970;
     return (
-        <p>{ageDate} {ageAppend[lang]}</p>
+        <p>{ageDate}{ageAppend[lang]}</p>
     );
 };
 Age.propTypes = {
