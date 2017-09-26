@@ -58,7 +58,7 @@
     }
 
     #thinColumn {
-        background-color: rgba(0, 104, 75, 0.1) !important;
+        background-color: rgba(240, 240, 240) !important;
         -webkit-print-color-adjust: exact;
     }
 
@@ -68,8 +68,4 @@
         bottom: 0;
     }
 
-    .stackCell, .stackCell * {
-        background-color: rgb(0, 99, 90) !important;
-        color: #ffffff !important;
-    }
 }
