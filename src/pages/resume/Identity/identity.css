@@ -1,0 +1,20 @@
+address {
+    flex-grow: 1;
+    font-family: "Source Sans Pro", sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-style: normal;
+}
+
+address .name {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(0, 59, 53);
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+address .address {
+    margin-top: 0;
+}

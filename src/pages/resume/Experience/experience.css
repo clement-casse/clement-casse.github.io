@@ -1,0 +1,74 @@
+.experiences {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.experiences > h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(0, 59, 53);
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.experience > .informations {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: right;
+    border-right: solid 5px rgb(0, 99, 90);
+    padding-right: 10px;
+}
+
+.experience > .details {
+    flex-grow: 3;
+    flex-basis: 0;
+    padding-left: 10px;
+}
+
+.experience > .details > strong {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    color: rgb(0, 59, 53);
+}
+
+.experience > .details > .missions {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience > .details > .notes {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.topics + .notes {
+    /* set a 4 px separation between .topics and .notes  */
+    margin-top: -10px;
+}
+
+.experience > .details > .notes > * {
+    flex-basis: 0;
+}
+
+.experience > .details > .notes ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+.experience > .details > .notes ul > li:before {
+     content: "— ";
+}

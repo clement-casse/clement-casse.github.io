@@ -1,0 +1,10 @@
+.radial-partition-graph .arc {
+    stroke-width: 2px;
+    stroke: rgb(240, 240, 240);
+}
+
+.radial-partition-graph polyline {
+    fill: none;
+    stroke: rgb(71, 80, 80);
+    stroke-width: 1.5px;
+}

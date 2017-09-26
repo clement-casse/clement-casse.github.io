@@ -1,0 +1,545 @@
+{
+  "skills": {
+    "sectionTitle": {
+      "fr": "Compétences",
+      "en": "Skills"
+    },
+    "subSections": [
+      {
+        "id": "environments",
+        "title": {
+          "fr": "Environnements",
+          "en": "Environments"
+        },
+        "note": {
+          "fr": "Deux ans d'expérience en administration de serveurs Linux et un an d'exploitation de Docker en production.",
+          "en": "Two years of experience administrating Linux servers and one year running Docker in production."
+        },
+        "type": "treemap-graph",
+        "height": 100,
+        "domains": [
+          {
+            "id": "root",
+            "title": {
+              "fr": "",
+              "en": ""
+            },
+            "relatedDomains": [
+              "os", "virt"
+            ]
+          },
+          {
+            "id": "os",
+            "title": {
+              "fr": "Systèmes d'exploitation",
+              "en": "Operating Systems"
+            },
+            "relatedSkills": [
+              { "id": "linux", "weight": 4},
+              { "id": "windows", "weight": 3}
+            ]
+          },
+          {
+            "id": "virt",
+            "title": {
+              "fr": "Virtualisation / Cloud",
+              "en": "Virtualization / Cloud"
+            },
+            "relatedSkills": [
+              { "id": "docker", "weight": 5},
+              { "id": "kvm", "weight": 1},
+              { "id": "xen", "weight": 1}
+            ]
+          }
+        ],
+        "skills": []
+      },
+      {
+        "id": "devops",
+        "title": {
+          "fr": "DevOps",
+          "en": "DevOps"
+        },
+        "note": {
+          "fr": "Expérience dans la containerisation d'applications Big Data, fort intérêt pour l'élaboration de solutions Cloud.",
+          "en": "Experience containerizing Big Data Applications, strong interest in designing Cloud-based solutions."
+        },
+        "type": "radial-tree-graph",
+        "height": 210,
+        "domains": [
+          {
+            "id": "root",
+            "title": {
+              "fr": " ",
+              "en": " "
+            },
+            "relatedDomains": [
+              "tools", "broker", "log-processing", "monitoring", "web"
+            ]
+          },
+          {
+            "id": "web",
+            "title": {
+              "fr": "Web",
+              "en": "Web"
+            },
+            "relatedSkills": [
+              "nginx", "rest", "traefik"
+            ]
+          },
+          {
+            "id": "log-processing",
+            "title": {
+              "fr": "Traitement de logs",
+              "en": "Log Processing"
+            },
+            "relatedSkills": [
+             "logstash", "graylog", "elasticsearch"
+            ]
+          },
+          {
+            "id": "monitoring",
+            "title": {
+              "fr": "Monitoring",
+              "en": "Monitoring"
+            },
+            "relatedSkills": [
+              "prometheus", "grafana"
+            ]
+          },
+          {
+            "id": "broker",
+            "title": {
+              "fr": "Files de messages",
+              "en": "Messages brokers"
+            },
+            "relatedSkills": [
+              "kafka", "redis"
+            ]
+          },
+          {
+            "id": "tools",
+            "title": {
+              "fr": "Outils",
+              "en": "Tools"
+            },
+            "relatedSkills": [
+              "git", "vagrant"
+            ]
+          }
+        ],
+        "skills": []
+      },
+      {
+        "id": "development",
+        "title": {
+          "fr": "Développement : Langages & Frameworks",
+          "en": "Development: Languages & Frameworks"
+        },
+        "note": {
+          "fr": "Expérience en développement basé autour des APIs REST, interêt pour la programmation fonctionnelle.",
+          "en": "Experience developping focused on REST APIs, interested in functional programming."
+        },
+        "type": "radial-partition-graph",
+        "height": 205,
+        "domains": [
+          {
+            "id": "root",
+            "title": {
+              "fr": "",
+              "en": ""
+            },
+            "relatedDomains": [
+              "interested", "knowledge", "practice"
+            ]
+          },
+          {
+            "id": "practice",
+            "title": {
+              "fr": "Pratiqué",
+              "en": "Practice"
+            },
+            "relatedSkills": [
+              "golang", "javascript", "python"
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": {
+              "fr": "Connaissance",
+              "en": "Knowledge"
+            },
+            "relatedSkills": [
+              "java", "c"
+            ]
+          },
+          {
+            "id": "interested",
+            "title": {
+              "fr": "Intérêt",
+              "en": "Interes"
+            },
+            "relatedSkills": [
+              "elixir", "scala"
+            ]
+          }
+        ],
+        "skills": []
+      },
+      {
+        "id": "tongues",
+        "title": {
+          "fr": "Langues",
+          "en": "Tongues"
+        },
+        "type": "extended-list",
+        "skills": [ "fr", "en" ]
+      }
+    ],
+    "list": [
+      {
+        "id": "linux",
+        "title": {
+          "fr": "Linux",
+          "en": "Linux"
+        },
+        "relatedSkills": [
+          "bash",
+          "debian",
+          "centos"
+        ]
+      },
+      {
+        "id": "debian",
+        "title": {
+          "fr": "Debian",
+          "en": "Debian"
+        }
+      },
+      {
+        "id": "centos",
+        "title": {
+          "fr": "CentOS",
+          "en": "CentOS"
+        }
+      },
+      {
+        "id": "windows",
+        "title": {
+          "fr": "Windows",
+          "en": "Windows"
+        },
+        "relatedSkills": [
+          "active-directory"
+        ]
+      },
+      {
+        "id": "active-directory",
+        "title": {
+          "fr": "AD",
+          "en": "AD"
+        }
+      },
+      {
+        "id": "docker",
+        "title": {
+          "fr": "Docker",
+          "en": "Docker"
+        },
+        "relatedSkills": [
+          "microservices",
+          "docker-swarm"
+        ]
+      },
+      {
+        "id": "microservices",
+        "title": {
+          "fr": "Microservices",
+          "en": "Microservices"
+        }
+      },
+      {
+        "id": "docker-swarm",
+        "title": {
+          "fr": "Swarm",
+          "en": "Swarm"
+        }
+      },
+      {
+        "id": "kvm",
+        "title": {
+          "fr": "KVM",
+          "en": "KVM"
+        }
+      },
+      {
+        "id": "xen",
+        "title": {
+          "fr": "Xen",
+          "en": "Xen"
+        }
+      },
+      {
+        "id": "bash",
+        "title": {
+          "fr": "Bash",
+          "en": "Bash"
+        }
+      },
+      {
+        "id": "vagrant",
+        "title": {
+          "fr": "Vagrant",
+          "en": "Vagrant"
+        }
+      },
+      {
+        "id": "ansible",
+        "title": {
+          "fr": "Ansible",
+          "en": "Ansible"
+        }
+      },
+      {
+        "id": "prometheus",
+        "title": {
+          "fr": "Prometheus",
+          "en": "Prometheus"
+        }
+      },
+      {
+        "id": "grafana",
+        "title": {
+          "fr": "Grafana",
+          "en": "Grafana"
+        }
+      },
+      {
+        "id": "apache",
+        "title": {
+          "fr": "Apache",
+          "en": "Apache"
+        }
+      },
+      {
+        "id": "nginx",
+        "title": {
+          "fr": "NginX",
+          "en": "NginX"
+        }
+      },
+      {
+        "id": "traefik",
+        "title": {
+          "fr": "Traefik",
+          "en": "Traefik"
+        }
+      },
+      {
+        "id": "dns",
+        "title": {
+          "fr": "DNS",
+          "en": "DNS"
+        }
+      },
+      {
+        "id": "elasticsearch",
+        "title": {
+          "fr": "Elasticsearch",
+          "en": "Elasticsearch"
+        }
+      },
+      {
+        "id": "mysql",
+        "title": {
+          "fr": "MySQL",
+          "en": "MySQL"
+        }
+      },
+      {
+        "id": "redis",
+        "title": {
+          "fr": "Redis",
+          "en": "Redis"
+        }
+      },
+      {
+        "id": "kafka",
+        "title": {
+          "fr": "Kafka",
+          "en": "Kafka"
+        }
+      },
+      {
+        "id": "graylog",
+        "title": {
+          "fr": "Graylog",
+          "en": "Graylog"
+        }
+      },
+      {
+        "id": "logstash",
+        "title": {
+          "fr": "Logstash",
+          "en": "Logstash"
+        }
+      },
+      {
+        "id": "firewall",
+        "title": {
+          "fr": "Pare-Feux",
+          "en": "Firewall"
+        }
+      },
+      {
+        "id": "web-proxy",
+        "title": {
+          "fr": "Proxy Web",
+          "en": "Web Proxies"
+        }
+      },
+      {
+        "id": "ids",
+        "title": {
+          "fr": "IDS",
+          "en": "IDS"
+        }
+      },
+      {
+        "id": "rsa-security-analitics",
+        "title": {
+          "fr": "RSA Security Analitics",
+          "en": "RSA Security Analitics"
+        }
+      },
+      {
+        "id": "rsa-archer",
+        "title": {
+          "fr": "RSA Archer",
+          "en": "RSA Archer"
+        }
+      },
+      {
+        "id": "thehive",
+        "title": {
+          "fr": "TheHive",
+          "en": "TheHive"
+        }
+      },
+      {
+        "id": "git",
+        "title": {
+          "fr": "Git",
+          "en": "Git"
+        }
+      },
+      {
+        "id": "rest",
+        "title": {
+          "fr": "API REST",
+          "en": "REST API"
+        }
+      },
+      {
+        "id": "c",
+        "title": {
+          "en": "C",
+          "fr": "C"
+        }
+      },
+      {
+        "id": "java",
+        "title": {
+          "en": "Java",
+          "fr": "Java"
+        }
+      },
+      {
+        "id": "python",
+        "title": {
+          "en": "Python",
+          "fr": "Python"
+        }
+      },
+      {
+        "id": "javascript",
+        "title": {
+          "fr": "Javascript",
+          "en": "Javascript"
+        },
+        "relatedSkills": [
+          "react", "d3"
+        ]
+      },
+      {
+        "id": "golang",
+        "title": {
+          "fr": "Go",
+          "en": "Go"
+        }
+      },
+      {
+        "id": "react",
+        "title": {
+          "fr": "ReactJS",
+          "en": "ReactJS"
+        }
+      },
+      {
+        "id": "d3",
+        "title": {
+          "fr": "D3",
+          "en": "D3"
+        }
+      },
+      {
+        "id": "nodejs",
+        "title": {
+          "fr": "Node.js",
+          "en": "Node.js"
+        }
+      },
+      {
+        "id": "es6",
+        "title": {
+          "en": "ES6",
+          "fr": "ES6"
+        }
+      },
+      {
+        "id": "elixir",
+        "title": {
+          "fr": "Elixir",
+          "en": "Elixir"
+        }
+      },
+      {
+        "id": "scala",
+        "title": {
+          "fr": "Scala",
+          "en": "Scala"
+        }
+      },
+      {
+        "id": "fr",
+        "title": {
+          "en": "French"
+        },
+        "level": {
+          "en": "Mother tongue"
+        }
+      },
+      {
+        "id": "en",
+        "title": {
+          "fr": "Anglais",
+          "en": "English"
+        },
+        "level": {
+          "fr": "TOEIC 2014 : 880/990",
+          "en": "Advanced speaker, TOEIC 2014: 880/990"
+        }
+      }
+    ]
+  }
+}

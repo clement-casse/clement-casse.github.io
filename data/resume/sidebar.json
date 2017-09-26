@@ -1,0 +1,85 @@
+{
+  "sidebar": {
+    "head": {
+      "fr": "- CV -",
+      "en": "- CV -"
+    },
+    "sections": [
+      {
+        "id": "config",
+        "title": {
+          "fr": "Configuration :",
+          "en": "Configuration:"
+        },
+        "text": {
+          "fr": "Il est possible de changer le contenu du CV, pour ce faire, sélectionnez une langue, et un domaine grâce aux boutons ci dessous.",
+          "en": "To change the content of the CV, please select a language and a dominance with the buttons below."
+        },
+        "menu": {
+          "type": "button-group",
+          "entries": [
+            {
+              "id": "fr",
+              "handler": "changeLangFR",
+              "imageUrl": "http://www.crwflags.com/fotw/images/f/fr.gif",
+              "text": "Français"
+            },
+            {
+              "id": "en",
+              "handler": "changeLangEN",
+              "imageUrl": "http://www.crwflags.com/fotw/images/g/gb_2x3.gif",
+              "text": "English"
+            }
+          ]
+        }
+      },
+      {
+        "id": "print",
+        "title": {
+          "fr": "Imprimer :",
+          "en": "Print:"
+        },
+        "menu": {
+          "type": "button-group",
+          "entries": [
+            {
+              "id": "print",
+              "icon": "fa-print",
+              "handler": "print"
+            }
+          ]
+        }
+      },
+      {
+        "id": "links",
+        "title": {
+          "fr": "Liens :",
+          "en": "Links:"
+        },
+        "menu": {
+          "type": "link-list",
+          "entries": [
+            {
+              "id": "github-code",
+              "icon": "fa-github-square",
+              "url": "https://github.com/clement-casse/clement-casse.github.io",
+              "text": {
+                "fr": "Consulter le code de la page",
+                "en": "View the code on GitHub"
+              }
+            },
+            {
+              "id": "linkedin-profile",
+              "icon": "fa-linkedin-square",
+              "url": "https://fr.linkedin.com/in/clementcasse",
+              "text": {
+                "fr": "Profil LinkedIn",
+                "en": "LinkedIn Profile"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

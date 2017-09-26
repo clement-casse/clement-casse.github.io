@@ -1,0 +1,208 @@
+{
+  "workexp": {
+    "sectionTitle": {
+      "fr": "Expériences Professionnelles",
+      "en": "Work Experience"
+    },
+    "list": [
+      {
+        "name": {
+          "fr": "Ingénieur DevOps Cybersécurité",
+          "en": "Cybersecurity DevOps Engineer "
+        },
+        "dates": {
+          "start": "2016-08-01"
+        },
+        "location": {
+          "name": "ITrust",
+          "address": "55 L'Occitane",
+          "zip": "31670",
+          "city": "Labège",
+          "area": {
+            "fr": "31",
+            "en": "France"
+          }
+        },
+        "missions": [
+          {
+            "brief": {
+              "fr": "Conception SIEM et SOC basée sur l'intégration de composants Open-Source.",
+              "en": "SIEM and SOC design based on Open-Source component integration."
+            },
+            "relatedSkills": ["graylog", "elasticsearch", "logstash", "rsyslog", "thehive"]
+          },
+          {
+            "brief": {
+              "fr": "Création d'une architecture de traitement de logs par micro-services via Docker.",
+              "en": "Micro-services log processing architecture via Docker."
+            },
+            "relatedSkills": ["docker", "docker-swarm", "microservices", "bash"]
+          },
+          {
+            "brief": {
+              "fr": "Développement de modules d'alertes de sécurité en Python basés sur des requètes Elasticsearch.",
+              "en": "Alerting module development in Python based on Elasticsearch queries."
+            },
+            "relatedSkills": ["rest", "python", "elasticsearch"]
+          },
+          {
+            "brief": {
+              "fr": "Développement de modules de collecte de donnée de Threat Intelligence en Go.",
+              "en": "Threat intelligence database collection module development in Go."
+            },
+            "relatedSkills": ["rest", "goland"]
+          },
+          {
+            "brief": {
+              "fr": "Rédaction de rapports d'analyse.",
+              "en": "Analysis report writing."
+            },
+            "relatedSkills": []
+          }
+        ]
+      },
+      {
+        "name": {
+          "fr": "Analyste SOC de Niveau 2 - Investigations de cybersécurité pour le compte d'Airbus",
+          "en": "Level 2 SOC Analyst - Cybersecurity investigation on behalf of Airbus"
+        },
+        "dates": {
+          "start": "2016-03-07",
+          "end": "2016-07-07"
+        },
+        "location": {
+          "name": "Sopra Steria",
+          "address": "8 avenue Yves Brunaud",
+          "zip": "31770",
+          "city": "Colomiers",
+          "logoUrl": "//www.prestationintellectuelle.com/wp-content/uploads/2015/04/logo-sopra-steria-groupe.jpg",
+          "area": {
+            "fr": "31",
+            "en": "France"
+          }
+        },
+        "missions": [
+          {
+            "brief": {
+              "fr": "Gestion et reporting d'incidents de sécurité.",
+              "en": "Security incident reporting."
+            },
+            "relatedSkills": ["rsa-archer"]
+          },
+          {
+            "brief": {
+              "fr": "Investigation et analyse de logs sur SIEM.",
+              "en": "SIEM log analysis and investigation."
+            },
+            "relatedSkills": ["rsa-security-analitics"]
+          },
+          {
+            "brief": {
+              "fr": "Qualification d'évènements de sécurité sur IDS-IPS.",
+              "en": "IDS-IPS qualification of security events."
+            },
+            "relatedSkills": []
+          }
+        ]
+      },
+      {
+        "name": {
+          "fr": "Apprenti Ingénieur validation systèmes avioniques",
+          "en": "Apprentice Engineer on V&V for avionic software"
+        },
+        "dates": {
+          "start": "2012-09-01",
+          "end": "2015-08-31"
+        },
+        "location": {
+          "name": "Airbus Group",
+          "address": "316 Route de Bayonne",
+          "zip": "31000",
+          "city": "Toulouse",
+          "logoUrl": "//seeklogo.com/images/A/airbus-logo-327DC4730C-seeklogo.com.png",
+          "area": {
+            "fr": "31",
+            "en": "France"
+          }
+        },
+        "missions": [
+          {
+            "brief":{
+              "fr": "Rationalisation d'un parc de moyens de V&V logiciel avionique DO178B DAL A, B, C, E.",
+              "en": "Park of means rationalization for the V&V of avionic software DO178B DAL A, B, C, E."
+            },
+            "relatedSkills": []
+          },
+          {
+            "brief": {
+              "fr": "Etude de mise en place d'Intégration Continue dans les cycles de développement de logiciel avionique.",
+              "en": "Continuous Integration in avionic software development lifecycle set-up study."
+            },
+            "relatedSkills": []
+          },
+          {
+            "brief":{
+              "fr": "Suivi de prestations de sous-traitance, contribution au pilotage technique des activités sous-traitées.",
+              "en": "Subcontractor follow-up, and contribution to the technical management of the outsourced activity."
+            },
+            "display": "hidden",
+            "relatedSkills": []
+          },
+          {
+            "brief": {
+              "fr": "Creation d'un sous-réseau sécurisé lié à l'exploitation de moyens obsolètes.",
+              "en": "Sub-network creation to keep using obsolete means."
+            },
+            "display": "hidden",
+            "relatedSkills": []
+          },
+          {
+            "brief": {
+              "fr": "Analyse de risques industriels, traitement des obsolesences des outils de  V&V.",
+              "en": "Industrial Risks Analysis, obsolescence management of V&V tools."
+            },
+            "relatedSkills":[]
+          }
+        ]
+      },
+      {
+        "name": {
+          "fr": "Stagiaire administrateur réseaux",
+          "en": "Trainee Network Administrator"
+        },
+        "display": "hidden",
+        "dates": {
+          "start": "2012-04-09",
+          "end": "2012-06-15"
+        },
+        "location": {
+          "name": "MediaMeeting",
+          "address": "99 Route d'Espagne",
+          "zip": "31100",
+          "city": "Toulouse",
+          "logoUrl": "//www.a2prl.fr/wp-content/uploads/2015/01/logo-mediameeting.png",
+          "area": {
+            "fr": "31",
+            "en": "France"
+          }
+        },
+        "missions": [
+          {
+            "brief": {
+              "fr": "Etude et déploiement de VPN SSL et d'un système FailOver sur Cisco ASA",
+              "en": "VPN SSL and FailOver study and setup on Cisco ASA"
+            },
+            "relatedSkills": []
+          },
+          {
+            "brief": {
+              "fr": "Optimisation des règles firewall sur Cisco ASA",
+              "en": "Update and simplification of Cisco ASA Firewall Rules"
+            },
+            "relatedSkills": []
+          }
+        ]
+      }
+    ]
+  }
+}
