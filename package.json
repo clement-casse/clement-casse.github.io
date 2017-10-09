@@ -32,7 +32,7 @@
   },
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --inline --hot",
-    "test": "echo 'Lol, maybe later'"
+    "build": "bash -c 'NODE_ENV=production ./node_modules/.bin/webpack --config webpack.config.js --production --progress'"
   },
   "repository": {
     "type": "git",

@@ -50,7 +50,7 @@ export const Page = ({ format, margins, children }) => {
 
     return (
         <div className="page" style={pageStyle}>
-            { children.filter(e => e.type.name === 'SubPage') }
+            { children }
         </div>
     );
 };
@@ -70,7 +70,7 @@ Page.defaultProps = {
  */
 export const SubPage = ({ sectionHeight, children }) => (
     <div className="subPage" style={{ minHeight: sectionHeight }}>
-        { children.filter(e => e.type.name === 'Column') }
+        { children }
     </div>
 );
 SubPage.propTypes = {
