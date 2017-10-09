@@ -50,7 +50,7 @@ export default class RadialPartitionGraph extends React.Component {
             .outerRadius(d => d.y1);
 
         const arcs = graph
-            .selectAll('g.arc')
+            .selectAll('.arc')
             .data(root.descendants());
 
         graph.selectAll('text')
