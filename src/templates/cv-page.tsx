@@ -152,7 +152,7 @@ const CVTemplate: React.FC<CVTemplateProps> = ({ data }) => (
     <div className="cv-webpage" style={{ display: 'flex' }}>
       <StyledSidebar>
         <SidebarH2>Actions:</SidebarH2>
-        <button onClick={window.print}>
+        <button onClick={ e => (typeof window !== `undefined`) ? window.print() : console.log(e) }>
           <FontAwesomeIcon icon="print" fixedWidth />
         </button>
         <p style={{ marginTop: '10px' }}>Works on Chrome and Firefox.</p>

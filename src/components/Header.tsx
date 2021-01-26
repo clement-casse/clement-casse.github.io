@@ -84,7 +84,7 @@ const Header: React.FC<HeaderProps> = ({ title }) => (
       </ul>
     </HeaderInner>
     <GithubCorner
-      href="https://github.com/clement-casse/website"
+      href="https://github.com/clement-casse/clement-casse.github.io"
       octoColor={darken(0.1, colors.brand)}
       bannerColor={`${colors.white}`}
       size={heights.header}
