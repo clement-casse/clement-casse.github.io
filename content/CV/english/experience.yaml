@@ -1,0 +1,50 @@
+- id: eng-orange-phd
+  title: PhD Student in Cloud-Computing architecture
+  start: 2018-05-01
+  company:
+    name: Orange
+    city: Blagnac
+    area: France
+  missions:
+    - desc: ""
+      skills___NODE: []
+    - desc: Design a PoC platform running OpenTelemetry connected with a Data Processing platform.
+      skills___NODE: [terraform, k8s, gcp, istio, jaeger]
+    - desc: Model tracing data as a Property Graph to identify inefficient placement of services in Cloud Application.
+      skills___NODE: [scala, gremlin, neo4j]
+    - desc: ""
+      skills___NODE: []
+
+- id: eng-itrust-devops
+  title: Cybersecurity DevOps Engineer
+  start: 2016-04-01
+  end: 2018-03-31
+  company:
+    name: ITrust
+    city: Labège
+    area: France
+  missions:
+    - desc: SIEM and SOC design based on Open-Source component integration.
+      skills___NODE: []
+    - desc: Micro-services log processing architecture via Docker.
+      skills___NODE: [docker, ansible]
+    - desc: Alerting module development in Python based on Elasticsearch queries.
+      skills___NODE: [rest, python]
+    - desc: Analysis report writing.
+      skills___NODE: [english]
+
+- id: eng-airbus-apprentice
+  title: Apprentice Engineer on V&V for avionic software
+  start: 2012-09-01
+  end: 2015-08-31
+  company:
+    name: Airbus Group
+    city: Toulouse
+    area: France
+  missions:
+    - desc: Park of means rationalization for the V&V of avionic software DO178B DAL A, B, C, E.
+      skills___NODE: []
+    - desc: Continuous Integration in avionic software development lifecycle set-up study.
+      skills___NODE: []
+    - desc: Industrial Risks Analysis, obsolescence management of V&V tools.
+      skills___NODE: []

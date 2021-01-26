@@ -1,0 +1,100 @@
+- id: linux
+  name: Linux
+  selfEvaluation: 5
+  connectedSkills___NODE:
+    - bash
+
+- id: windows
+  name: Windows
+
+- id: docker
+  name: Docker
+  desc: ""
+  selfEvaluation: 5
+
+- id: k8s
+  name: Kubernetes
+  desc: ""
+  selfEvaluation: 3
+  connectedSkills___NODE:
+    - istio
+
+- id: istio
+  name: Istio
+  desc: ""
+  selfEvaluation: 1
+
+- id: gcp
+  name: Google Cloud
+  desc: ""
+  selfEvaluation: 2
+
+- id: elastic
+  name: Stack Elastic
+  connectedSkills___NODE:
+    - elasticsearch
+
+- id: prometheus
+  name: Prometheus
+
+- id: jaeger
+  name: Jaeger
+
+- id: neo4j
+  name: Neo4j - Cypher
+  selfEvaluation: 5
+
+- id: gremlin
+  name: Gremlin
+  selfEvaluation: 3
+
+- id: elasticsearch
+  name: Elasticsearch
+
+- id: api
+  name: APIs
+
+- id: rest
+  name: REST
+
+- id: graphql
+  name: GraphQL
+  selfEvaluation: 1
+
+- id: ansible
+  name: Ansible
+
+- id: bash
+  name: Bash
+  selfEvaluation: 5
+
+- id: terraform
+  name: Terraform
+
+- id: kafka
+  name: Kafka
+
+- id: git
+  name: Git
+
+- id: python
+  name: Python
+  selfEvaluation: 2
+
+- id: js
+  name: Javascript
+  selfEvaluation: 2
+
+- id: ts
+  name: TypeScript
+  selfEvaluation: 3
+
+- id: scala
+  name: Scala
+  selfEvaluation: 4
+
+- id: golang
+  name: Go
+
+- id: rust
+  name: Rust

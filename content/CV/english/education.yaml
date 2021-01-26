@@ -1,0 +1,50 @@
+- id: eng-engineer-degree
+  title: Engineer degree in Network - Telecommunications
+  start: 2012-09-01
+  end: 2015-08-31
+  school:
+    name: Télécom-Bretagne
+    city: Brest
+    area: France
+  # topics:
+  #   - Software Engineering
+  #   - Architecture of Information Systems
+  #   - Electronics for telecommunications
+  notes:
+    - Apprenticeship with Airbus
+    - ERASMUS Semester at NTNU Throndheim, Norway
+
+- id: eng-erasmus-semester
+  title: "ERASMUS Semester: spec. in Information Security"
+  start: 2014-08-09
+  end: 2014-12-22
+  school:
+    name: NTNU
+    city: Trondheim
+    area: Norway
+  topics:
+    - Vulnerability assessment
+    - Threat Modeling
+    - UML Modeling
+    - Web App Security
+  notes:
+    - "Topics elected: Software security, Wireless Security, Model Based Development of Information Systems"
+
+- id: eng-tech-degree
+  title: "DUT R&T: ~ Two-year degree in IT"
+  start: 2010-09-01
+  end: 2012-08-31
+  school:
+    name: IUT de Toulouse
+    city: Blagnac
+    area: France
+  # topics:
+  #   - Windows and Linux Administration
+  #   - IP Routing
+  #   - Operator Networks
+  notes:
+    - "July 2011: CCNA 1 and 2"
+
+- id: eng-bac
+  title: "Baccalauréat SSI: ~ High School diploma in Sciences"
+  end: 2009-06-30

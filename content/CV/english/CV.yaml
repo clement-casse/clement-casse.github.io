@@ -1,0 +1,130 @@
+- cvId: english
+  identity:
+    firstName: Clément
+    lastName: Cassé
+    emailAddress: casse.clement@outlook.com
+    address:
+      line1: 8 Grande Rue Saint-Michel
+      zipCode: "31400"
+      city: Toulouse
+    phoneNumber: +33 6 88 80 28 08
+    age: 29-years-old
+
+  header:
+    title: Software Engineer
+    subTitle: |
+      Goal: Achieving personal growth by learning from others in a technology-driven environment that encourages innovative thinking,
+      recognition, and career development
+
+  sections:
+    workingExperience:
+      title: Working Experience
+      content___NODE:
+        - eng-orange-phd
+        - eng-itrust-devops
+        - eng-airbus-apprentice
+    education:
+      title: Education
+      content___NODE:
+        - eng-engineer-degree
+        - eng-tech-degree
+        - eng-bac
+    hobbies:
+      title: Hobbies
+      content:
+        - Origami
+        - Technological watch
+        - Silver photography
+        - Cooperative online gaming
+    skills:
+      title: Skills
+      subSections:
+        - title: System - Tooling
+          additionalInfo: |
+            Experience automating and building Cloud-Native & Data-Intensive monitoring applications.
+          visualization:
+            kind: RadialTree
+            width: 305
+            height: 215
+          skillCategories:
+            - name: Containers
+              skills___NODE:
+                - docker
+                - k8s
+                - istio
+
+            - name: Monitoring
+              skills___NODE:
+                - jaeger
+                - prometheus
+                - elastic
+
+            - name: Public Clouds
+              skills___NODE:
+                - gcp
+
+            - name: Automation
+              skills___NODE:
+                - terraform
+                - ansible
+
+            - name: System
+              skills___NODE:
+                - windows
+                - linux
+
+        - title: Programing
+          skillCategories:
+            - name: General Purpose Languages
+              visualization:
+                kind: PartitionBar
+              skills___NODE:
+                - golang
+                - js
+                - ts
+                - rust
+
+            - name: Data Processing / Analytics
+              visualization:
+                kind: PartitionBar
+              skills___NODE:
+                - scala
+                - python
+
+            - name: Graph processing
+              visualization:
+                kind: PartitionBar
+              skills___NODE:
+                - neo4j
+                - graphql
+                - gremlin
+
+            - name: Other
+              visualization:
+                kind: CloudOfWords
+                width: 300
+                height: 40
+              skills___NODE:
+                - bash
+                - kafka
+
+          additionalInfo: |
+            Functional programming enthusiast
+
+        - title: Soft Skills
+          skills:
+            - id: communication
+              name: Communication
+              desc: ""
+            - id: teaching
+              name: Teaching
+              desc: ""
+
+        - title: Tongues
+          skills:
+            - id: eng
+              name: English
+              desc: "TOEIC 2014 : 880/990"
+            - id: fr
+              name: French
+              desc: Mother Tongue

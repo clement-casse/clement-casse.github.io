@@ -1,0 +1,54 @@
+- id: fr-orange-phd
+  title: Doctorant Cloud-Computing
+  start: 2018-05-01
+  company:
+    name: Orange
+    city: Blagnac
+    area: "31"
+  missions:
+    - desc: ""
+      skills___NODE: [k8s]
+    - desc: ""
+      skills___NODE: []
+    - desc: ""
+      skills___NODE: []
+    - desc: ""
+      skills___NODE: []
+
+- id: fr-itrust-devops
+  title: Ingénieur DevOps Cybersécurité
+  start: 2016-04-01
+  end: 2018-03-31
+  company:
+    name: ITrust
+    city: Labège
+    area: "31"
+  missions:
+    - desc: Conception SIEM et SOC basée sur l'intégration de composants Open-Source
+      skills___NODE: []
+    - desc: Création d'une architecture de traitement de logs par micro-services via Docker
+      skills___NODE:
+        - docker
+        - ansible
+    - desc: Développement de modules d'alertes de sécurité en Python basés sur des requètes Elasticsearch
+      skills___NODE:
+        - rest
+        - python
+    - desc: Rédaction de rapports d'analyse
+      skills___NODE: []
+
+- id: fr-airbus-apprentice
+  title: Apprenti Ingénieur validation systèmes avioniques
+  start: 2012-09-01
+  end: 2015-08-31
+  company:
+    name: Airbus Group
+    city: Toulouse
+    area: "31"
+  missions:
+    - desc: Rationalisation d'un parc de moyens de V&V logiciel avionique DO178B DAL A, B, C, E
+      skills___NODE: []
+    - desc: Etude de mise en place d'Intégration Continue dans les cycles de développement de logiciel avionique
+      skills___NODE: []
+    - desc: Analyse de risques industriels, traitement des obsolesences des outils de V&V
+      skills___NODE: []

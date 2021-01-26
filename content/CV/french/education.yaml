@@ -1,0 +1,37 @@
+- id: fr-engineer-degree
+  title: Diplôme d'Ingénieur Réseaux - Télécommunications
+  display: true
+  start: 2012-09-01
+  end: 2015-08-31
+  school:
+    name: Télécom-Bretagne
+    city: Brest
+    area: '02'
+  # topics:
+  #   - Ingénierie Logicielle
+  #   - Architecture des Systèmes d'Information
+  #   - Electronique des Télécommunications
+  notes:
+    - Formation en apprentissage avec Airbus
+    - Semestre ERASMUS à NTNU Trondheim, Norvège
+
+- id: fr-tech-degree
+  title: DUT Réseaux et Télécommunications
+  display: true
+  start: 2010-09-01
+  end: 2012-08-31
+  school:
+    name: IUT de Toulouse
+    city: Blagnac
+    area: '31'
+  # topics:
+  #   - Administration Windows et Linux
+  #   - Routage IP
+  #   - Réseaux d'opérateurs
+  notes:
+    - 'CCNA 1 & 2 Juillet 2011'
+
+- id: fr-bac
+  title: Baccalauréat S-Sciences de l’Ingénieur
+  display: true
+  end: 2009-06-30

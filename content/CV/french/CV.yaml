@@ -1,0 +1,89 @@
+- cvId: french
+  identity:
+    firstName: Clément
+    lastName: Cassé
+    emailAddress: casse.clement@outlook.com
+    address:
+      line1: 8 Grande Rue Saint-Michel
+      zipCode: "31400"
+      city: Toulouse
+    phoneNumber: 06 88 80 28 08
+    age: 29 ans
+
+  header:
+    title: "Ingénieur Devops"
+    subTitle: |
+      Objectif : Rejoindre un environnement technique dynamique encourageant l'innovation, pour progresser et continuer à apprendre
+
+  sections:
+    workingExperience:
+      title: Expérience Professionnelle
+      content___NODE:
+        - fr-orange-phd
+        - fr-itrust-devops
+        - fr-airbus-apprentice
+    education:
+      title: Formation
+      content___NODE:
+        - fr-engineer-degree
+        - fr-tech-degree
+        - fr-bac
+    hobbies:
+      title: Loisirs
+      content:
+        - Origami
+        - Veille Technologique
+        - Photographie Argentique
+        - Jeux Videos Communautaires
+    skills:
+      title: Compétences
+      subSections:
+        - title: Environnement
+          additionalInfo: |
+            Deux ans d'expérience en administration de serveurs Linux et un an d'exploitation de Docker en production.
+          visualization:
+            kind: TreeMap
+            width: 300
+            height: 100
+          skillCategories:
+            - name: Systèmes
+              desc: ""
+              skills___NODE:
+                - linux
+                - windows
+            - name: Cloud
+              desc: ""
+              skills___NODE:
+                - docker
+                - k8s
+                - gcp
+        - title: DevOps
+          additionalInfo: |
+            Expérience dans la containerisation d'applications Big Data, fort intérêt pour l'élaboration de solutions Cloud.
+          visualization:
+            kind: RadialTree
+            width: 300
+            height: 300
+          skillCategories:
+            - name: Monitoring
+              desc: ""
+              skills___NODE:
+                - elastic
+                - prometheus
+                - jaeger
+            - name: Automatisation
+              desc: ""
+              skills___NODE:
+                - bash
+                - ansible
+        - title: Développement
+          additionalInfo: |
+            Expérience en développement basé autour des APIs REST, interêt pour la programmation fonctionnelle.
+          visualization:
+            kind: TreeMap
+            width: 300
+            height: 100
+          skillCategories:
+            - name: ""
+
+        - title: Langues
