@@ -38,52 +38,85 @@
     skills:
       title: Compétences
       subSections:
-        - title: Environnement
+        - title: System - Tooling
           additionalInfo: |
-            Deux ans d'expérience en administration de serveurs Linux et un an d'exploitation de Docker en production.
+            Experience automating and building Cloud-Native & Data-Intensive monitoring applications.
           visualization:
-            kind: TreeMap
-            width: 300
-            height: 100
+            kind: RadialTree
+            width: 305
+            height: 215
           skillCategories:
-            - name: Systèmes
-              desc: ""
-              skills___NODE:
-                - linux
-                - windows
-            - name: Cloud
-              desc: ""
+            - name: Containers
               skills___NODE:
                 - docker
                 - k8s
-                - gcp
-        - title: DevOps
-          additionalInfo: |
-            Expérience dans la containerisation d'applications Big Data, fort intérêt pour l'élaboration de solutions Cloud.
-          visualization:
-            kind: RadialTree
-            width: 300
-            height: 300
-          skillCategories:
+                - istio
+
             - name: Monitoring
-              desc: ""
               skills___NODE:
-                - elastic
-                - prometheus
                 - jaeger
-            - name: Automatisation
-              desc: ""
+                - prometheus
+                - elastic
+
+            - name: Public Clouds
+              skills___NODE:
+                - gcp
+
+            - name: Automation
+              skills___NODE:
+                - terraform
+                - ansible
+
+            - name: System
+              skills___NODE:
+                - windows
+                - linux
+
+        - title: Programing
+          skillCategories:
+            - name: General Purpose Languages
+              visualization:
+                kind: PartitionBar
+              skills___NODE:
+                - scala
+                - js
+                - python
+                - golang
+                - rust
+
+            # - name: Data Processing / Analytics
+            #   visualization:
+            #     kind: PartitionBar
+            #   skills___NODE:
+
+
+            - name: Graph processing
+              visualization:
+                kind: PartitionBar
+              skills___NODE:
+                - neo4j
+                - graphql
+                - gremlin
+
+            - name: Other
+              visualization:
+                kind: CloudOfWords
+                width: 300
+                height: 40
               skills___NODE:
                 - bash
-                - ansible
-        - title: Développement
+                - kafka
+
           additionalInfo: |
-            Expérience en développement basé autour des APIs REST, interêt pour la programmation fonctionnelle.
-          visualization:
-            kind: TreeMap
-            width: 300
-            height: 100
-          skillCategories:
-            - name: ""
+            Functional programming enthusiast
+
+        - title: Soft Skills
+          skills:
+            - id: communication
+              name: Communication
+              desc: ""
+            - id: teaching
+              name: Enseignement
+              desc: ""
 
         - title: Langues

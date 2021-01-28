@@ -82,11 +82,7 @@
   selfEvaluation: 2
 
 - id: js
-  name: Javascript
-  selfEvaluation: 2
-
-- id: ts
-  name: TypeScript
+  name: JavaScript / TypeScript
   selfEvaluation: 3
 
 - id: scala
