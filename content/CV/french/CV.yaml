@@ -2,7 +2,7 @@
   identity:
     firstName: Clément
     lastName: Cassé
-    emailAddress: casse.clement@outlook.com
+    emailAddress: clement.casse@outlook.com
     address:
       line1: 8 Grande Rue Saint-Michel
       zipCode: "31400"
@@ -83,12 +83,6 @@
                 - python
                 - golang
                 - rust
-
-            # - name: Data Processing / Analytics
-            #   visualization:
-            #     kind: PartitionBar
-            #   skills___NODE:
-
 
             - name: Graph processing
               visualization:

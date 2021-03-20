@@ -94,3 +94,18 @@
 
 - id: rust
   name: Rust
+
+- id: rsyslog
+  name: Rsyslog
+  selfEvaluation: 4
+
+- id: redis
+  name: Redis
+
+- id: latex
+  name: LaTeX
+  selfEvaluation: 3
+
+- id: logstash
+  name: Logstash
+  selfEvaluation: 4

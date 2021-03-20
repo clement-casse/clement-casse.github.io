@@ -2,7 +2,7 @@
   identity:
     firstName: Clément
     lastName: Cassé
-    emailAddress: casse.clement@outlook.com
+    emailAddress: clement.casse@outlook.com
     address:
       line1: 8 Grande Rue Saint-Michel
       zipCode: "31400"
@@ -75,21 +75,20 @@
 
         - title: Programing
           skillCategories:
-            - name: General Purpose Languages
-              visualization:
-                kind: PartitionBar
-              skills___NODE:
-                - golang
-                - js
-                - ts
-                - rust
-
-            - name: Data Processing / Analytics
+            - name: Languages
               visualization:
                 kind: PartitionBar
               skills___NODE:
                 - scala
                 - python
+                - golang
+                - js
+                - rust
+
+            # - name: Framework
+            #   visualization:
+            #     kind: PartitionBar
+            #   skills___NODE:
 
             - name: Graph processing
               visualization:
@@ -103,10 +102,17 @@
               visualization:
                 kind: CloudOfWords
                 width: 300
-                height: 40
+                height: 100
               skills___NODE:
                 - bash
                 - kafka
+                - git
+                - rsyslog
+                - api
+                - rest
+                - redis
+                - latex
+                - logstash
 
           additionalInfo: |
             Functional programming enthusiast
