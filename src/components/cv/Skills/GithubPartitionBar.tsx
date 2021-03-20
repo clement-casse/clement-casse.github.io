@@ -53,7 +53,7 @@ const GithubStyledLegend = styled.ul`
 const GithubStyledLegendItem = styled.li`
   margin-left: 4px;
   margin-right: 11px;
-  display: inline !important;
+  display: inline-flex !important;
 `
 
 export default class PartitionBar<Datum> extends React.Component<BarsListProps<Datum>, {}> {
@@ -94,8 +94,9 @@ export default class PartitionBar<Datum> extends React.Component<BarsListProps<D
         <GithubStyledLegend>
           {this.partitions.map((p, i) => (
             <GithubStyledLegendItem key={i}>
-              <FontAwesomeIcon icon="circle" size="xs" color={`${this.colorScale(i)}`} fixedWidth />
-              <span> {p.partitionTitle}</span>
+              <span>
+                <FontAwesomeIcon icon="circle" size="xs" color={`${this.colorScale(i)}`} fixedWidth />&nbsp;{p.partitionTitle}
+              </span>
             </GithubStyledLegendItem>
           ))}
         </GithubStyledLegend>
