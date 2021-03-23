@@ -51,11 +51,12 @@
 - id: elasticsearch
   name: Elasticsearch
 
-- id: api
-  name: APIs
-
 - id: rest
-  name: REST
+  name: REST APIs
+  selfEvaluation: 3
+
+- id: grpc
+  name: gRPC
 
 - id: graphql
   name: GraphQL
@@ -73,6 +74,7 @@
 
 - id: kafka
   name: Kafka
+  selfEvaluation: 2
 
 - id: git
   name: Git
@@ -104,8 +106,21 @@
 
 - id: latex
   name: LaTeX
-  selfEvaluation: 3
+  selfEvaluation: 2
 
 - id: logstash
   name: Logstash
   selfEvaluation: 4
+
+- id: spark
+  name: Spark
+
+- id: grafana
+  name: Grafana
+
+- id: gke
+  name: GKE
+
+- id: regex
+  name: RegEx
+  selfEvaluation: 3

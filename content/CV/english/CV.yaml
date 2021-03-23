@@ -36,10 +36,11 @@
         - Technological watch
         - Silver photography
         - Cooperative online gaming
+
     skills:
       title: Skills
       subSections:
-        - title: System - Tooling
+        - title: System - DevOps
           additionalInfo: |
             Experience automating and building Cloud-Native & Data-Intensive monitoring applications.
           visualization:
@@ -85,11 +86,6 @@
                 - js
                 - rust
 
-            # - name: Framework
-            #   visualization:
-            #     kind: PartitionBar
-            #   skills___NODE:
-
             - name: Graph processing
               visualization:
                 kind: PartitionBar
@@ -98,39 +94,42 @@
                 - graphql
                 - gremlin
 
-            - name: Other
+            - name: Tools
               visualization:
                 kind: CloudOfWords
                 width: 300
-                height: 100
+                height: 90
               skills___NODE:
                 - bash
                 - kafka
                 - git
                 - rsyslog
-                - api
+                - grpc
                 - rest
                 - redis
                 - latex
                 - logstash
+                - grafana
+                - spark
+                - regex
 
           additionalInfo: |
-            Functional programming enthusiast
+            .
 
         - title: Soft Skills
           skills:
             - id: communication
               name: Communication
-              desc: ""
+              desc: Verbal and Written scientific communication
             - id: teaching
               name: Teaching
-              desc: ""
+              desc: Created courses on Docker and Log analysis for cybersecurity
 
         - title: Tongues
           skills:
             - id: eng
               name: English
-              desc: "TOEIC 2014 : 880/990"
+              desc: "TOEIC 2014: 880/990"
             - id: fr
               name: French
               desc: Mother Tongue

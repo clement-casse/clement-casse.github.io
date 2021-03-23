@@ -1,6 +1,5 @@
 - id: fr-engineer-degree
-  title: Diplôme d'Ingénieur Réseaux - Télécommunications
-  display: true
+  title: Diplôme d'Ingénieur Réseau & Télécommunications
   start: 2012-09-01
   end: 2015-08-31
   school:
@@ -16,8 +15,7 @@
     - Semestre ERASMUS à NTNU Trondheim, Norvège
 
 - id: fr-tech-degree
-  title: DUT Réseaux et Télécommunications
-  display: true
+  title: DUT Réseau et Télécommunications
   start: 2010-09-01
   end: 2012-08-31
   school:
@@ -33,5 +31,4 @@
 
 - id: fr-bac
   title: Baccalauréat S-Sciences de l’Ingénieur
-  display: true
   end: 2009-06-30

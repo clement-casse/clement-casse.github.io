@@ -11,7 +11,7 @@
     age: 29 ans
 
   header:
-    title: "Ingénieur Devops"
+    title: "Ingénieur Recherche Cloud"
     subTitle: |
       Objectif : Rejoindre un environnement technique dynamique encourageant l'innovation, pour progresser et continuer à apprendre
 
@@ -35,12 +35,13 @@
         - Veille Technologique
         - Photographie Argentique
         - Jeux Videos Communautaires
+
     skills:
       title: Compétences
       subSections:
-        - title: System - Tooling
+        - title: Systèmes - DevOps
           additionalInfo: |
-            Experience automating and building Cloud-Native & Data-Intensive monitoring applications.
+            Expérience dans l'automatisation et le déploiement d'applications distribuées traitant des données de monitoring (Métriques, Logs, Traces)
           visualization:
             kind: RadialTree
             width: 305
@@ -58,23 +59,23 @@
                 - prometheus
                 - elastic
 
-            - name: Public Clouds
+            - name: Cloud Publics
               skills___NODE:
                 - gcp
 
-            - name: Automation
+            - name: Automatisation
               skills___NODE:
                 - terraform
                 - ansible
 
-            - name: System
+            - name: Systèmes
               skills___NODE:
                 - windows
                 - linux
 
-        - title: Programing
+        - title: Développement
           skillCategories:
-            - name: General Purpose Languages
+            - name: Langages de Programmation
               visualization:
                 kind: PartitionBar
               skills___NODE:
@@ -84,7 +85,7 @@
                 - golang
                 - rust
 
-            - name: Graph processing
+            - name: Traitement de Graphes
               visualization:
                 kind: PartitionBar
               skills___NODE:
@@ -92,25 +93,39 @@
                 - graphql
                 - gremlin
 
-            - name: Other
+            - name: Outils
               visualization:
                 kind: CloudOfWords
                 width: 300
-                height: 40
+                height: 90
               skills___NODE:
                 - bash
                 - kafka
+                - git
+                - rsyslog
+                - grpc
+                - rest
+                - redis
+                - latex
+                - logstash
+                - grafana
+                - spark
+                - regex
 
           additionalInfo: |
-            Functional programming enthusiast
+            .
 
-        - title: Soft Skills
+        - title: Compétences non Techniques
           skills:
             - id: communication
               name: Communication
-              desc: ""
+              desc: Présentation et écriture scientifique
             - id: teaching
               name: Enseignement
-              desc: ""
+              desc: Création de cours sur Docker et sur le traitement de logs appliqué à la cybersécurité
 
         - title: Langues
+          skills:
+            - id: eng
+              name: Anglais
+              desc: "TOEIC 2014 : 880/990"
