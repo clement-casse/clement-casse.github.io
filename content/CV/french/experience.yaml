@@ -1,19 +1,19 @@
 - id: fr-orange-phd
-  title: Doctorant Cloud-Computing
+  title: Doctorant en performance Cloud-Computing
   start: 2018-05-01
   company:
     name: Orange
     city: Blagnac
     area: "31"
   missions:
-    - desc: ""
-      skills___NODE: [k8s]
-    - desc: ""
+    - desc: Etude des problèmes de performance des applications Cloud et des systèmes distribués, modélisation basée sur la théorie des graphes
       skills___NODE: []
-    - desc: ""
-      skills___NODE: []
-    - desc: ""
-      skills___NODE: []
+    - desc: Création d'une plateforme basée sur Kubernetes, Istio et OpenTelemetry pour la génération de traces.
+      skills___NODE: [terraform, k8s, gcp, istio, jaeger, spark]
+    - desc: Modélisation des traces via des graphes de propriétés en Scala, Gremlin et Neo4j.
+      skills___NODE: [scala, gremlin, neo4j]
+    - desc: Ecriture et communication scientifique pour l'académique et l'industrie.
+      skills___NODE: [english, latex]
 
 - id: fr-itrust-devops
   title: Ingénieur DevOps Cybersécurité
@@ -24,17 +24,17 @@
     city: Labège
     area: "31"
   missions:
-    - desc: Conception SIEM et SOC basée sur l'intégration de composants Open-Source
+    - desc: Conception SIEM et SOC basée sur l'intégration de composants Open-Source.
       skills___NODE: []
-    - desc: Création d'une architecture de traitement de logs par micro-services via Docker
+    - desc: Création d'une architecture de traitement de logs par micro-services via Docker.
       skills___NODE:
         - docker
         - ansible
-    - desc: Développement de modules d'alertes de sécurité en Python basés sur des requètes Elasticsearch
+    - desc: Développement de modules d'alertes de sécurité en Python basés sur des requètes Elasticsearch.
       skills___NODE:
         - rest
         - python
-    - desc: Rédaction de rapports d'analyse
+    - desc: Rédaction de rapports d'analyse.
       skills___NODE: []
 
 - id: fr-airbus-apprentice
@@ -46,9 +46,9 @@
     city: Toulouse
     area: "31"
   missions:
-    - desc: Rationalisation d'un parc de moyens de V&V logiciel avionique DO178B DAL A, B, C, E
+    - desc: Rationalisation d'un parc de moyens de V&V logiciel avionique pour la certification DO178B.
       skills___NODE: []
-    - desc: Etude de mise en place d'Intégration Continue dans les cycles de développement de logiciel avionique
+    - desc: Etude d'Intégration Continue appliquée aux cycles de développement de logiciel avionique.
       skills___NODE: []
-    - desc: Analyse de risques industriels, traitement des obsolesences des outils de V&V
+    - desc: Analyse de risques industriels, traitement des obsolesences des outils de V&V.
       skills___NODE: []

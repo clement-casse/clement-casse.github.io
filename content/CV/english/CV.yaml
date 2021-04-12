@@ -8,7 +8,7 @@
       zipCode: "31400"
       city: Toulouse
     phoneNumber: +33 6 88 80 28 08
-    age: 29-years-old
+    age: 30-years-old
 
   header:
     title: Software Engineer
@@ -113,8 +113,8 @@
                 - spark
                 - regex
 
-          additionalInfo: |
-            .
+          #additionalInfo: |
+          #  .
 
         - title: Soft Skills
           skills:

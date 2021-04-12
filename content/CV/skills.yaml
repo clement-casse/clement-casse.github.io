@@ -78,6 +78,7 @@
 
 - id: git
   name: Git
+  selfEvaluation: 2
 
 - id: python
   name: Python

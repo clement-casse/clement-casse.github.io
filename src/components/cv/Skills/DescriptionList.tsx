@@ -22,14 +22,15 @@ const Line = styled.div`
 `
 
 const Term = styled.dt`
-  flex: 1 0;
+  width: 30%;
   font-weight: 700;
   text-align: right;
   margin-right: 10px;
 `
 
 const Definition = styled.dd`
-  flex: 3 0;
+  flex: 3 1;
+  margin-left: 10px;
 `
 
 const DescriptionList: React.FC<DescriptionListProps> = ({ skills }) => (

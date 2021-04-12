@@ -1,19 +1,19 @@
 - id: eng-orange-phd
-  title: PhD Student in Cloud-Computing architecture
+  title: PhD Student in Cloud-Computing performance
   start: 2018-05-01
   company:
     name: Orange
     city: Blagnac
     area: France
   missions:
-    - desc: ""
+    - desc: Studied Cloud-Application specific performance issues, distributed systems monitoring, and modelled with Graph Theory concepts.
       skills___NODE: []
-    - desc: Design a PoC running a Data Processing pipeline based on Kubernetes and OpenTelemetry to compute traces.
-      skills___NODE: [terraform, k8s, gcp, istio, jaeger]
-    - desc: Model tracing data as a Property Graph to identify inefficient placement of services in Cloud Application.
+    - desc: Designed a trace processing pipeline based on Kubernetes, Istio and OpenTelemetry.
+      skills___NODE: [terraform, k8s, gcp, istio, jaeger, spark]
+    - desc: Modeled tracing data as Property Graphs with Scala, Gremlin and Neo4j.
       skills___NODE: [scala, gremlin, neo4j]
-    - desc: ""
-      skills___NODE: []
+    - desc: Scientific writing for academic and industry.
+      skills___NODE: [english, latex]
 
 - id: eng-itrust-devops
   title: Cybersecurity DevOps Engineer
@@ -24,13 +24,13 @@
     city: Labège
     area: France
   missions:
-    - desc: SIEM and SOC design based on Open-Source component integration.
-      skills___NODE: []
-    - desc: Micro-services log processing architecture via Docker.
-      skills___NODE: [docker, ansible]
-    - desc: Alerting module development in Python based on Elasticsearch queries.
-      skills___NODE: [rest, python]
-    - desc: Analysis report writing.
+    - desc: Integrated Open Source components to design a scalable SIEM via Docker.
+      skills___NODE: [docker, linux, rsyslog, bash, redis, logstash, grafana]
+    - desc: Automated deployment and configuration of the SIEM with Ansible for on-premise installations.
+      skills___NODE: [ansible, linux, bash]
+    - desc: Developped Alerting modules in Python / Go based on Elasticsearch queries.
+      skills___NODE: [rest, python, go]
+    - desc: Wrote analysis reports based on SOC alerts.
       skills___NODE: [english]
 
 - id: eng-airbus-apprentice
@@ -42,9 +42,9 @@
     city: Toulouse
     area: France
   missions:
-    - desc: Park of means rationalization for the V&V of avionic software DO178B DAL A, B, C, E.
+    - desc: Studied the rationalization of the park of V&V means used for avionic software DO178B certification.
       skills___NODE: []
-    - desc: Continuous Integration in avionic software development lifecycle set-up study.
+    - desc: Studied Continuous Integration opportunities for avionic software development lifecycle.
       skills___NODE: []
-    - desc: Industrial Risks Analysis, obsolescence management of V&V tools.
+    - desc: Ensured the follow up of Industrial Risks Analysis and obsolescence management of V&V tools.
       skills___NODE: []

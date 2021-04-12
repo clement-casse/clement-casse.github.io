@@ -8,12 +8,12 @@
       zipCode: "31400"
       city: Toulouse
     phoneNumber: 06 88 80 28 08
-    age: 29 ans
+    age: 30 ans
 
   header:
-    title: "Ingénieur Recherche Cloud"
+    title: "Ingénieur de Recherche Cloud-Computing"
     subTitle: |
-      Objectif : Rejoindre un environnement technique dynamique encourageant l'innovation, pour progresser et continuer à apprendre
+      Objectif : Rejoindre un environnement technique dynamique encourageant l'innovation pour progresser et continuer à apprendre
 
   sections:
     workingExperience:
@@ -41,7 +41,7 @@
       subSections:
         - title: Systèmes - DevOps
           additionalInfo: |
-            Expérience dans l'automatisation et le déploiement d'applications distribuées traitant des données de monitoring (Métriques, Logs, Traces)
+            Expérience dans l'automatisation et le déploiement d'applications de traitement de données de monitoring.
           visualization:
             kind: RadialTree
             width: 305
@@ -73,9 +73,9 @@
                 - windows
                 - linux
 
-        - title: Développement
+        - title: Programmation
           skillCategories:
-            - name: Langages de Programmation
+            - name: Langages
               visualization:
                 kind: PartitionBar
               skills___NODE:
@@ -112,8 +112,8 @@
                 - spark
                 - regex
 
-          additionalInfo: |
-            .
+          #additionalInfo: |
+          #  .
 
         - title: Compétences non Techniques
           skills:
@@ -122,10 +122,13 @@
               desc: Présentation et écriture scientifique
             - id: teaching
               name: Enseignement
-              desc: Création de cours sur Docker et sur le traitement de logs appliqué à la cybersécurité
+              desc: Création de cours sur Docker et initiation au traitement de logs.
 
         - title: Langues
           skills:
             - id: eng
               name: Anglais
               desc: "TOEIC 2014 : 880/990"
+            - id: fr
+              name: Français
+              desc: "Langue maternelle"

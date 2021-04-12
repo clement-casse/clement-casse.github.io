@@ -43,26 +43,23 @@ export default () => (
         <StyledButtonBlock>
           <StyledButton>
             <Link to="/cv/english">
-              <div style={{ backgroundImage: 'url()' }}>
-                <StyledButtonContent>English Version</StyledButtonContent>
-              </div>
+              <StyledButtonContent>in English 🇬🇧</StyledButtonContent>
             </Link>
           </StyledButton>
           <StyledButton>
             <Link to="/cv/french">
-              <div style={{ backgroundImage: 'url()' }}>
-                <StyledButtonContent>en Français</StyledButtonContent>
-              </div>
+              <StyledButtonContent>en Français 🇫🇷</StyledButtonContent>
             </Link>
           </StyledButton>
         </StyledButtonBlock>
 
         <p>
-          for all decisions related to typography, colors and layout, I referred to{' '}
+          In order to have a nice looking rendering for the CV, I followed advices from{' '}
           <a href="https://colinecaillier.com/">Coline Caillier</a>.
         </p>
 
         <h2>How it is made and why?</h2>
+        <h3>Goals and Non-Goals</h3>
         <p>
           I use this page and this website more generally to create my CV.
           I decided to pick up frameworks, libraries and technologies as I wanted to learn them, as a result, the solution

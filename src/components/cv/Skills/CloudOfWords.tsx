@@ -39,7 +39,7 @@ export default class CloudOfWords<Datum> extends React.Component<CloudOfWordsPro
     this.colorScale = d3
       .scaleLinear<string, number>()
       .domain([0, this.props.hierarchyRoot.leaves().length - 1])
-      .range([`${transparentize(0.3, darken(0.1, colors.brand))}`, `${transparentize(0.2, colors.brand)}`])
+      .range([`${transparentize(0.25, darken(0.2, colors.brand))}`, `${transparentize(0.2, colors.brand)}`])
   }
 
   componentDidMount() {

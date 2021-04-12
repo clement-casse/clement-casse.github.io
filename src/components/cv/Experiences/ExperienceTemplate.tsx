@@ -116,7 +116,7 @@ const Notes: React.FC<NotesProps> = ({ notes }) => (
     </NoteIconWrapper>
     <NoteContent>
       {notes.map((n, i) => (
-        <li key={i}>— {n}</li>
+        <li key={i}>{n}</li>
       ))}
     </NoteContent>
   </StyledNoteBox>
