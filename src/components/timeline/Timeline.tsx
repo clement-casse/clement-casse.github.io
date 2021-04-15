@@ -105,9 +105,7 @@ export const TimelineContainer: React.FC<TimelineContainerProps> = ({title, pos,
           <p>
             <ContentTitle>{title}</ContentTitle>
           </p>
-          <p>
-            {children}
-          </p>
+          {children}
         </TimelineContainerContent>
       </RightTimelineContainer>
     )
@@ -118,9 +116,7 @@ export const TimelineContainer: React.FC<TimelineContainerProps> = ({title, pos,
           <p>
             <ContentTitle>{title}</ContentTitle>
           </p>
-          <p>
-            {children}
-          </p>
+          {children}
         </TimelineContainerContent>
       </LeftTimelineContainer>
     )
