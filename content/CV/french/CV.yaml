@@ -11,7 +11,7 @@
     age: 30 ans
 
   header:
-    title: "Ingénieur de Recherche Cloud-Computing"
+    title: "Ingénieur R&D Informatique"
     subTitle: |
       Objectif : Rejoindre un environnement technique dynamique encourageant l'innovation pour progresser et continuer à apprendre
 
@@ -25,9 +25,10 @@
     education:
       title: Formation
       content___NODE:
+        - fr-phd-degree
         - fr-engineer-degree
         - fr-tech-degree
-        - fr-bac
+        #- fr-bac
     hobbies:
       title: Loisirs
       content:
@@ -97,7 +98,7 @@
               visualization:
                 kind: CloudOfWords
                 width: 300
-                height: 90
+                height: 120
               skills___NODE:
                 - bash
                 - kafka

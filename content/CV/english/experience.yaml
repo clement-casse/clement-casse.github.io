@@ -1,6 +1,7 @@
 - id: eng-orange-phd
-  title: PhD Student in Cloud-Computing performance
+  title: PhD Student on Cloud-Computing performance
   start: 2018-05-01
+  end: 2022-01-31
   company:
     name: Orange
     city: Blagnac
@@ -16,7 +17,7 @@
       skills___NODE: [english, latex]
 
 - id: eng-itrust-devops
-  title: Cybersecurity DevOps Engineer
+  title: Cybersecurity Technical Architect
   start: 2016-04-01
   end: 2018-03-31
   company:

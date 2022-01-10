@@ -1,12 +1,13 @@
 - id: fr-orange-phd
   title: Doctorant en performance Cloud-Computing
   start: 2018-05-01
+  end: 2022-01-31
   company:
     name: Orange
     city: Blagnac
     area: "31"
   missions:
-    - desc: Etude des problèmes de performance des applications Cloud et des systèmes distribués, modélisation basée sur la théorie des graphes
+    - desc: Etude des problèmes de performance des applications Cloud et des systèmes distribués, modélisation basée sur la théorie des graphes.
       skills___NODE: []
     - desc: Création d'une plateforme basée sur Kubernetes, Istio et OpenTelemetry pour la génération de traces.
       skills___NODE: [terraform, k8s, gcp, istio, jaeger, spark]
@@ -16,7 +17,7 @@
       skills___NODE: [english, latex]
 
 - id: fr-itrust-devops
-  title: Ingénieur DevOps Cybersécurité
+  title: Architecte Technique Cybersécurité
   start: 2016-04-01
   end: 2018-03-31
   company:
@@ -50,5 +51,5 @@
       skills___NODE: []
     - desc: Etude d'Intégration Continue appliquée aux cycles de développement de logiciel avionique.
       skills___NODE: []
-    - desc: Analyse de risques industriels, traitement des obsolesences des outils de V&V.
+    - desc: Analyse de risques industriels, traitement d'obsolesences des outils de V&V.
       skills___NODE: []

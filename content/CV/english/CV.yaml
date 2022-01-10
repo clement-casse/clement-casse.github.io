@@ -11,7 +11,7 @@
     age: 30-years-old
 
   header:
-    title: Software Engineer
+    title: Research Engineer in IT
     subTitle: |
       Goal: Achieving personal growth by learning from others in a technology-driven environment that encourages innovative thinking,
       recognition, and career development
@@ -26,9 +26,10 @@
     education:
       title: Education
       content___NODE:
+        - eng-phd-degree
         - eng-engineer-degree
         - eng-tech-degree
-        - eng-bac
+        #- eng-bac
     hobbies:
       title: Hobbies
       content:
@@ -98,7 +99,7 @@
               visualization:
                 kind: CloudOfWords
                 width: 300
-                height: 90
+                height: 120
               skills___NODE:
                 - bash
                 - kafka

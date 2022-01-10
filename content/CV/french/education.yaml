@@ -1,3 +1,15 @@
+- id: fr-phd-degree
+  title: Doctorat en Informatique, Maths. & Télécoms.
+  start: 2018-05-01
+  end: 2022-01-01
+  school:
+    name: Univ. Paul Sabatier
+    city: Toulouse
+    area: '31'
+  notes:
+    - Thèse CIFRE en partenariat avec Orange
+
+
 - id: fr-engineer-degree
   title: Diplôme d'Ingénieur Réseau & Télécommunications
   start: 2012-09-01

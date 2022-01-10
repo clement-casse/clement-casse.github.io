@@ -1,3 +1,14 @@
+- id: eng-phd-degree
+  title: PhD in Computer Science, Maths.
+  start: 2018-05-01
+  end: 2022-01-01
+  school:
+    name: Univ. Paul Sabatier
+    city: Toulouse
+    area: France
+  notes:
+    - CIFRE Contract in partnership with Orange
+
 - id: eng-engineer-degree
   title: Engineer degree in Network - Telecommunications
   start: 2012-09-01
